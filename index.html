@@ -384,101 +384,155 @@
     </div>
   </div>
 
-  <!-- CATEGORY WORK SHOWCASE -->
-  <section id="work" class="filter-section">
-    <div class="section-title" style="margin-bottom: 20px;">
-      <h2>Selected Works & Portfolio</h2>
-      <p>Filter by focus area to review narrative, documentary, corporate, and visual projects.</p>
-    </div>
-
-    <div class="filter-bar">
-      <button class="filter-btn active" onclick="filterGrid('all')">All Work</button>
-      <button class="filter-btn" onclick="filterGrid('narrative')">Narrative & Short Film</button>
-      <button class="filter-btn" onclick="filterGrid('doccie')">Documentaries</button>
-      <button class="filter-btn" onclick="filterGrid('corporate')">Corporate & Brand</button>
-      <button class="filter-btn" onclick="filterGrid('music')">Music Videos</button>
-      <button class="filter-btn" onclick="filterGrid('photo')">Photography</button>
-      <button class="filter-btn" onclick="filterGrid('photo')">Verandert</button>
-      <button class="filter-btn" onclick="filterGrid('photo')">Weddings</button>
-    </div>
-  </section>
-
-  <!-- PORTFOLIO GRID -->
-  <div class="grid">
-    
-    <!-- ITEM 1: DOCUMENTARY -->
-    <div class="card grid-item doccie">
-      <div class="media-container">
-        <iframe src="https://www.youtube.com/embed/iXKJGqHCyXk" allowfullscreen></iframe>
-      </div>
-      <div class="card-body">
-        <span class="card-tag">Documentary / Impact</span>
-        <h3 class="card-title">Yzerfontein Community Feature (Verandert)</h3>
-        <p class="card-desc">High-retention social impact narrative that achieved 22,000+ views in 14 days with an average watch duration exceeding 5:30.</p>
-      </div>
-    </div>
-
-    <!-- ITEM 2: NARRATIVE -->
-    <div class="card grid-item narrative">
-      <div class="media-container">
-        <iframe src="https://www.youtube.com/embed/QDIR0q1jndg" allowfullscreen></iframe>
-      </div>
-      <div class="card-body">
-        <span class="card-tag">Narrative Drama</span>
-        <h3 class="card-title">Cinematic Short Film Showcase</h3>
-        <p class="card-desc">Full narrative execution featuring custom production design, atmosphere control, pacing, and color grading.</p>
-      </div>
-    </div>
-
-    <!-- ITEM 3: CORPORATE -->
-    <div class="card grid-item corporate">
-      <div class="media-container">
-        <iframe src="https://www.youtube.com/embed/V3YknBiaw38" allowfullscreen></iframe>
-      </div>
-      <div class="card-body">
-        <span class="card-tag">Corporate Brand Film</span>
-        <h3 class="card-title">Travelport LIVE & Executive Storytelling</h3>
-        <p class="card-desc">B2B product launches and corporate highlights designed for high-conversion stakeholder presentation.</p>
-      </div>
-    </div>
-
-    <!-- ITEM 4: MUSIC VIDEO -->
-    <div class="card grid-item music">
-      <div class="media-container">
-        <iframe src="https://www.youtube.com/embed/RITvYt_YsX4" allowfullscreen></iframe>
-      </div>
-      <div class="card-body">
-        <span class="card-tag">Music Video</span>
-        <h3 class="card-title">Visual Performance & Concept Video</h3>
-        <p class="card-desc">Rhythmic editing, specialized stage lighting design, and creative color grading for music artists.</p>
-      </div>
-    </div>
-
-    <!-- ITEM 5: PHOTOGRAPHY -->
-    <div class="card grid-item photo">
-      <div class="media-container">
-        <img src="weddings2.jpg?auto=format&fit=crop&w=800&q=80" alt="Cinematic Stills & Photography">
-      </div>
-      <div class="card-body">
-        <span class="card-tag">Photography</span>
-        <h3 class="card-title">Cinematic Stills & Set Design Gallery</h3>
-        <p class="card-desc">High-resolution location stills, portraiture, and behind-the-scenes set art direction captures.</p>
-      </div>
-    </div>
-
-    <!-- ITEM 6: WEDDING PRODUCTIONS -->
-    <div class="card grid-item doccie">
-      <div class="media-container">
-        <iframe src="https://www.youtube.com/embed/-nWzVNTJHJk" allowfullscreen></iframe>
-      </div>
-      <div class="card-body">
-        <span class="card-tag">Wedding Documentary</span>
-        <h3 class="card-title">Cinematic Wedding (Wedding Short)</h3>
-        <p class="card-desc">10 minute wedding highlights short.</p>
-      </div>
-    </div>
-
+ <!-- CATEGORY WORK SHOWCASE -->
+<section id="work" class="filter-section">
+  <div class="section-title" style="margin-bottom: 20px;">
+    <h2>Selected Works & Portfolio</h2>
+    <p>Filter by focus area to review narrative, documentary, corporate, and visual projects.</p>
   </div>
+
+  <div class="filter-bar">
+    <button class="filter-btn active" onclick="filterGrid('all')">All Work</button>
+    <button class="filter-btn" onclick="filterGrid('narrative')">Narrative & Short Film</button>
+    <button class="filter-btn" onclick="filterGrid('doccie')">Documentaries</button>
+    <button class="filter-btn" onclick="filterGrid('verandert')">Verandert</button>
+    <button class="filter-btn" onclick="filterGrid('corporate')">Corporate & Brand</button>
+    <button class="filter-btn" onclick="filterGrid('music')">Music Videos</button>
+    <button class="filter-btn" onclick="filterGrid('photo')">Photography</button>
+    <button class="filter-btn" onclick="filterGrid('wedding')">Weddings</button>
+  </div>
+</section>
+
+<!-- PORTFOLIO GRID -->
+<div class="grid">
+  
+  <!-- ITEM 1: DOCUMENTARY / VERANDERT (WITH PLAYLIST TRIGGER) -->
+  <div class="card grid-item doccie verandert">
+    <div class="media-container">
+      <iframe src="https://www.youtube.com/embed/iXKJGqHCyXk" allowfullscreen></iframe>
+    </div>
+    <div class="card-body">
+      <span class="card-tag">Documentary / Impact</span>
+      <h3 class="card-title">Yzerfontein Community Feature (Verandert)</h3>
+      <p class="card-desc">High-retention social impact narrative that achieved 22,000+ views in 14 days with an average watch duration exceeding 5:30.</p>
+      
+      <!-- BUTTON TO OPEN PLAYLIST MODAL -->
+      <button onclick="openDocModal()" class="btn btn-primary" style="width: 100%; margin-top: 15px; cursor: pointer; border: none; font-size: 0.85rem; display: flex; align-items: center; justify-content: center; gap: 8px;">
+        <span>▶</span> Watch & Explore More Documentaries
+      </button>
+    </div>
+  </div>
+
+  <!-- ITEM 2: NARRATIVE -->
+  <div class="card grid-item narrative">
+    <div class="media-container">
+      <iframe src="https://www.youtube.com/embed/QDIR0q1jndg" allowfullscreen></iframe>
+    </div>
+    <div class="card-body">
+      <span class="card-tag">Narrative Drama</span>
+      <h3 class="card-title">Cinematic Short Film Showcase</h3>
+      <p class="card-desc">Full narrative execution featuring custom production design, atmosphere control, pacing, and color grading.</p>
+    </div>
+  </div>
+
+  <!-- ITEM 3: CORPORATE -->
+  <div class="card grid-item corporate">
+    <div class="media-container">
+      <iframe src="https://www.youtube.com/embed/V3YknBiaw38" allowfullscreen></iframe>
+    </div>
+    <div class="card-body">
+      <span class="card-tag">Corporate Brand Film</span>
+      <h3 class="card-title">Travelport LIVE & Executive Storytelling</h3>
+      <p class="card-desc">B2B product launches and corporate highlights designed for high-conversion stakeholder presentation.</p>
+    </div>
+  </div>
+
+  <!-- ITEM 4: MUSIC VIDEO -->
+  <div class="card grid-item music">
+    <div class="media-container">
+      <iframe src="https://www.youtube.com/embed/RITvYt_YsX4" allowfullscreen></iframe>
+    </div>
+    <div class="card-body">
+      <span class="card-tag">Music Video</span>
+      <h3 class="card-title">Visual Performance & Concept Video</h3>
+      <p class="card-desc">Rhythmic editing, specialized stage lighting design, and creative color grading for music artists.</p>
+    </div>
+  </div>
+
+  <!-- ITEM 5: PHOTOGRAPHY -->
+  <div class="card grid-item photo">
+    <div class="media-container">
+      <img src="weddings2.jpg" alt="Cinematic Stills & Photography">
+    </div>
+    <div class="card-body">
+      <span class="card-tag">Photography</span>
+      <h3 class="card-title">Cinematic Stills & Set Design Gallery</h3>
+      <p class="card-desc">High-resolution location stills, portraiture, and behind-the-scenes set art direction captures.</p>
+    </div>
+  </div>
+
+  <!-- ITEM 6: WEDDING PRODUCTIONS -->
+  <div class="card grid-item wedding">
+    <div class="media-container">
+      <iframe src="https://www.youtube.com/embed/-nWzVNTJHJk" allowfullscreen></iframe>
+    </div>
+    <div class="card-body">
+      <span class="card-tag">Wedding Documentary</span>
+      <h3 class="card-title">Cinematic Wedding (Wedding Short)</h3>
+      <p class="card-desc">10 minute wedding highlights short.</p>
+    </div>
+  </div>
+
+</div>
+
+<!-- DOCUMENTARY & VERANDERT PLAYLIST MODAL -->
+<div id="docModal" class="modal-overlay">
+  <div class="modal-content">
+    <button onclick="closeDocModal()" class="close-modal-btn">&times;</button>
+    <div class="modal-body">
+      
+      <!-- MAIN PLAYER -->
+      <div class="modal-player-container">
+        <div class="media-container">
+          <iframe id="modalVideoPlayer" src="https://www.youtube.com/embed/iXKJGqHCyXk?enablejsapi=1" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+        <div style="padding: 15px 0 0;">
+          <h3 id="modalVideoTitle" style="color: #fff; margin: 0 0 8px; font-size: 1.2rem;">Yzerfontein Community Feature (Verandert)</h3>
+          <p id="modalVideoDesc" style="color: var(--text-muted); font-size: 0.85rem; margin: 0;">High-retention social impact narrative that achieved 22,000+ views in 14 days with an average watch duration exceeding 5:30.</p>
+        </div>
+      </div>
+
+      <!-- PLAYLIST SELECTOR -->
+      <div class="modal-playlist">
+        <h4 style="margin: 0 0 15px; text-transform: uppercase; font-size: 0.8rem; letter-spacing: 1px; color: var(--accent);">Documentary & Impact Showcase</h4>
+        
+        <div class="playlist-items">
+          <div class="playlist-item active" onclick="switchModalVideo('iXKJGqHCyXk', 'Yzerfontein Community Feature (Verandert)', 'High-retention social impact narrative that achieved 22,000+ views in 14 days.', this)">
+            <div class="playlist-thumb-title">
+              <strong>Yzerfontein Community Feature</strong>
+              <span>Verandert Impact • Primary Feature</span>
+            </div>
+          </div>
+
+          <div class="playlist-item" onclick="switchModalVideo('QDIR0q1jndg', 'Cinematic Narrative Feature', 'Full narrative execution featuring custom production design and lighting.', this)">
+            <div class="playlist-thumb-title">
+              <strong>Cinematic Narrative Short</strong>
+              <span>Drama / Storytelling</span>
+            </div>
+          </div>
+
+          <div class="playlist-item" onclick="switchModalVideo('-nWzVNTJHJk', 'Cinematic Wedding Highlights', '10 minute documentary-style wedding highlights film.', this)">
+            <div class="playlist-thumb-title">
+              <strong>Cinematic Wedding Film</strong>
+              <span>Documentary Wedding</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
 
   <!-- SOCIAL MEDIA HUB -->
   <section id="socials" class="social-section">

@@ -3,224 +3,626 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Latsky Multimedia | Production & Post-Production</title>
+<title>Latsky Multimedia | Broadcast Production, Post-Production & Visual Design</title>
+<meta name="description" content="20+ years of broadcast production, narrative editing, corporate brand films, music videos, photography, and high-impact documentary storytelling.">
 <style>
   :root {
-    --bg-dark: #0f1115;
-    --card-bg: #181b22;
+    --bg-dark: #08090c;
+    --card-bg: #12141c;
     --accent: #ff3b30;
+    --accent-blue: #007aff;
     --text-main: #ffffff;
-    --text-muted: #9ba1b0;
-    --border: #2a2e39;
+    --text-muted: #9aa0a6;
+    --border: rgba(255, 255, 255, 0.1);
   }
+
+  * { box-sizing: border-box; }
 
   body {
     margin: 0;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     background-color: var(--bg-dark);
     color: var(--text-main);
-    padding: 20px;
+    line-height: 1.6;
+    scroll-behavior: smooth;
   }
 
+  /* STICKY HEADER */
+  header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: rgba(8, 9, 12, 0.85);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--border);
+    padding: 16px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo {
+    font-weight: 800;
+    font-size: 1.1rem;
+    letter-spacing: 2px;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+
+  nav a {
+    color: var(--text-muted);
+    text-decoration: none;
+    margin: 0 16px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    transition: color 0.2s;
+  }
+
+  nav a:hover { color: #fff; }
+
+  .nav-btn {
+    background: var(--accent);
+    color: #fff !important;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-weight: 700 !important;
+    transition: transform 0.2s, background 0.2s;
+  }
+
+  .nav-btn:hover {
+    transform: translateY(-2px);
+    background: #e03228;
+  }
+
+  /* HERO SECTION */
   .hero {
     text-align: center;
-    padding: 60px 20px;
-    max-width: 900px;
+    padding: 100px 20px 60px;
+    max-width: 950px;
     margin: 0 auto;
   }
 
   .badge {
-    background: rgba(255, 59, 48, 0.15);
+    background: rgba(255, 59, 48, 0.12);
+    border: 1px solid rgba(255, 59, 48, 0.3);
     color: var(--accent);
     padding: 6px 16px;
     border-radius: 20px;
-    font-size: 14px;
-    font-weight: 600;
+    font-size: 0.8rem;
+    font-weight: 700;
     text-transform: uppercase;
-    letter-spacing: 1px;
+    letter-spacing: 1.5px;
     display: inline-block;
-    margin-bottom: 20px;
+    margin-bottom: 24px;
   }
 
   h1 {
-    font-size: 2.5rem;
+    font-size: 3rem;
     font-weight: 800;
-    line-height: 1.2;
-    margin-bottom: 15px;
+    line-height: 1.15;
+    margin-bottom: 24px;
+    letter-spacing: -0.5px;
   }
 
   p.subtitle {
-    font-size: 1.15rem;
+    font-size: 1.25rem;
     color: var(--text-muted);
-    margin-bottom: 30px;
+    margin-bottom: 36px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .cta-group {
     display: flex;
-    gap: 15px;
+    gap: 16px;
     justify-content: center;
     flex-wrap: wrap;
   }
 
   .btn {
-    padding: 14px 28px;
+    padding: 14px 30px;
     border-radius: 6px;
     font-weight: 700;
     text-decoration: none;
     transition: all 0.2s ease;
+    font-size: 0.95rem;
   }
 
-  .btn-primary {
-    background-color: var(--accent);
-    color: #fff;
+  .btn-primary { background-color: var(--accent); color: #fff; }
+  .btn-primary:hover { background-color: #e03228; }
+  .btn-secondary { background-color: rgba(255,255,255,0.05); color: #fff; border: 1px solid var(--border); }
+  .btn-secondary:hover { background-color: rgba(255,255,255,0.1); }
+
+  /* PROOF BAR */
+  .proof-bar {
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+    background: rgba(255,255,255,0.01);
+    padding: 24px 20px;
+    margin-top: 60px;
   }
 
-  .btn-secondary {
-    background-color: transparent;
-    color: #fff;
+  .proof-items {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    flex-wrap: wrap;
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .proof-item strong { display: block; font-size: 1.5rem; color: #fff; font-weight: 800; }
+  .proof-item span { font-size: 0.85rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.5px; }
+
+  /* FILTER BAR */
+  .filter-section {
+    padding: 80px 20px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .filter-bar {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+  }
+
+  .filter-btn {
+    background: var(--card-bg);
     border: 1px solid var(--border);
+    color: var(--text-muted);
+    padding: 10px 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 0.85rem;
+    transition: all 0.2s;
   }
 
+  .filter-btn:hover { color: #fff; border-color: rgba(255,255,255,0.3); }
+
+  .filter-btn.active {
+    background: var(--accent);
+    color: #fff;
+    border-color: var(--accent);
+  }
+
+  /* PORTFOLIO GRID */
   .grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
     max-width: 1200px;
     margin: 40px auto;
+    padding: 0 20px;
   }
 
   .card {
     background: var(--card-bg);
-    border-radius: 8px;
+    border-radius: 12px;
     overflow: hidden;
     border: 1px solid var(--border);
+    transition: transform 0.3s, border-color 0.3s;
   }
 
-  .video-container {
+  .card:hover {
+    transform: translateY(-6px);
+    border-color: rgba(255, 59, 48, 0.4);
+  }
+
+  .media-container {
     position: relative;
     padding-bottom: 56.25%;
     height: 0;
+    background: #000;
+    overflow: hidden;
   }
 
-  .video-container iframe {
+  .media-container iframe, .media-container img {
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border: 0;
+    top: 0; left: 0; width: 100%; height: 100%; border: 0; object-fit: cover;
   }
 
-  .card-body {
-    padding: 18px;
+  .card-body { padding: 24px; }
+  .card-tag { font-size: 0.75rem; text-transform: uppercase; color: var(--accent); font-weight: 700; letter-spacing: 1px; }
+  .card-title { font-size: 1.2rem; font-weight: 700; margin: 8px 0 10px; color: #fff; }
+  .card-desc { color: var(--text-muted); font-size: 0.9rem; line-height: 1.5; margin: 0; }
+
+  /* SOCIAL MEDIA WIDGET SHOWCASE */
+  .social-section {
+    background: #0d0f17;
+    padding: 80px 20px;
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
   }
 
-  .card-title {
-    font-size: 1.1rem;
-    font-weight: 700;
-    margin: 0 0 8px 0;
+  .social-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    max-width: 1100px;
+    margin: 40px auto 0;
   }
 
-  .card-desc {
-    color: var(--text-muted);
-    font-size: 0.9rem;
-    line-height: 1.4;
-    margin: 0;
+  .social-card {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 24px;
+    text-align: center;
+    transition: border-color 0.2s;
   }
 
-  .impact-banner {
-    background: linear-gradient(135deg, #1c1010 0%, #111 100%);
-    border: 1px solid rgba(255, 59, 48, 0.3);
+  .social-card:hover { border-color: rgba(255,255,255,0.3); }
+
+  .social-icon {
+    font-size: 2rem;
+    margin-bottom: 12px;
+    display: inline-block;
+  }
+
+  /* ADVANTAGE SECTION */
+  .advantage-section {
+    padding: 100px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .section-title { text-align: center; max-width: 750px; margin: 0 auto 50px; }
+  .section-title h2 { font-size: 2.2rem; margin-bottom: 12px; font-weight: 800; }
+  .section-title p { color: var(--text-muted); margin: 0; font-size: 1.05rem; }
+
+  .adv-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+  }
+
+  .adv-card {
+    background: var(--card-bg);
+    padding: 32px;
     border-radius: 12px;
-    padding: 30px;
-    max-width: 1140px;
-    margin: 50px auto;
+    border: 1px solid var(--border);
+  }
+
+  .adv-card h3 { font-size: 1.25rem; margin-top: 0; color: #fff; font-weight: 700; }
+  .adv-card p { color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0; line-height: 1.6; }
+
+  /* VERANDERT BANNER */
+  .impact-banner {
+    background: linear-gradient(135deg, #1f1111 0%, #0d0f17 100%);
+    border: 1px solid rgba(255, 59, 48, 0.4);
+    border-radius: 16px;
+    padding: 50px;
+    max-width: 1160px;
+    margin: 40px auto 100px;
     display: flex;
     align-items: center;
-    gap: 30px;
+    gap: 50px;
     flex-wrap: wrap;
   }
 
   .impact-stats {
     background: var(--card-bg);
-    padding: 20px;
-    border-radius: 8px;
+    padding: 30px;
+    border-radius: 12px;
     border: 1px solid var(--border);
-    min-width: 220px;
+    min-width: 260px;
   }
 
-  .stat-num {
-    font-size: 2rem;
-    font-weight: 800;
-    color: var(--accent);
+  .stat-num { font-size: 2.4rem; font-weight: 800; color: var(--accent); }
+  .stat-label { font-size: 0.85rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.5px; }
+
+  /* FOOTER & FORM */
+  footer {
+    background: #040507;
+    border-top: 1px solid var(--border);
+    padding: 80px 20px 40px;
   }
 
-  .stat-label {
-    font-size: 0.85rem;
-    color: var(--text-muted);
+  .footer-container { max-width: 800px; margin: 0 auto; }
+
+  .form-group { margin-bottom: 20px; }
+  .form-group label { display: block; margin-bottom: 8px; font-weight: 600; font-size: 0.85rem; color: var(--text-muted); }
+  .form-group input, .form-group select, .form-group textarea {
+    width: 100%;
+    padding: 14px 16px;
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    color: #fff;
+    font-size: 0.95rem;
   }
+
+  .form-group input:focus, .form-group select:focus, .form-group textarea:focus {
+    outline: none;
+    border-color: var(--accent);
+  }
+
+  .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+  @media (max-width: 600px) { .form-row { grid-template-columns: 1fr; } h1 { font-size: 2.2rem; } }
 </style>
 </head>
 <body>
 
+  <!-- STICKY HEADER -->
+  <header>
+    <a href="#" class="logo">Latsky Multimedia</a>
+    <nav>
+      <a href="#work">Work</a>
+      <a href="#advantage">Advantage</a>
+      <a href="#socials">Social Feed</a>
+      <a href="#verandert">Verandert</a>
+      <a href="#contact" class="nav-btn">Book Project</a>
+    </nav>
+  </header>
+
+  <!-- HERO SECTION -->
   <section class="hero">
-    <span class="badge">20+ Years Industry Experience</span>
-    <h1>Broadcast-Grade Video Production & High-Impact Editing</h1>
-    <p class="subtitle">Specializing in multi-cam podcast edits, corporate brand films, and social impact documentaries. Based in Cape Town, serving global remote clients.</p>
+    <span class="badge">20+ Years Production & Art Direction Authority</span>
+    <h1>Broadcast-Grade Storytelling & High-Impact Post-Production</h1>
+    <p class="subtitle">Specializing in narrative filmmaking, cinematic documentaries, corporate brand films, music videos, and high-end photography. Based in Cape Town, available worldwide.</p>
     <div class="cta-group">
-      <a href="mailto:johann@latskymultimedia.co.za" class="btn btn-primary">Book a Project / Quote</a>
-      <a href="https://youtube.com/@Verandertglobal" target="_blank" class="btn btn-secondary">Watch Verandert (YouTube)</a>
+      <a href="#contact" class="btn btn-primary">Request a Proposal / Quote</a>
+      <a href="#work" class="btn btn-secondary">Explore Work Showcase</a>
     </div>
   </section>
 
-  <div class="grid">
-    <div class="card">
-      <div class="video-container">
-        <iframe src="https://www.youtube.com/embed/QDIR0q1jndg" allowfullscreen></iframe>
-      </div>
-      <div class="card-body">
-        <h3 class="card-title">Multi-Cam Podcasts & Media Shows</h3>
-        <p class="card-desc">Fast-paced multi-cam editing, audio polishing, color grading, and 48-hour turnarounds for global content creators.</p>
-      </div>
-    </div>
-
-    <div class="card">
-      <div class="video-container">
-        <iframe src="https://www.youtube.com/embed/X2rEopyT3mw" allowfullscreen></iframe>
-      </div>
-      <div class="card-body">
-        <h3 class="card-title">Corporate & B2B Storytelling</h3>
-        <p class="card-desc">Executive interviews, case studies, and brand documentaries engineered to build corporate trust and convert leads.</p>
-      </div>
-    </div>
-
-    <div class="card">
-      <div class="video-container">
-        <iframe src="https://www.youtube.com/embed/ocySh5uZvRs" allowfullscreen></iframe>
-      </div>
-      <div class="card-body">
-        <h3 class="card-title">Verandert: Community Impact</h3>
-        <p class="card-desc">Documenting South Africa's quiet heroes. Proof of concept reached over 22,000 views in 2 weeks with 91%+ retention.</p>
-      </div>
+  <!-- PROOF BAR -->
+  <div class="proof-bar">
+    <div class="proof-items">
+      <div class="proof-item"><strong>20+ Years</strong><span>Industry Authority</span></div>
+      <div class="proof-item"><strong>22,000+ Views</strong><span>Organic Impact Launch (Verandert)</span></div>
+      <div class="proof-item"><strong>4K Cinema Pipeline</strong><span>Complete Post & Editing Suite</span></div>
+      <div class="proof-item"><strong>100% Tax Deductible</strong><span>Corporate CSI Partnerships</span></div>
     </div>
   </div>
 
-  <div class="impact-banner">
+  <!-- CATEGORY WORK SHOWCASE -->
+  <section id="work" class="filter-section">
+    <div class="section-title" style="margin-bottom: 20px;">
+      <h2>Selected Works & Portfolio</h2>
+      <p>Filter by focus area to review narrative, documentary, corporate, and visual projects.</p>
+    </div>
+
+    <div class="filter-bar">
+      <button class="filter-btn active" onclick="filterGrid('all')">All Work</button>
+      <button class="filter-btn" onclick="filterGrid('narrative')">Narrative & Short Film</button>
+      <button class="filter-btn" onclick="filterGrid('doccie')">Documentaries & Verandert</button>
+      <button class="filter-btn" onclick="filterGrid('corporate')">Corporate & Brand</button>
+      <button class="filter-btn" onclick="filterGrid('music')">Music Videos</button>
+      <button class="filter-btn" onclick="filterGrid('photo')">Photography</button>
+    </div>
+  </section>
+
+  <!-- PORTFOLIO GRID -->
+  <div class="grid">
+    
+    <!-- ITEM 1: DOCUMENTARY -->
+    <div class="card grid-item doccie">
+      <div class="media-container">
+        <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
+      </div>
+      <div class="card-body">
+        <span class="card-tag">Documentary / Impact</span>
+        <h3 class="card-title">Yzerfontein Community Feature (Verandert)</h3>
+        <p class="card-desc">High-retention social impact narrative that achieved 22,000+ views in 14 days with an average watch duration exceeding 5:30.</p>
+      </div>
+    </div>
+
+    <!-- ITEM 2: NARRATIVE -->
+    <div class="card grid-item narrative">
+      <div class="media-container">
+        <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
+      </div>
+      <div class="card-body">
+        <span class="card-tag">Narrative Drama</span>
+        <h3 class="card-title">Cinematic Short Film Showcase</h3>
+        <p class="card-desc">Full narrative execution featuring custom production design, atmosphere control, pacing, and color grading.</p>
+      </div>
+    </div>
+
+    <!-- ITEM 3: CORPORATE -->
+    <div class="card grid-item corporate">
+      <div class="media-container">
+        <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
+      </div>
+      <div class="card-body">
+        <span class="card-tag">Corporate Brand Film</span>
+        <h3 class="card-title">Travelport LIVE & Executive Storytelling</h3>
+        <p class="card-desc">B2B product launches and corporate highlights designed for high-conversion stakeholder presentation.</p>
+      </div>
+    </div>
+
+    <!-- ITEM 4: MUSIC VIDEO -->
+    <div class="card grid-item music">
+      <div class="media-container">
+        <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
+      </div>
+      <div class="card-body">
+        <span class="card-tag">Music Video</span>
+        <h3 class="card-title">Visual Performance & Concept Video</h3>
+        <p class="card-desc">Rhythmic editing, specialized stage lighting design, and creative color grading for music artists.</p>
+      </div>
+    </div>
+
+    <!-- ITEM 5: PHOTOGRAPHY -->
+    <div class="card grid-item photo">
+      <div class="media-container">
+        <img src="https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?auto=format&fit=crop&w=800&q=80" alt="Cinematic Stills & Photography">
+      </div>
+      <div class="card-body">
+        <span class="card-tag">Photography</span>
+        <h3 class="card-title">Cinematic Stills & Set Design Gallery</h3>
+        <p class="card-desc">High-resolution location stills, portraiture, and behind-the-scenes set art direction captures.</p>
+      </div>
+    </div>
+
+    <!-- ITEM 6: DOCUMENTARY FEATURE -->
+    <div class="card grid-item doccie">
+      <div class="media-container">
+        <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
+      </div>
+      <div class="card-body">
+        <span class="card-tag">Feature Documentary</span>
+        <h3 class="card-title">The Unseen (Teaser Trailer)</h3>
+        <p class="card-desc">70-90 min feature documentary capturing South Africa's unsung community heroes. Open for corporate sponsorship.</p>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- SOCIAL MEDIA HUB -->
+  <section id="socials" class="social-section">
+    <div class="section-title">
+      <h2>Live Social Channels & Recent Content</h2>
+      <p>Follow active updates, long-form releases, and behind-the-scenes set stories across primary channels.</p>
+    </div>
+
+    <div class="social-grid">
+      <div class="social-card">
+        <div class="social-icon">📺</div>
+        <h3 style="margin:0 0 8px; font-size:1.1rem;">YouTube Channel</h3>
+        <p style="color:var(--text-muted); font-size:0.85rem; margin-bottom:16px;">Verandert Global & Film Documentaries</p>
+        <a href="https://youtube.com/@Verandertglobal" target="_blank" class="btn btn-secondary" style="display:inline-block; padding:8px 16px; font-size:0.85rem;">Subscribe on YouTube</a>
+      </div>
+
+      <div class="social-card">
+        <div class="social-icon">💼</div>
+        <h3 style="margin:0 0 8px; font-size:1.1rem;">LinkedIn Professional</h3>
+        <p style="color:var(--text-muted); font-size:0.85rem; margin-bottom:16px;">Production Insights & B2B Updates</p>
+        <a href="https://linkedin.com" target="_blank" class="btn btn-secondary" style="display:inline-block; padding:8px 16px; font-size:0.85rem;">Connect on LinkedIn</a>
+      </div>
+
+      <div class="social-card">
+        <div class="social-icon">📷</div>
+        <h3 style="margin:0 0 8px; font-size:1.1rem;">Instagram & Stills</h3>
+        <p style="color:var(--text-muted); font-size:0.85rem; margin-bottom:16px;">Set Design, Photography & Reals</p>
+        <a href="https://instagram.com" target="_blank" class="btn btn-secondary" style="display:inline-block; padding:8px 16px; font-size:0.85rem;">Follow @LatskyMultimedia</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- LATSKY ADVANTAGE -->
+  <section id="advantage" class="advantage-section">
+    <div class="section-title">
+      <h2>The Latsky Production Advantage</h2>
+      <p>Uniting two decades of set design, directing, and editing experience.</p>
+    </div>
+
+    <div class="adv-grid">
+      <div class="adv-card">
+        <h3>20+ Years Art Direction & Set Precision</h3>
+        <p>Deep experience as Production Designer, Art Director, and Prop Master ensures every set is built with intentional lighting, color harmony, and visual depth.</p>
+      </div>
+      <div class="adv-card">
+        <h3>End-to-End Post Suite</h3>
+        <p>Single-operator speed with agency polish. Directing, filming, multi-cam editing, audio mastering, color grading, and graphics without bureaucratic delays.</p>
+      </div>
+      <div class="adv-card">
+        <h3>High-Pacing & Narrative Focus</h3>
+        <p>Expertise in maintaining view duration—whether editing fast-paced multi-cam episodes or shaping emotional, slow-burn documentary character arcs.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- VERANDERT BANNER -->
+  <div id="verandert" class="impact-banner">
     <div style="flex: 1; min-width: 280px;">
-      <span class="badge" style="background: rgba(255,255,255,0.1); color: #fff;">CSI / SED Opportunity</span>
-      <h2 style="margin: 10px 0;">Partner with Verandert Platform</h2>
-      <p style="color: var(--text-muted); line-height: 1.5;">Showcase your brand's community outreach through cinematic, high-retention stories. 100% tax-deductible as advertising or Section 18A PBO contributions on feature projects.</p>
-      <a href="mailto:johann@latskymultimedia.co.za?subject=Verandert Prospectus Request" class="btn btn-primary" style="display:inline-block; margin-top: 10px;">Request Partnership Prospectus PDF</a>
+      <span class="badge" style="background: rgba(255,255,255,0.1); color: #fff;">CSI & Corporate Partnership Engine</span>
+      <h2 style="margin: 10px 0; font-weight:800;">Verandert: Documenting South Africa's Quiet Heroes</h2>
+      <p style="color: var(--text-muted); line-height: 1.6;">Transform corporate social investment (CSI) into broadcast-quality visual stories. Corporate sponsorships qualify as 100% tax-efficient advertising or Section 18A PBO contributions on feature projects.</p>
+      <a href="#contact" class="btn btn-primary" style="display:inline-block; margin-top: 15px;">Request Sponsorship Prospectus</a>
     </div>
     
     <div class="impact-stats">
       <div class="stat-num">22,000+</div>
       <div class="stat-label">Views in 14 Days (Launch)</div>
       <hr style="border:0; border-top:1px solid var(--border); margin: 15px 0;">
-      <div class="stat-num">91.9%</div>
-      <div class="stat-label">Shorts Audience Retention</div>
+      <div class="stat-num">5:30+</div>
+      <div class="stat-label">Avg. Watch Duration</div>
+      <hr style="border:0; border-top:1px solid var(--border); margin: 15px 0;">
+      <div class="stat-num">100%</div>
+      <div class="stat-label">Tax Efficiency Options</div>
     </div>
   </div>
+
+  <!-- BOOKING FORM -->
+  <footer id="contact">
+    <div class="footer-container">
+      <div class="section-title">
+        <h2>Start a Project Discussion</h2>
+        <p>Submit your timeline and requirements for a proposal within 24 hours.</p>
+      </div>
+
+      <form action="https://formspree.io/f/johann@latskymultimedia.co.za" method="POST">
+        <div class="form-row">
+          <div class="form-group">
+            <label>Your Name / Company</label>
+            <input type="text" name="name" placeholder="Name or Organization" required>
+          </div>
+          <div class="form-group">
+            <label>Email Address</label>
+            <input type="email" name="email" placeholder="name@company.com" required>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label>Primary Service Needed</label>
+            <select name="service">
+              <option value="narrative">Narrative / Short Film Post-Production</option>
+              <option value="doccie">Documentary / Feature Project</option>
+              <option value="corporate">Corporate Brand Video / Event</option>
+              <option value="music">Music Video Production</option>
+              <option value="verandert">Verandert CSI Sponsorship</option>
+              <option value="photo">Photography / Art Direction</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Estimated Timeline</label>
+            <input type="text" name="timeline" placeholder="e.g. Next 30 Days / Immediate">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label>Project Details</label>
+          <textarea name="message" rows="5" placeholder="Outline scope, camera setup, or editing needs..." required></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary" style="width: 100%; cursor: pointer; border: none; font-size: 1rem;">Send Project Inquiry</button>
+      </form>
+
+      <div style="text-align: center; margin-top: 50px; color: var(--text-muted); font-size: 0.85rem;">
+        <p>Johann Latsky | Direct: johann@latskymultimedia.co.za | Cape Town, South Africa</p>
+        <p>© 2026 Latsky Multimedia. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- CATEGORY FILTER JAVASCRIPT -->
+  <script>
+    function filterGrid(category) {
+      const buttons = document.querySelectorAll('.filter-btn');
+      buttons.forEach(btn => btn.classList.remove('active'));
+      event.target.classList.add('active');
+
+      const items = document.querySelectorAll('.grid-item');
+      items.forEach(item => {
+        if (category === 'all' || item.classList.contains(category)) {
+          item.style.display = 'block';
+        } else {
+          item.style.display = 'none';
+        }
+      });
+    }
+  </script>
 
 </body>
 </html>

@@ -762,6 +762,62 @@
     </div>
   </div>
 
+  <!-- CONTACT / BOOKING FOOTER SECTION -->
+  <footer id="contact">
+    <div class="footer-container">
+      <div class="section-title">
+        <h2>Start Your Production Project</h2>
+        <p>Share your scope, target timeline, or CSI sponsorship request to schedule a consultation.</p>
+      </div>
+
+      <!-- Replace YOUR_FORMSPREE_ID with your Formspree endpoint string (e.g. https://formspree.io/f/xbjnqwe) -->
+      <form action="https://formspree.io/f/YOUR_FORMSPREE_ID" method="POST">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="name">Your Name / Company</label>
+            <input type="text" id="name" name="name" placeholder="John Doe or Acme Corp" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="name@company.com" required>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="service">Primary Project Focus</label>
+            <select id="service" name="service" required>
+              <option value="Narrative Film">Narrative & Short Film Production</option>
+              <option value="Documentary">Documentary / Impact Project</option>
+              <option value="Corporate Brand">Corporate & Brand Video</option>
+              <option value="Verandert CSI">Verandert Sponsorship / CSI Partnership</option>
+              <option value="Music Video">Music Video Production</option>
+              <option value="Photography">Cinematic Stills & Photography</option>
+              <option value="Weddings">Cinematic Wedding Film</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="timeline">Target Delivery Date</label>
+            <input type="text" id="timeline" name="timeline" placeholder="e.g. Q4 2026 or ASAP">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Project Brief / Scope Details</label>
+          <textarea id="message" name="message" rows="5" placeholder="Tell us about the project goals, locations, or deliverables..." required></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary" style="width: 100%; border: none; cursor: pointer; padding: 16px;">
+          Send Proposal Request
+        </button>
+      </form>
+
+      <div style="text-align: center; margin-top: 50px; color: var(--text-muted); font-size: 0.85rem; border-top: 1px solid var(--border); padding-top: 30px;">
+        <p>© Latsky Multimedia. Broadcast Production, Visual Art Direction & Editing Suite. Cape Town, South Africa.</p>
+      </div>
+    </div>
+  </footer>
+
   <script>
     function filterGrid(category) {
       var items = document.querySelectorAll('.grid-item');

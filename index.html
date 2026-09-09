@@ -384,395 +384,335 @@
     </div>
   </div>
 
- <!-- CATEGORY WORK SHOWCASE -->
-<section id="work" class="filter-section">
-  <div class="section-title" style="margin-bottom: 20px;">
-    <h2>Selected Works & Portfolio</h2>
-    <p>Filter by focus area to review narrative, documentary, corporate, and visual projects.</p>
-  </div>
+  <!-- CATEGORY WORK SHOWCASE -->
+  <section id="work" class="filter-section">
+    <div class="section-title" style="margin-bottom: 20px;">
+      <h2>Selected Works & Portfolio</h2>
+      <p>Filter by focus area to review narrative, documentary, corporate, and visual projects.</p>
+    </div>
 
-  <div class="filter-bar">
-    <button class="filter-btn active" onclick="filterGrid('all')">All Work</button>
-    <button class="filter-btn" onclick="filterGrid('narrative')">Narrative & Short Film</button>
-    <button class="filter-btn" onclick="filterGrid('doccie')">Documentaries</button>
-    <button class="filter-btn" onclick="filterGrid('verandert')">Verandert</button>
-    <button class="filter-btn" onclick="filterGrid('corporate')">Corporate & Brand</button>
-    <button class="filter-btn" onclick="filterGrid('music')">Music Videos</button>
-    <button class="filter-btn" onclick="filterGrid('photo')">Photography</button>
-    <button class="filter-btn" onclick="filterGrid('wedding')">Weddings</button>
-  </div>
-</section>
+    <div class="filter-bar">
+      <button class="filter-btn active" onclick="filterGrid('featured')">Featured Work</button>
+      <button class="filter-btn" onclick="filterGrid('narrative')">Narrative & Short Film</button>
+      <button class="filter-btn" onclick="filterGrid('doccie')">Documentaries</button>
+      <button class="filter-btn" onclick="filterGrid('verandert')">Verandert</button>
+      <button class="filter-btn" onclick="filterGrid('corporate')">Corporate & Brand</button>
+      <button class="filter-btn" onclick="filterGrid('music')">Music Videos</button>
+      <button class="filter-btn" onclick="filterGrid('photo')">Photography</button>
+      <button class="filter-btn" onclick="filterGrid('wedding')">Weddings</button>
+    </div>
+  </section>
 
-<!-- PORTFOLIO GRID -->
-<div class="grid">
-  
-  <!-- ITEM 1: DOCUMENTARY / VERANDERT (WITH PLAYLIST TRIGGER) -->
-  <div class="card grid-item doccie verandert">
-    <div class="media-container">
-      <iframe src="https://www.youtube.com/embed/iXKJGqHCyXk" allowfullscreen></iframe>
+  <!-- PORTFOLIO GRID -->
+  <div class="grid">
+    
+    <!-- 1. FEATURED DOCUMENTARY / VERANDERT -->
+    <div class="card grid-item doccie verandert featured">
+      <div class="media-container">
+        <iframe src="https://www.youtube.com/embed/iXKJGqHCyXk" allowfullscreen></iframe>
+      </div>
+      <div class="card-body">
+        <span class="card-tag">Documentary / Impact</span>
+        <h3 class="card-title">Yzerfontein Community Feature (Verandert)</h3>
+        <p class="card-desc">High-retention social impact narrative that achieved 22,000+ views in 14 days with an average watch duration exceeding 5:30.</p>
+      </div>
     </div>
-    <div class="card-body">
-      <span class="card-tag">Documentary / Impact</span>
-      <h3 class="card-title">Yzerfontein Community Feature (Verandert)</h3>
-      <p class="card-desc">High-retention social impact narrative that achieved 22,000+ views in 14 days with an average watch duration exceeding 5:30.</p>
-      
-      <!-- BUTTON TO OPEN PLAYLIST MODAL -->
-      <button onclick="openDocModal()" class="btn btn-primary" style="width: 100%; margin-top: 15px; cursor: pointer; border: none; font-size: 0.85rem; display: flex; align-items: center; justify-content: center; gap: 8px;">
-        <span>▶</span> Watch & Explore More Documentaries
-      </button>
-    </div>
-  </div>
 
-  <!-- ITEM 2: NARRATIVE -->
-  <div class="card grid-item narrative">
-    <div class="media-container">
-      <iframe src="https://www.youtube.com/embed/QDIR0q1jndg" allowfullscreen></iframe>
+    <!-- 2. FEATURED NARRATIVE -->
+    <div class="card grid-item narrative featured">
+      <div class="media-container">
+        <iframe src="https://www.youtube.com/embed/QDIR0q1jndg" allowfullscreen></iframe>
+      </div>
+      <div class="card-body">
+        <span class="card-tag">Narrative Drama</span>
+        <h3 class="card-title">Cinematic Short Film Showcase</h3>
+        <p class="card-desc">Full narrative execution featuring custom production design, atmosphere control, pacing, and color grading.</p>
+      </div>
     </div>
-    <div class="card-body">
-      <span class="card-tag">Narrative Drama</span>
-      <h3 class="card-title">Cinematic Short Film Showcase</h3>
-      <p class="card-desc">Full narrative execution featuring custom production design, atmosphere control, pacing, and color grading.</p>
-    </div>
-  </div>
-  <div class="card grid-item narrative">
-    <div class="media-container">
-      <iframe src="https://www.youtube.com/embed/gPWrQdA-wLA" allowfullscreen></iframe>
-    </div>
-    <div class="card-body">
-      <span class="card-tag">Narrative Drama</span>
-      <h3 class="card-title">If Your Business Doesn’t Get This Right ASAP!… It’s Over!</h3>
-      <p class="card-desc">In this special episode of Building Banter, Ran, Sheldon, Kyle, Fefe, and the entire Banter crew open up about what it really takes to build a successful business </p>
-    </div>
-  </div>
+
     <div class="card grid-item narrative">
-    <div class="media-container">
-      <iframe src="https://www.youtube.com/embed/qESbs5FanJA" allowfullscreen></iframe>
+      <div class="media-container">
+        <iframe src="https://www.youtube.com/embed/gPWrQdA-wLA" allowfullscreen></iframe>
+      </div>
+      <div class="card-body">
+        <span class="card-tag">Narrative Drama</span>
+        <h3 class="card-title">If Your Business Doesn’t Get This Right ASAP!… It’s Over!</h3>
+        <p class="card-desc">In this special episode of Building Banter, Ran, Sheldon, Kyle, Fefe, and the entire Banter crew open up about what it really takes to build a successful business.</p>
+      </div>
     </div>
-    <div class="card-body">
-      <span class="card-tag">Narrative Drama</span>
-      <h3 class="card-title">The Crypto Bear Market Is EVEN WORSE Than You Think…</h3>
-      <p class="card-desc">In this video, Ran and the Banter team will show you how the current crypto bear market is affecting Bitcoin, altcoins, and everyone’s mental health. They’ll dive into the impact on the crypto market and share how they’re navigate through these tough times.</p>
-    </div>
-  </div>
-      <div class="card grid-item narrative">
-    <div class="media-container">
-      <iframe src="https://www.youtube.com/embed/AGn9hOcAS1c" allowfullscreen></iframe>
-    </div>
-    <div class="card-body">
-      <span class="card-tag">Narrative Drama</span>
-      <h3 class="card-title">I Tried Pro Polo With ZERO Experience (Nearly Died)</h3>
-      <p class="card-desc">In this episode of Building Banter, Ran flies to Dubai with zero experience to compete in a pro-level Crypto Polo tournament. From crypto charts to polo fields, this wild challenge pushed him to the limit and may have changed his life forever.</p>
-    </div>
-  </div>
-        <div class="card grid-item narrative">
-    <div class="media-container">
-      <iframe src="https://www.youtube.com/embed/pBk3jnp0290" allowfullscreen></iframe>
-    </div>
-    <div class="card-body">
-      <span class="card-tag">Narrative Drama</span>
-      <h3 class="card-title">We Are Sponsoring A Formula 1 Team!</h3>
-      <p class="card-desc">Crypto Banter will be sponsoring a Formula 1 team for 2025! Which one, you might wonder? In this episode of 'Building Banter', Cryptomanran explores the options live in Singapore!</p>
-    </div>
-  </div>
-          <div class="card grid-item narrative">
-    <div class="media-container">
-      <iframe src="https://www.youtube.com/embed/7zIrMyW0NhE" allowfullscreen></iframe>
-    </div>
-    <div class="card-body">
-      <span class="card-tag">Narrative Drama</span>
-      <h3 class="card-title">Why It Took Crypto Banter 4 Years To Launch MERCH!</h3>
-      <p class="card-desc">Why is this the first crypto merch line to launch from Banter? Simple, brilliance or nothing! Crypto man Ran is taking you through the journey of Banter merch and how we finally cracked the code to brilliant designs. </p>
-    </div>
-  </div>
-            <div class="card grid-item narrative">
-    <div class="media-container">
-      <iframe src="https://www.youtube.com/embed/1o8pwH05qKo" allowfullscreen></iframe>
-    </div>
-    <div class="card-body">
-      <span class="card-tag">Narrative Drama</span>
-      <h3 class="card-title">There's Something You Need To Know About $BAKED...</h3>
-      <p class="card-desc">The first behind the scenes of the 2nd official Banter meme coin is being released! The crypto industry might be surprised to see what really went down behind the scenes…
-    </div>
-  </div>
 
-  <!-- ITEM 3: CORPORATE -->
-  <div class="card grid-item corporate">
-    <div class="media-container">
-      <iframe src="https://www.youtube.com/embed/V3YknBiaw38" allowfullscreen></iframe>
+    <div class="card grid-item narrative">
+      <div class="media-container">
+        <iframe src="https://www.youtube.com/embed/qESbs5FanJA" allowfullscreen></iframe>
+      </div>
+      <div class="card-body">
+        <span class="card-tag">Narrative Drama</span>
+        <h3 class="card-title">The Crypto Bear Market Is EVEN WORSE Than You Think…</h3>
+        <p class="card-desc">In this video, Ran and the Banter team show how the current market is affecting Bitcoin, altcoins, and mental health.</p>
+      </div>
     </div>
-    <div class="card-body">
-      <span class="card-tag">Corporate Brand Film</span>
-      <h3 class="card-title">Travelport LIVE & Executive Storytelling</h3>
-      <p class="card-desc">B2B product launches and corporate highlights designed for high-conversion stakeholder presentation.</p>
+
+    <div class="card grid-item narrative">
+      <div class="media-container">
+        <iframe src="https://www.youtube.com/embed/AGn9hOcAS1c" allowfullscreen></iframe>
+      </div>
+      <div class="card-body">
+        <span class="card-tag">Narrative Drama</span>
+        <h3 class="card-title">I Tried Pro Polo With ZERO Experience (Nearly Died)</h3>
+        <p class="card-desc">Building Banter episode flying to Dubai with zero experience to compete in a pro-level Crypto Polo tournament.</p>
+      </div>
     </div>
-  </div>
-<div class="card grid-item corporate">
-  <div class="media-container">
-    <iframe 
-      src="https://player.vimeo.com/video/376521138?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" 
-      allow="autoplay; fullscreen; picture-in-picture; clipboard-write" 
-      allowfullscreen 
-      title="Travelport LIVE &amp; Executive Storytelling">
-    </iframe>
-  </div>
-  <div class="card-body">
-    <span class="card-tag">Corporate Brand Film</span>
-    <h3 class="card-title">Thunderball Launch Party 30 sec</h3>
-    <p class="card-desc">The Thunderball Launch Party.</p>
-  </div>
-</div>
-  <div class="card grid-item corporate">
-  <div class="media-container">
-    <iframe 
-      src="https://player.vimeo.com/video/376520659?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" 
-      allow="autoplay; fullscreen; picture-in-picture; clipboard-write" 
-      allowfullscreen 
-      title="Travelport LIVE &amp; Executive Storytelling">
-    </iframe>
-  </div>
-  <div class="card-body">
-    <span class="card-tag">Corporate Brand Film</span>
-    <h3 class="card-title">Thunderball kids car segment sec</h3>
-    <p class="card-desc">Kids car segment of the Thunderball Campaign..</p>
-  </div>
-</div>
+
+    <div class="card grid-item narrative">
+      <div class="media-container">
+        <iframe src="https://www.youtube.com/embed/pBk3jnp0290" allowfullscreen></iframe>
+      </div>
+      <div class="card-body">
+        <span class="card-tag">Narrative Drama</span>
+        <h3 class="card-title">We Are Sponsoring A Formula 1 Team!</h3>
+        <p class="card-desc">Crypto Banter sponsoring a Formula 1 team for 2025! Exploring options live in Singapore.</p>
+      </div>
+    </div>
+
+    <div class="card grid-item narrative">
+      <div class="media-container">
+        <iframe src="https://www.youtube.com/embed/7zIrMyW0NhE" allowfullscreen></iframe>
+      </div>
+      <div class="card-body">
+        <span class="card-tag">Narrative Drama</span>
+        <h3 class="card-title">Why It Took Crypto Banter 4 Years To Launch MERCH!</h3>
+        <p class="card-desc">Crypto man Ran takes you through the journey of Banter merch and cracking the code to brilliant design.</p>
+      </div>
+    </div>
+
+    <div class="card grid-item narrative">
+      <div class="media-container">
+        <iframe src="https://www.youtube.com/embed/1o8pwH05qKo" allowfullscreen></iframe>
+      </div>
+      <div class="card-body">
+        <span class="card-tag">Narrative Drama</span>
+        <h3 class="card-title">There's Something You Need To Know About $BAKED...</h3>
+        <p class="card-desc">Behind the scenes of the official Banter meme coin release.</p>
+      </div>
+    </div>
+
+    <!-- 3. FEATURED CORPORATE -->
+    <div class="card grid-item corporate featured">
+      <div class="media-container">
+        <iframe src="https://www.youtube.com/embed/V3YknBiaw38" allowfullscreen></iframe>
+      </div>
+      <div class="card-body">
+        <span class="card-tag">Corporate Brand Film</span>
+        <h3 class="card-title">Travelport LIVE & Executive Storytelling</h3>
+        <p class="card-desc">B2B product launches and corporate highlights designed for high-conversion stakeholder presentation.</p>
+      </div>
+    </div>
+
     <div class="card grid-item corporate">
-    <div class="media-container">
-      <iframe src="https://www.youtube.com/embed/ThCsvp-ThCw" allowfullscreen></iframe>
+      <div class="media-container">
+        <iframe 
+          src="https://player.vimeo.com/video/376521138?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" 
+          allow="autoplay; fullscreen; picture-in-picture; clipboard-write" 
+          allowfullscreen 
+          title="Thunderball Launch Party">
+        </iframe>
+      </div>
+      <div class="card-body">
+        <span class="card-tag">Corporate Brand Film</span>
+        <h3 class="card-title">Thunderball Launch Party 30 sec</h3>
+        <p class="card-desc">The Thunderball Launch Party highlight reel.</p>
+      </div>
     </div>
-    <div class="card-body">
-      <span class="card-tag">Corporate Brand Film</span>
-      <h3 class="card-title">Travelport LIVE Africa 2018 - highlights</h3>
-      <p class="card-desc">We're very proud to have been a part of Travelport LIVE Africa 2018 in Hermanus, South Africa.</p>
-    </div>
-  </div>
-      <div class="card grid-item corporate">
-    <div class="media-container">
-      <iframe src="https://www.youtube.com/embed/MJ3NoBI4578" allowfullscreen></iframe>
-    </div>
-    <div class="card-body">
-      <span class="card-tag">Corporate Brand Film</span>
-      <h3 class="card-title">Mandela day Camphill Village 2018</h3>
-      <p class="card-desc">To be part of the organizing team for Mandela Day was an indescribable experience.  This incredible day was filled with lots of excitement from the word go.  Lights, camera and action! "Marlize Visser"</p>
-    </div>
-  </div>
-        <div class="card grid-item corporate">
-    <div class="media-container">
-      <iframe src="https://www.youtube.com/embed/Hn2DKocoo1A" allowfullscreen></iframe>
-    </div>
-    <div class="card-body">
-      <span class="card-tag">Corporate Brand Film</span>
-      <h3 class="card-title">STBB 4 Good MTB Challenge 2017</h3>
-      <p class="card-desc">This year's STBB4GOOD MTB Challenge and Family Day will be taking place on Saturday 21 October 2017 at Overgaauw Wine Estate in Stellenbosch. The aim of this event is to raise funds for the Miles for Smiles Foundation.</p>
-    </div>
-  </div>
-          <div class="card grid-item corporate">
-    <div class="media-container">
-      <iframe src="https://www.youtube.com/embed/2ArSlKfAElQ" allowfullscreen></iframe>
-    </div>
-    <div class="card-body">
-      <span class="card-tag">Corporate Brand Film</span>
-      <h3 class="card-title">TOP VENDOR WEDDING AWARDS 2015 Trailer</h3>
-      <p class="card-desc">Crowning wedding excellence</p>
-    </div>
-  </div>
+
     <div class="card grid-item corporate">
-  <div class="media-container">
-    <iframe 
-      src="https://player.vimeo.com/video/122723616?fl?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" 
-      allow="autoplay; fullscreen; picture-in-picture; clipboard-write" 
-      allowfullscreen 
-      title="Travelport LIVE &amp; Executive Storytelling">
-    </iframe>
-  </div>
-  <div class="card-body">
-    <span class="card-tag">Corporate Brand Film</span>
-    <h3 class="card-title">Route 62 Trailer</h3>
-    <p class="card-desc">Harley Davidson Route 62 biker ralley</p>
-  </div>
-</div>
-            <div class="card grid-item corporate">
-    <div class="media-container">
-      <iframe src="https://www.youtube.com/embed/dIuDpC5lzAs" allowfullscreen></iframe>
+      <div class="media-container">
+        <iframe 
+          src="https://player.vimeo.com/video/376520659?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" 
+          allow="autoplay; fullscreen; picture-in-picture; clipboard-write" 
+          allowfullscreen 
+          title="Thunderball kids car segment">
+        </iframe>
+      </div>
+      <div class="card-body">
+        <span class="card-tag">Corporate Brand Film</span>
+        <h3 class="card-title">Thunderball kids car segment</h3>
+        <p class="card-desc">Kids car segment of the Thunderball Campaign.</p>
+      </div>
     </div>
-    <div class="card-body">
-      <span class="card-tag">Corporate Brand Film</span>
-      <h3 class="card-title">Two Icons Tour CPT 2 min</h3>
-      <p class="card-desc">Jaguar/Land Rover Two Icons Tour</p>
+
+    <div class="card grid-item corporate">
+      <div class="media-container">
+        <iframe src="https://www.youtube.com/embed/ThCsvp-ThCw" allowfullscreen></iframe>
+      </div>
+      <div class="card-body">
+        <span class="card-tag">Corporate Brand Film</span>
+        <h3 class="card-title">Travelport LIVE Africa 2018 - highlights</h3>
+        <p class="card-desc">Event story highlights from Travelport LIVE Africa in Hermanus, South Africa.</p>
+      </div>
     </div>
-  </div>
-              <div class="card grid-item corporate">
-    <div class="media-container">
-      <iframe src="https://www.youtube.com/embed/MJE9cHF4yB4" allowfullscreen></iframe>
+
+    <div class="card grid-item corporate">
+      <div class="media-container">
+        <iframe src="https://www.youtube.com/embed/MJ3NoBI4578" allowfullscreen></iframe>
+      </div>
+      <div class="card-body">
+        <span class="card-tag">Corporate Brand Film</span>
+        <h3 class="card-title">Mandela day Camphill Village 2018</h3>
+        <p class="card-desc">Impact coverage created for the organizing team at Camphill Village.</p>
+      </div>
     </div>
-    <div class="card-body">
-      <span class="card-tag">Corporate Brand Film</span>
-      <h3 class="card-title">All Weather Capital - For Positive Outcomes</h3>
-      <p class="card-desc">"For Positive Outcomes" is more than our strapline. It's the lens we look through in everything we do.</p>
+
+    <div class="card grid-item corporate">
+      <div class="media-container">
+        <iframe src="https://www.youtube.com/embed/Hn2DKocoo1A" allowfullscreen></iframe>
+      </div>
+      <div class="card-body">
+        <span class="card-tag">Corporate Brand Film</span>
+        <h3 class="card-title">STBB 4 Good MTB Challenge 2017</h3>
+        <p class="card-desc">STBB4GOOD MTB Challenge raising funds for Miles for Smiles Foundation.</p>
+      </div>
     </div>
-  </div>
-                <div class="card grid-item corporate">
-    <div class="media-container">
-      <iframe src="https://www.youtube.com/embed/N4qmrYW01tg" allowfullscreen></iframe>
+
+    <div class="card grid-item corporate">
+      <div class="media-container">
+        <iframe src="https://www.youtube.com/embed/2ArSlKfAElQ" allowfullscreen></iframe>
+      </div>
+      <div class="card-body">
+        <span class="card-tag">Corporate Brand Film</span>
+        <h3 class="card-title">TOP VENDOR WEDDING AWARDS Trailer</h3>
+        <p class="card-desc">Crowning wedding industry excellence.</p>
+      </div>
     </div>
-    <div class="card-body">
-      <span class="card-tag">Corporate Brand Film</span>
-      <h3 class="card-title">Gibson Party Trailer</h3>
-      <p class="card-desc">"120 Years of Gibson Guitars.</p>
+
+    <div class="card grid-item corporate">
+      <div class="media-container">
+        <iframe 
+          src="https://player.vimeo.com/video/122723616?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" 
+          allow="autoplay; fullscreen; picture-in-picture; clipboard-write" 
+          allowfullscreen 
+          title="Route 62 Trailer">
+        </iframe>
+      </div>
+      <div class="card-body">
+        <span class="card-tag">Corporate Brand Film</span>
+        <h3 class="card-title">Route 62 Trailer</h3>
+        <p class="card-desc">Harley Davidson Route 62 biker rally.</p>
+      </div>
     </div>
-  </div>
-                  <div class="card grid-item corporate">
-    <div class="media-container">
-      <iframe src="https://www.youtube.com/embed/-O-nHZ4zI6o" allowfullscreen></iframe>
+
+    <div class="card grid-item corporate">
+      <div class="media-container">
+        <iframe src="https://www.youtube.com/embed/dIuDpC5lzAs" allowfullscreen></iframe>
+      </div>
+      <div class="card-body">
+        <span class="card-tag">Corporate Brand Film</span>
+        <h3 class="card-title">Two Icons Tour CPT 2 min</h3>
+        <p class="card-desc">Jaguar/Land Rover Two Icons Tour highlights.</p>
+      </div>
     </div>
-    <div class="card-body">
-      <span class="card-tag">Corporate Brand Film</span>
-      <h3 class="card-title">stokedtv</h3>
-      <p class="card-desc">"South African Board-riding Channel.</p>
+
+    <div class="card grid-item corporate">
+      <div class="media-container">
+        <iframe src="https://www.youtube.com/embed/MJE9cHF4yB4" allowfullscreen></iframe>
+      </div>
+      <div class="card-body">
+        <span class="card-tag">Corporate Brand Film</span>
+        <h3 class="card-title">All Weather Capital - For Positive Outcomes</h3>
+        <p class="card-desc">Brand positioning narrative for All Weather Capital.</p>
+      </div>
     </div>
+
+    <div class="card grid-item corporate">
+      <div class="media-container">
+        <iframe src="https://www.youtube.com/embed/N4qmrYW01tg" allowfullscreen></iframe>
+      </div>
+      <div class="card-body">
+        <span class="card-tag">Corporate Brand Film</span>
+        <h3 class="card-title">Gibson Party Trailer</h3>
+        <p class="card-desc">120 Years of Gibson Guitars event brand film.</p>
+      </div>
+    </div>
+
+    <div class="card grid-item corporate">
+      <div class="media-container">
+        <iframe src="https://www.youtube.com/embed/-O-nHZ4zI6o" allowfullscreen></iframe>
+      </div>
+      <div class="card-body">
+        <span class="card-tag">Corporate Brand Film</span>
+        <h3 class="card-title">stokedtv</h3>
+        <p class="card-desc">South African Board-riding Channel promo reel.</p>
+      </div>
+    </div>
+
+    <!-- 4. FEATURED MUSIC VIDEO -->
+    <div class="card grid-item music featured">
+      <div class="media-container">
+        <iframe src="https://www.youtube.com/embed/RITvYt_YsX4" allowfullscreen></iframe>
+      </div>
+      <div class="card-body">
+        <span class="card-tag">Music Video</span>
+        <h3 class="card-title">Visual Performance & Concept Video</h3>
+        <p class="card-desc">Rhythmic editing, specialized stage lighting design, and creative color grading for music artists.</p>
+      </div>
+    </div>
+
+    <!-- 5. FEATURED PHOTOGRAPHY -->
+    <div class="card grid-item photo featured">
+      <div class="media-container">
+        <img src="weddings2.jpg" alt="Cinematic Stills & Photography">
+      </div>
+      <div class="card-body">
+        <span class="card-tag">Photography</span>
+        <h3 class="card-title">Cinematic Stills & Set Design Gallery</h3>
+        <p class="card-desc">High-resolution location stills, portraiture, and behind-the-scenes set art direction captures.</p>
+      </div>
+    </div>
+
+    <!-- 6. FEATURED WEDDING PRODUCTION -->
+    <div class="card grid-item wedding featured">
+      <div class="media-container">
+        <iframe src="https://www.youtube.com/embed/-nWzVNTJHJk" allowfullscreen></iframe>
+      </div>
+      <div class="card-body">
+        <span class="card-tag">Wedding Documentary</span>
+        <h3 class="card-title">Cinematic Wedding (Wedding Short)</h3>
+        <p class="card-desc">10 minute wedding highlights short.</p>
+      </div>
+    </div>
+
   </div>
 
+  <!-- SOCIAL MEDIA HUB -->
+  <section id="socials" class="social-section">
+    <div class="section-title">
+      <h2>Live Social Channels & Recent Content</h2>
+      <p>Follow active updates, long-form releases, and behind-the-scenes set stories across primary channels.</p>
+    </div>
 
-  <!-- ITEM 4: MUSIC VIDEO -->
-  <div class="card grid-item music">
-    <div class="media-container">
-      <iframe src="https://www.youtube.com/embed/RITvYt_YsX4" allowfullscreen></iframe>
-    </div>
-    <div class="card-body">
-      <span class="card-tag">Music Video</span>
-      <h3 class="card-title">Visual Performance & Concept Video</h3>
-      <p class="card-desc">Rhythmic editing, specialized stage lighting design, and creative color grading for music artists.</p>
-    </div>
-  </div>
-
-  <!-- ITEM 5: PHOTOGRAPHY -->
-  <div class="card grid-item photo">
-    <div class="media-container">
-      <img src="weddings2.jpg" alt="Cinematic Stills & Photography">
-    </div>
-    <div class="card-body">
-      <span class="card-tag">Photography</span>
-      <h3 class="card-title">Cinematic Stills & Set Design Gallery</h3>
-      <p class="card-desc">High-resolution location stills, portraiture, and behind-the-scenes set art direction captures.</p>
-    </div>
-  </div>
-
-  <!-- ITEM 6: WEDDING PRODUCTIONS -->
-  <div class="card grid-item wedding">
-    <div class="media-container">
-      <iframe src="https://www.youtube.com/embed/-nWzVNTJHJk" allowfullscreen></iframe>
-    </div>
-    <div class="card-body">
-      <span class="card-tag">Wedding Documentary</span>
-      <h3 class="card-title">Cinematic Wedding (Wedding Short)</h3>
-      <p class="card-desc">10 minute wedding highlights short.</p>
-    </div>
-  </div>
-
-</div>
-
-<!-- DOCUMENTARY & VERANDERT PLAYLIST MODAL -->
-<div id="docModal" class="modal-overlay">
-  <div class="modal-content">
-    <button onclick="closeDocModal()" class="close-modal-btn">&times;</button>
-    <div class="modal-body">
-      
-      <!-- MAIN PLAYER -->
-      <div class="modal-player-container">
-        <div class="media-container">
-          <iframe id="modalVideoPlayer" src="https://www.youtube.com/embed/iXKJGqHCyXk?enablejsapi=1" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-        </div>
-        <div style="padding: 15px 0 0;">
-          <h3 id="modalVideoTitle" style="color: #fff; margin: 0 0 8px; font-size: 1.2rem;">Yzerfontein Community Feature (Verandert)</h3>
-          <p id="modalVideoDesc" style="color: var(--text-muted); font-size: 0.85rem; margin: 0;">High-retention social impact narrative that achieved 22,000+ views in 14 days with an average watch duration exceeding 5:30.</p>
-        </div>
+    <div class="social-grid">
+      <div class="social-card">
+        <div class="social-icon">📺</div>
+        <h3 style="margin:0 0 8px; font-size:1.1rem;">YouTube Channel</h3>
+        <p style="color:var(--text-muted); font-size:0.85rem; margin-bottom:16px;">Verandert Global & Film Documentaries</p>
+        <a href="https://youtube.com/@Verandertglobal" target="_blank" class="btn btn-secondary" style="display:inline-block; padding:8px 16px; font-size:0.85rem;">Subscribe on YouTube</a>
       </div>
 
-      <!-- PLAYLIST SELECTOR -->
-      <div class="modal-playlist">
-        <h4 style="margin: 0 0 15px; text-transform: uppercase; font-size: 0.8rem; letter-spacing: 1px; color: var(--accent);">Documentary & Impact Showcase</h4>
-        
-        <!-- THIS IS WHERE ALL MODAL PLAYLIST VIDEOS GO -->
-        <div class="playlist-items">
-          
-          <!-- VIDEO 1 -->
-          <div class="playlist-item active" onclick="switchModalVideo('iXKJGqHCyXk', 'Yzerfontein Community Feature (Verandert)', 'High-retention social impact narrative that achieved 22,000+ views in 14 days.', this)">
-            <div class="playlist-thumb-title">
-              <strong>Yzerfontein Community Feature</strong>
-              <span>Verandert Impact • Primary Feature</span>
-            </div>
-          </div>
-          
-
-          <!-- VIDEO 2 -->
-          <div class="playlist-item" onclick="switchModalVideo('QDIR0q1jndg', 'Cinematic Narrative Feature', 'Full narrative execution featuring custom production design and lighting.', this)">
-            <div class="playlist-thumb-title">
-              <strong>Cinematic Narrative Short</strong>
-              <span>Drama / Storytelling</span>
-            </div>
-          </div>
-
-          <!-- VIDEO 3 -->
-          <div class="playlist-item" onclick="switchModalVideo('-nWzVNTJHJk', 'Cinematic Wedding Highlights', '10 minute documentary-style wedding highlights film.', this)">
-            <div class="playlist-thumb-title">
-              <strong>Cinematic Wedding Film</strong>
-              <span>Documentary Wedding</span>
-            </div>
-          </div>
-
-          <!-- VIDEO 4 (ADDITIONAL EXAMPLE) -->
-          <div class="playlist-item" onclick="switchModalVideo('V3YknBiaw38', 'Travelport LIVE & Corporate Storytelling', 'B2B product launch feature created for high-conversion stakeholder presentations.', this)">
-            <div class="playlist-thumb-title">
-              <strong>Travelport LIVE Corporate</strong>
-              <span>Brand & Corporate Doc</span>
-            </div>
-          </div>
-
-          <!-- VIDEO 5 (ADDITIONAL EXAMPLE) -->
-          <div class="playlist-item" onclick="switchModalVideo('RITvYt_YsX4', 'Music Video & Lighting Showcase', 'Rhythmic editing and stage lighting design narrative.', this)">
-            <div class="playlist-thumb-title">
-              <strong>Visual Performance Concept</strong>
-              <span>Music & Lighting</span>
-            </div>
-          </div>
-
-        </div>
+      <div class="social-card">
+        <div class="social-icon">💼</div>
+        <h3 style="margin:0 0 8px; font-size:1.1rem;">LinkedIn Professional</h3>
+        <p style="color:var(--text-muted); font-size:0.85rem; margin-bottom:16px;">Production Insights & B2B Updates</p>
+        <a href="https://www.linkedin.com/in/johannlatsky/" target="_blank" class="btn btn-secondary" style="display:inline-block; padding:8px 16px; font-size:0.85rem;">Connect on LinkedIn</a>
       </div>
 
+      <div class="social-card">
+        <div class="social-icon">📷</div>
+        <h3 style="margin:0 0 8px; font-size:1.1rem;">Instagram & Stills</h3>
+        <p style="color:var(--text-muted); font-size:0.85rem; margin-bottom:16px;">Set Design, Photography & Reels</p>
+        <a href="https://www.instagram.com/johannlatskyreal/" target="_blank" class="btn btn-secondary" style="display:inline-block; padding:8px 16px; font-size:0.85rem;">Follow @LatskyMultimedia</a>
+      </div>
     </div>
-  </div>
-</div>
+  </section>
 
-<!-- SOCIAL MEDIA HUB -->
-<section id="socials" class="social-section">
-  <div class="section-title">
-    <h2>Live Social Channels & Recent Content</h2>
-    <p>Follow active updates, long-form releases, and behind-the-scenes set stories across primary channels.</p>
-  </div>
-
-  <div class="social-grid">
-    <div class="social-card">
-      <div class="social-icon">📺</div>
-      <h3 style="margin:0 0 8px; font-size:1.1rem;">YouTube Channel</h3>
-      <p style="color:var(--text-muted); font-size:0.85rem; margin-bottom:16px;">Verandert Global & Film Documentaries</p>
-      <a href="https://youtube.com/@Verandertglobal" target="_blank" class="btn btn-secondary" style="display:inline-block; padding:8px 16px; font-size:0.85rem;">Subscribe on YouTube</a>
-    </div>
-
-    <div class="social-card">
-      <div class="social-icon">💼</div>
-      <h3 style="margin:0 0 8px; font-size:1.1rem;">LinkedIn Professional</h3>
-      <p style="color:var(--text-muted); font-size:0.85rem; margin-bottom:16px;">Production Insights & B2B Updates</p>
-      <a href="https://www.linkedin.com/in/johannlatsky/" target="_blank" class="btn btn-secondary" style="display:inline-block; padding:8px 16px; font-size:0.85rem;">Connect on LinkedIn</a>
-    </div>
-
-    <div class="social-card">
-      <div class="social-icon">📷</div>
-      <h3 style="margin:0 0 8px; font-size:1.1rem;">Instagram & Stills</h3>
-      <p style="color:var(--text-muted); font-size:0.85rem; margin-bottom:16px;">Set Design, Photography & Reals</p>
-      <a href="https://www.instagram.com/johannlatskyreal/" target="_blank" class="btn btn-secondary" style="display:inline-block; padding:8px 16px; font-size:0.85rem;">Follow @LatskyMultimedia</a>
-    </div>
-  </div>
-</section>
   <!-- LATSKY ADVANTAGE -->
   <section id="advantage" class="advantage-section">
     <div class="section-title">
@@ -797,101 +737,58 @@
   </section>
 
   <!-- VERANDERT BANNER -->
-<div id="verandert" class="impact-banner">
-  <div style="flex: 1; min-width: 280px;">
-    
-    <!-- LOGO CONTAINER -->
-    <div style="margin-bottom: 20px; display: flex; align-items: center; gap: 15px; flex-wrap: wrap;">
-      <img src="verandertlogo.png" alt="Verandert Logo" style="height: 48px; width: auto; object-fit: contain;">
-      <span class="badge" style="background: rgba(255,59,48,0.15); color: #ff3b30; border: 1px solid rgba(255,59,48,0.3); margin-bottom: 0;">CSI & Corporate Partnership Engine</span>
-    </div>
-
-    <h2 style="margin: 10px 0; font-weight:800; font-size: 2rem; color: #fff;">Verandert: Documenting South Africa's Quiet Heroes</h2>
-    <p style="color: var(--text-muted); line-height: 1.6;">Transform corporate social investment (CSI) into broadcast-quality visual stories. Corporate sponsorships qualify as 100% tax-efficient advertising or Section 18A PBO contributions on feature projects.</p>
-    
-    <a href="#contact" class="btn btn-primary" style="display:inline-block; margin-top: 15px;">Request Sponsorship Prospectus</a>
-  </div>
-
-  <div class="impact-stats">
-    <div class="stat-num">22,000+</div>
-    <div class="stat-label">Views in 14 Days (Launch)</div>
-    <hr style="border:0; border-top:1px solid var(--border); margin: 15px 0;">
-    <div class="stat-num">5:30+</div>
-    <div class="stat-label">Avg. Watch Duration</div>
-    <hr style="border:0; border-top:1px solid var(--border); margin: 15px 0;">
-    <div class="stat-num">100%</div>
-    <div class="stat-label">Tax Efficiency Options</div>
-  </div>
-</div>
-  <!-- BOOKING FORM -->
-  <footer id="contact">
-    <div class="footer-container">
-      <div class="section-title">
-        <h2>Start a Project Discussion</h2>
-        <p>Submit your timeline and requirements for a proposal within 24 hours.</p>
+  <div id="verandert" class="impact-banner">
+    <div style="flex: 1; min-width: 280px;">
+      <div style="margin-bottom: 20px; display: flex; align-items: center; gap: 15px; flex-wrap: wrap;">
+        <img src="verandertlogo.png" alt="Verandert Logo" style="height: 48px; width: auto; object-fit: contain;">
+        <span class="badge" style="background: rgba(255,59,48,0.15); color: #ff3b30; border: 1px solid rgba(255,59,48,0.3); margin-bottom: 0;">CSI & Corporate Partnership Engine</span>
       </div>
 
-      <form action="https://formspree.io/f/johann@latskymultimedia.co.za" method="POST">
-        <div class="form-row">
-          <div class="form-group">
-            <label>Your Name / Company</label>
-            <input type="text" name="name" placeholder="Name or Organization" required>
-          </div>
-          <div class="form-group">
-            <label>Email Address</label>
-            <input type="email" name="email" placeholder="name@company.com" required>
-          </div>
-        </div>
-
-        <div class="form-row">
-          <div class="form-group">
-            <label>Primary Service Needed</label>
-            <select name="service">
-              <option value="narrative">Narrative / Short Film Post-Production</option>
-              <option value="doccie">Documentary / Feature Project</option>
-              <option value="corporate">Corporate Brand Video / Event</option>
-              <option value="music">Music Video Production</option>
-              <option value="verandert">Verandert CSI Sponsorship</option>
-              <option value="photo">Photography / Art Direction</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label>Estimated Timeline</label>
-            <input type="text" name="timeline" placeholder="e.g. Next 30 Days / Immediate">
-          </div>
-        </div>
-
-        <div class="form-group">
-          <label>Project Details</label>
-          <textarea name="message" rows="5" placeholder="Outline scope, camera setup, or editing needs..." required></textarea>
-        </div>
-
-        <button type="submit" class="btn btn-primary" style="width: 100%; cursor: pointer; border: none; font-size: 1rem;">Send Project Inquiry</button>
-      </form>
-
-      <div style="text-align: center; margin-top: 50px; color: var(--text-muted); font-size: 0.85rem;">
-        <p>Johann Latsky | Direct: johann@latskymultimedia.co.za | Cape Town, South Africa</p>
-        <p>© 2026 Latsky Multimedia. All rights reserved.</p>
-      </div>
+      <h2 style="margin: 10px 0; font-weight:800; font-size: 2rem; color: #fff;">Verandert: Documenting South Africa's Quiet Heroes</h2>
+      <p style="color: var(--text-muted); line-height: 1.6;">Transform corporate social investment (CSI) into broadcast-quality visual stories. Corporate sponsorships qualify as 100% tax-efficient advertising or Section 18A PBO contributions on feature projects.</p>
+      
+      <a href="#contact" class="btn btn-primary" style="display:inline-block; margin-top: 15px;">Request Sponsorship Prospectus</a>
     </div>
-  </footer>
 
-  <!-- CATEGORY FILTER JAVASCRIPT -->
+    <div class="impact-stats">
+      <div class="stat-num">22,000+</div>
+      <div class="stat-label">Views in 14 Days (Launch)</div>
+      <hr style="border:0; border-top:1px solid var(--border); margin: 15px 0;">
+      <div class="stat-num">5:30+</div>
+      <div class="stat-label">Avg. Watch Duration</div>
+      <hr style="border:0; border-top:1px solid var(--border); margin: 15px 0;">
+      <div class="stat-num">100%</div>
+      <div class="stat-label">Tax Efficiency Options</div>
+    </div>
+  </div>
+
   <script>
     function filterGrid(category) {
-      const buttons = document.querySelectorAll('.filter-btn');
-      buttons.forEach(btn => btn.classList.remove('active'));
-      event.target.classList.add('active');
+      var items = document.querySelectorAll('.grid-item');
+      var buttons = document.querySelectorAll('.filter-btn');
 
-      const items = document.querySelectorAll('.grid-item');
-      items.forEach(item => {
-        if (category === 'all' || item.classList.contains(category)) {
+      buttons.forEach(function(btn) {
+        btn.classList.remove('active');
+        if (btn.getAttribute('onclick').includes("'" + category + "'")) {
+          btn.classList.add('active');
+        }
+      });
+
+      items.forEach(function(item) {
+        if (category === 'all') {
+          item.style.display = 'block';
+        } else if (item.classList.contains(category)) {
           item.style.display = 'block';
         } else {
           item.style.display = 'none';
         }
       });
     }
+
+    // Auto-run Featured Filter on load
+    document.addEventListener('DOMContentLoaded', function() {
+      filterGrid('featured');
+    });
   </script>
 
 </body>

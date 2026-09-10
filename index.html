@@ -388,7 +388,7 @@
   <section id="work" class="filter-section">
     <div class="section-title" style="margin-bottom: 20px;">
       <h2>Selected Works & Portfolio</h2>
-      <p>Filter by focus area to review narrative, documentary, corporate, and visual projects.</p>
+      <p>Filter by focus area to review narrative, documentary, corporate, podcast, and visual projects.</p>
     </div>
 
     <div class="filter-bar">
@@ -397,6 +397,7 @@
       <button class="filter-btn" onclick="filterGrid('doccie')">Documentaries</button>
       <button class="filter-btn" onclick="filterGrid('verandert')">Verandert</button>
       <button class="filter-btn" onclick="filterGrid('corporate')">Corporate & Brand</button>
+      <button class="filter-btn" onclick="filterGrid('podcast')">Podcasts & Shows</button>
       <button class="filter-btn" onclick="filterGrid('music')">Music Videos</button>
       <button class="filter-btn" onclick="filterGrid('photo')">Photography</button>
       <button class="filter-btn" onclick="filterGrid('wedding')">Weddings</button>
@@ -406,7 +407,19 @@
   <!-- PORTFOLIO GRID -->
   <div class="grid">
     
-    <!-- 1. FEATURED DOCUMENTARY / VERANDERT -->
+    <!-- 0. SHOWREEL (PRIMARY FEATURED) -->
+    <div class="card grid-item featured">
+      <div class="media-container">
+        <iframe src="https://www.youtube.com/embed/qewetELfIcY" allowfullscreen></iframe>
+      </div>
+      <div class="card-body">
+        <span class="card-tag">Showreel</span>
+        <h3 class="card-title">Johann Latsky Showreel: Brand Films, Documentaries & More</h3>
+        <p class="card-desc">Overview highlight reel showcasing 20+ years of direction, cinematography, set design, and post-production execution.</p>
+      </div>
+    </div>
+
+    <!-- DOCUMENTARIES & VERANDERT -->
     <div class="card grid-item doccie verandert featured">
       <div class="media-container">
         <iframe src="https://www.youtube.com/embed/iXKJGqHCyXk" allowfullscreen></iframe>
@@ -418,7 +431,84 @@
       </div>
     </div>
 
-    <!-- 2. FEATURED NARRATIVE -->
+    <div class="card grid-item doccie verandert">
+      <div class="media-container">
+        <iframe src="https://www.youtube.com/embed/FvP0zgSYTac" allowfullscreen></iframe>
+      </div>
+      <div class="card-body">
+        <span class="card-tag">Documentary</span>
+        <h3 class="card-title">WARNING The Common Misconception About being disabled</h3>
+        <p class="card-desc">Challenging societal perspectives and highlighting authentic human potential.</p>
+      </div>
+    </div>
+
+    <div class="card grid-item doccie">
+      <div class="media-container">
+        <iframe src="https://www.youtube.com/embed/fZSpv9MAp_M" allowfullscreen></iframe>
+      </div>
+      <div class="card-body">
+        <span class="card-tag">Documentary</span>
+        <h3 class="card-title">A story of a heart transplant patient</h3>
+        <p class="card-desc">Groote Schuur Heart Transplant 50th Anniversary documentary feature.</p>
+      </div>
+    </div>
+
+    <div class="card grid-item doccie">
+      <div class="media-container">
+        <iframe src="https://www.youtube.com/embed/PpzNiegEdxE" allowfullscreen></iframe>
+      </div>
+      <div class="card-body">
+        <span class="card-tag">Documentary</span>
+        <h3 class="card-title">Die Storie - Agter die Skerms van Hollywood in my Huis</h3>
+        <p class="card-desc">Behind-the-scenes narrative documentary following feature film production.</p>
+      </div>
+    </div>
+
+    <div class="card grid-item doccie">
+      <div class="media-container">
+        <iframe src="https://www.youtube.com/embed/T298L09s3cc" allowfullscreen></iframe>
+      </div>
+      <div class="card-body">
+        <span class="card-tag">Documentary</span>
+        <h3 class="card-title">Louw Venter (Tos) gesels oor Hollywood in my Huis</h3>
+        <p class="card-desc">Exclusive actor interview and production insights.</p>
+      </div>
+    </div>
+
+    <div class="card grid-item doccie">
+      <div class="media-container">
+        <iframe src="https://www.youtube.com/embed/USDRcztizyI" allowfullscreen></iframe>
+      </div>
+      <div class="card-body">
+        <span class="card-tag">Documentary</span>
+        <h3 class="card-title">George's World (Kids movie review of Sonic Movie)</h3>
+        <p class="card-desc">Engaging narrative storytelling feature.</p>
+      </div>
+    </div>
+
+    <div class="card grid-item doccie">
+      <div class="media-container">
+        <iframe src="https://www.youtube.com/embed/GL2NurgopeQ" allowfullscreen></iframe>
+      </div>
+      <div class="card-body">
+        <span class="card-tag">Documentary</span>
+        <h3 class="card-title">Agter die Skerms - Kamera Hollywood in my Huis</h3>
+        <p class="card-desc">Camera department behind-the-scenes breakdown.</p>
+      </div>
+    </div>
+
+    <div class="card grid-item doccie">
+      <div class="media-container">
+        <iframe src="https://www.youtube.com/embed/n9jq8mqak2Y" allowfullscreen></iframe>
+      </div>
+      <div class="card-body">
+        <span class="card-tag">Documentary</span>
+        <h3 class="card-title">Agter die Skerms - Matriekdans Hollywood in my Huis</h3>
+        <p class="card-desc">Behind-the-scenes sequence breakdown.</p>
+      </div>
+    </div>
+
+    <!-- NARRATIVE & SHORT FILMS -->
     <div class="card grid-item narrative featured">
       <div class="media-container">
         <iframe src="https://www.youtube.com/embed/QDIR0q1jndg" allowfullscreen></iframe>
@@ -432,12 +522,135 @@
 
     <div class="card grid-item narrative">
       <div class="media-container">
+        <iframe src="https://www.youtube.com/embed/8_AOAgHUVfQ" allowfullscreen></iframe>
+      </div>
+      <div class="card-body">
+        <span class="card-tag">Narrative Short</span>
+        <h3 class="card-title">Erin and Graham Short invite</h3>
+        <p class="card-desc">Cinematic short invite narrative production.</p>
+      </div>
+    </div>
+
+    <div class="card grid-item narrative">
+      <div class="media-container">
+        <iframe src="https://www.youtube.com/embed/FhYs2or_1dY" allowfullscreen></iframe>
+      </div>
+      <div class="card-body">
+        <span class="card-tag">Narrative Short</span>
+        <h3 class="card-title">THUNDERBALL RUN 2020 - THIS IS REAL</h3>
+        <p class="card-desc">High-octane action highlight trailer.</p>
+      </div>
+    </div>
+
+    <div class="card grid-item narrative">
+      <div class="media-container">
+        <iframe src="https://player.vimeo.com/video/365666801" allowfullscreen></iframe>
+      </div>
+      <div class="card-body">
+        <span class="card-tag">Narrative Short</span>
+        <h3 class="card-title">Thunderball Challenge “Filmsupply Edit Fest”</h3>
+        <p class="card-desc">Pacing and sound design entry for the Filmsupply Edit Fest.</p>
+      </div>
+    </div>
+
+    <!-- PODCASTS & SHOWS -->
+    <div class="card grid-item podcast">
+      <div class="media-container">
+        <iframe src="https://www.youtube.com/embed/ocySh5uZvRs" allowfullscreen></iframe>
+      </div>
+      <div class="card-body">
+        <span class="card-tag">Podcast & Show</span>
+        <h3 class="card-title">Ran Neuner: The Untold Story After Losing It All | E4</h3>
+        <p class="card-desc">Long-form multi-cam podcast editing and story structure.</p>
+      </div>
+    </div>
+
+    <div class="card grid-item podcast">
+      <div class="media-container">
+        <iframe src="https://www.youtube.com/embed/X2rEopyT3mw" allowfullscreen></iframe>
+      </div>
+      <div class="card-body">
+        <span class="card-tag">Podcast & Show</span>
+        <h3 class="card-title">"I scammed him” - Jason Derulo [SHOCKING INTERVIEW]</h3>
+        <p class="card-desc">High-retention multi-cam interview production.</p>
+      </div>
+    </div>
+
+    <div class="card grid-item podcast">
+      <div class="media-container">
+        <iframe src="https://www.youtube.com/embed/u3g9qYOFHEU" allowfullscreen></iframe>
+      </div>
+      <div class="card-body">
+        <span class="card-tag">Podcast & Show</span>
+        <h3 class="card-title">Ben Cowen "Bitcoin Was Never Digital Gold" EP. 11</h3>
+        <p class="card-desc">Analytical interview feature edit.</p>
+      </div>
+    </div>
+
+    <div class="card grid-item podcast">
+      <div class="media-container">
+        <iframe src="https://www.youtube.com/embed/hVsmtNH5zJk" allowfullscreen></iframe>
+      </div>
+      <div class="card-body">
+        <span class="card-tag">Podcast & Show</span>
+        <h3 class="card-title">He Quit His 9–5 for Crypto… Then Lost Everything | OSF Ep. 8</h3>
+        <p class="card-desc">Character-driven story edit and pacing.</p>
+      </div>
+    </div>
+
+    <div class="card grid-item podcast">
+      <div class="media-container">
+        <iframe src="https://www.youtube.com/embed/yltqZsmSVbU" allowfullscreen></iframe>
+      </div>
+      <div class="card-body">
+        <span class="card-tag">Podcast & Show</span>
+        <h3 class="card-title">How This Poker Pro Became a Billion-Dollar Crypto Investor! Haseeb Qureshi | E2</h3>
+        <p class="card-desc">Executive narrative interview production.</p>
+      </div>
+    </div>
+
+    <div class="card grid-item podcast">
+      <div class="media-container">
+        <iframe src="https://www.youtube.com/embed/n1KVVnE0HP0" allowfullscreen></iframe>
+      </div>
+      <div class="card-body">
+        <span class="card-tag">Podcast & Show</span>
+        <h3 class="card-title">Speculation Won’t Take Crypto To New Highs... Santiago Roel Santos | E1</h3>
+        <p class="card-desc">Premier broadcast episode post-production.</p>
+      </div>
+    </div>
+
+    <div class="card grid-item podcast">
+      <div class="media-container">
+        <iframe src="https://www.youtube.com/embed/Z0qmz0AMfQ4" allowfullscreen></iframe>
+      </div>
+      <div class="card-body">
+        <span class="card-tag">Podcast & Show</span>
+        <h3 class="card-title">Why He Raised $670M to Buy AVAX? | Bart Smith EP. 9</h3>
+        <p class="card-desc">Institutional crypto podcast highlights.</p>
+      </div>
+    </div>
+
+    <div class="card grid-item podcast">
+      <div class="media-container">
+        <iframe src="https://www.youtube.com/embed/Utfb8hrwJOc" allowfullscreen></iframe>
+      </div>
+      <div class="card-body">
+        <span class="card-tag">Podcast & Show</span>
+        <h3 class="card-title">AI Is Breaking Privacy Faster Than Anyone Realizes! Jiahao Sun | EP. 7</h3>
+        <p class="card-desc">Technical breakdown episode edit.</p>
+      </div>
+    </div>
+
+    <!-- NARRATIVE BANTER EXTRAS -->
+    <div class="card grid-item narrative">
+      <div class="media-container">
         <iframe src="https://www.youtube.com/embed/gPWrQdA-wLA" allowfullscreen></iframe>
       </div>
       <div class="card-body">
-        <span class="card-tag">Narrative Drama</span>
+        <span class="card-tag">Narrative & Pacing</span>
         <h3 class="card-title">If Your Business Doesn’t Get This Right ASAP!… It’s Over!</h3>
-        <p class="card-desc">In this special episode of Building Banter, Ran, Sheldon, Kyle, Fefe, and the entire Banter crew open up about what it really takes to build a successful business.</p>
+        <p class="card-desc">Special episode open on what it takes to build a successful business.</p>
       </div>
     </div>
 
@@ -446,9 +659,9 @@
         <iframe src="https://www.youtube.com/embed/qESbs5FanJA" allowfullscreen></iframe>
       </div>
       <div class="card-body">
-        <span class="card-tag">Narrative Drama</span>
+        <span class="card-tag">Narrative & Pacing</span>
         <h3 class="card-title">The Crypto Bear Market Is EVEN WORSE Than You Think…</h3>
-        <p class="card-desc">In this video, Ran and the Banter team show how the current market is affecting Bitcoin, altcoins, and mental health.</p>
+        <p class="card-desc">Market analysis with dramatic pacing and story focus.</p>
       </div>
     </div>
 
@@ -457,9 +670,9 @@
         <iframe src="https://www.youtube.com/embed/AGn9hOcAS1c" allowfullscreen></iframe>
       </div>
       <div class="card-body">
-        <span class="card-tag">Narrative Drama</span>
+        <span class="card-tag">Narrative & Pacing</span>
         <h3 class="card-title">I Tried Pro Polo With ZERO Experience (Nearly Died)</h3>
-        <p class="card-desc">Building Banter episode flying to Dubai with zero experience to compete in a pro-level Crypto Polo tournament.</p>
+        <p class="card-desc">Travel & experiential narrative episode shot in Dubai.</p>
       </div>
     </div>
 
@@ -468,35 +681,13 @@
         <iframe src="https://www.youtube.com/embed/pBk3jnp0290" allowfullscreen></iframe>
       </div>
       <div class="card-body">
-        <span class="card-tag">Narrative Drama</span>
+        <span class="card-tag">Narrative & Pacing</span>
         <h3 class="card-title">We Are Sponsoring A Formula 1 Team!</h3>
-        <p class="card-desc">Crypto Banter sponsoring a Formula 1 team for 2025! Exploring options live in Singapore.</p>
+        <p class="card-desc">Vlog-style broadcast narrative live in Singapore.</p>
       </div>
     </div>
 
-    <div class="card grid-item narrative">
-      <div class="media-container">
-        <iframe src="https://www.youtube.com/embed/7zIrMyW0NhE" allowfullscreen></iframe>
-      </div>
-      <div class="card-body">
-        <span class="card-tag">Narrative Drama</span>
-        <h3 class="card-title">Why It Took Crypto Banter 4 Years To Launch MERCH!</h3>
-        <p class="card-desc">Crypto man Ran takes you through the journey of Banter merch and cracking the code to brilliant design.</p>
-      </div>
-    </div>
-
-    <div class="card grid-item narrative">
-      <div class="media-container">
-        <iframe src="https://www.youtube.com/embed/1o8pwH05qKo" allowfullscreen></iframe>
-      </div>
-      <div class="card-body">
-        <span class="card-tag">Narrative Drama</span>
-        <h3 class="card-title">There's Something You Need To Know About $BAKED...</h3>
-        <p class="card-desc">Behind the scenes of the official Banter meme coin release.</p>
-      </div>
-    </div>
-
-    <!-- 3. FEATURED CORPORATE -->
+    <!-- CORPORATE BRAND FILMS -->
     <div class="card grid-item corporate featured">
       <div class="media-container">
         <iframe src="https://www.youtube.com/embed/V3YknBiaw38" allowfullscreen></iframe>
@@ -510,12 +701,18 @@
 
     <div class="card grid-item corporate">
       <div class="media-container">
-        <iframe 
-          src="https://player.vimeo.com/video/376521138?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" 
-          allow="autoplay; fullscreen; picture-in-picture; clipboard-write" 
-          allowfullscreen 
-          title="Thunderball Launch Party">
-        </iframe>
+        <iframe src="https://www.youtube.com/embed/YPQVFch11rU" allowfullscreen></iframe>
+      </div>
+      <div class="card-body">
+        <span class="card-tag">Corporate Brand Film</span>
+        <h3 class="card-title">FCB Chemistry Pitch Campaign</h3>
+        <p class="card-desc">High-impact agency pitch video narrative.</p>
+      </div>
+    </div>
+
+    <div class="card grid-item corporate">
+      <div class="media-container">
+        <iframe src="https://player.vimeo.com/video/376521138" allowfullscreen></iframe>
       </div>
       <div class="card-body">
         <span class="card-tag">Corporate Brand Film</span>
@@ -526,12 +723,7 @@
 
     <div class="card grid-item corporate">
       <div class="media-container">
-        <iframe 
-          src="https://player.vimeo.com/video/376520659?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" 
-          allow="autoplay; fullscreen; picture-in-picture; clipboard-write" 
-          allowfullscreen 
-          title="Thunderball kids car segment">
-        </iframe>
+        <iframe src="https://player.vimeo.com/video/376520659" allowfullscreen></iframe>
       </div>
       <div class="card-body">
         <span class="card-tag">Corporate Brand Film</span>
@@ -562,222 +754,392 @@
       </div>
     </div>
 
-    <div class="card grid-item corporate">
+    <!-- MUSIC VIDEOS -->
+    <div class="card grid-item music">
       <div class="media-container">
-        <iframe src="https://www.youtube.com/embed/MJ3NoBI4578" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/ve1jarkSkS8" allowfullscreen></iframe>
       </div>
       <div class="card-body">
-        <span class="card-tag">Corporate Brand Film</span>
-        <h3 class="card-title">Mandela day Camphill Village 2018</h3>
-        <p class="card-desc">Impact coverage created for the organizing team at Camphill Village.</p>
+        <span class="card-tag">Music / VFX</span>
+        <h3 class="card-title">Faxon VFX reveal</h3>
+        <p class="card-desc">VFX breakdown and visual composition reveal.</p>
       </div>
     </div>
 
-    <div class="card grid-item corporate">
+    <div class="card grid-item music">
       <div class="media-container">
-        <iframe src="https://www.youtube.com/embed/Hn2DKocoo1A" allowfullscreen></iframe>
-      </div>
-      <div class="card-body">
-        <span class="card-tag">Corporate Brand Film</span>
-        <h3 class="card-title">STBB 4 Good MTB Challenge 2017</h3>
-        <p class="card-desc">STBB4GOOD MTB Challenge raising funds for Miles for Smiles Foundation.</p>
-      </div>
-    </div>
-
-    <div class="card grid-item corporate">
-      <div class="media-container">
-        <iframe src="https://www.youtube.com/embed/2ArSlKfAElQ" allowfullscreen></iframe>
-      </div>
-      <div class="card-body">
-        <span class="card-tag">Corporate Brand Film</span>
-        <h3 class="card-title">TOP VENDOR WEDDING AWARDS Trailer</h3>
-        <p class="card-desc">Crowning wedding industry excellence.</p>
-      </div>
-    </div>
-
-    <div class="card grid-item corporate">
-      <div class="media-container">
-        <iframe 
-          src="https://player.vimeo.com/video/122723616?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" 
-          allow="autoplay; fullscreen; picture-in-picture; clipboard-write" 
-          allowfullscreen 
-          title="Route 62 Trailer">
-        </iframe>
-      </div>
-      <div class="card-body">
-        <span class="card-tag">Corporate Brand Film</span>
-        <h3 class="card-title">Route 62 Trailer</h3>
-        <p class="card-desc">Harley Davidson Route 62 biker rally.</p>
-      </div>
-    </div>
-
-    <div class="card grid-item corporate">
-      <div class="media-container">
-        <iframe src="https://www.youtube.com/embed/dIuDpC5lzAs" allowfullscreen></iframe>
-      </div>
-      <div class="card-body">
-        <span class="card-tag">Corporate Brand Film</span>
-        <h3 class="card-title">Two Icons Tour CPT 2 min</h3>
-        <p class="card-desc">Jaguar/Land Rover Two Icons Tour highlights.</p>
-      </div>
-    </div>
-
-    <div class="card grid-item corporate">
-      <div class="media-container">
-        <iframe src="https://www.youtube.com/embed/N4qmrYW01tg" allowfullscreen></iframe>
-      </div>
-      <div class="card-body">
-        <span class="card-tag">Corporate Brand Film</span>
-        <h3 class="card-title">Gibson Party Trailer</h3>
-        <p class="card-desc">120 Years of Gibson Guitars event brand film.</p>
-      </div>
-    </div>
-
-    <div class="card grid-item corporate">
-      <div class="media-container">
-        <iframe src="https://www.youtube.com/embed/-O-nHZ4zI6o" allowfullscreen></iframe>
-      </div>
-      <div class="card-body">
-        <span class="card-tag">Corporate Brand Film</span>
-        <h3 class="card-title">stokedtv</h3>
-        <p class="card-desc">South African Board-riding Channel promo reel.</p>
-      </div>
-    </div>
-
-    <!-- 4. FEATURED MUSIC VIDEO -->
-    <div class="card grid-item music featured">
-      <div class="media-container">
-        <iframe src="https://www.youtube.com/embed/RITvYt_YsX4" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/4N_UEfaz3Ag" allowfullscreen></iframe>
       </div>
       <div class="card-body">
         <span class="card-tag">Music Video</span>
-        <h3 class="card-title">Jack Stone-Vraagstuk (Lyric Video)</h3>
-        <p class="card-desc">Video Concept, Filming, Editing and creative color grading for music artists.</p>
+        <h3 class="card-title">Brynn Volcano (Live at the Alexander Cape Town)</h3>
+        <p class="card-desc">Live musical performance capture and audio sync.</p>
       </div>
     </div>
-        <div class="card grid-item music featured">
-      <div class="media-container">
-        <iframe src="https://www.youtube.com/embed/O3c-9GQvJOg" allowfullscreen></iframe>
-      </div>
-      <div class="card-body">
-        <span class="card-tag">Music Video</span>
-        <h3 class="card-title">Magic Mountain (Official Music Video) | Christine Petts | Witch Folklore Tale</h3>
-        <p class="card-desc">Rhythmic editing, specialized stage lighting design, and creative color grading for music artists.</p>
-      </div>
-    </div>
-            <div class="card grid-item music featured">
+
+    <div class="card grid-item music">
       <div class="media-container">
         <iframe src="https://www.youtube.com/embed/KDMYCQUn2PY" allowfullscreen></iframe>
       </div>
       <div class="card-body">
         <span class="card-tag">Music Video</span>
         <h3 class="card-title">Enya-M Shut up en soen my nou</h3>
-        <p class="card-desc">Rhythmic editing, specialized stage lighting design, and creative color grading for music artists.</p>
+        <p class="card-desc">Rhythmic editing, stage lighting, and color grading.</p>
       </div>
     </div>
-                <div class="card grid-item music featured">
+
+    <div class="card grid-item music">
       <div class="media-container">
         <iframe src="https://www.youtube.com/embed/OgZhseIRSIE" allowfullscreen></iframe>
       </div>
       <div class="card-body">
         <span class="card-tag">Music Video</span>
         <h3 class="card-title">Jack Stone - Dagbreek (Official Video)</h3>
-        <p class="card-desc">Rhythmic editing, specialized stage lighting design, and creative color grading for music artists.</p>
-      </div>
-    </div>
-                    <div class="card grid-item music featured">
-      <div class="media-container">
-        <iframe src="https://www.youtube.com/embed/_gBGGlBBn1A" allowfullscreen></iframe>
-      </div>
-      <div class="card-body">
-        <span class="card-tag">Music Video</span>
-        <h3 class="card-title">Klawer - Skade maak (Official Video)</h3>
-        <p class="card-desc">Rhythmic editing, specialized stage lighting design, and creative color grading for music artists.</p>
-      </div>
-    </div>
-                        <div class="card grid-item music featured">
-      <div class="media-container">
-        <iframe src="https://www.youtube.com/embed/Dt4I6aRkG5U" allowfullscreen></iframe>
-      </div>
-      <div class="card-body">
-        <span class="card-tag">Music Video</span>
-        <h3 class="card-title">Jack Stone en die bende tour REFLEKSIE</h3>
-        <p class="card-desc">Rhythmic editing, specialized stage lighting design, and creative color grading for music artists.</p>
-      </div>
-    </div>
-                            <div class="card grid-item music featured">
-      <div class="media-container">
-        <iframe src="https://www.youtube.com/embed/diCCv6Egu38" allowfullscreen></iframe>
-      </div>
-      <div class="card-body">
-        <span class="card-tag">Music Video</span>
-        <h3 class="card-title">Christine Petts (original) Too many Times.(Official Video)</h3>
-        <p class="card-desc">Rhythmic editing, specialized stage lighting design, and creative color grading for music artists.</p>
-      </div>
-    </div>
-                                <div class="card grid-item music featured">
-      <div class="media-container">
-        <iframe src="https://www.youtube.com/embed/FDSB2vp4Vro" allowfullscreen></iframe>
-      </div>
-      <div class="card-body">
-        <span class="card-tag">Music Video</span>
-        <h3 class="card-title">DESTINY (original smooth jazz) CHRISTINE PETTS (Official Video)</h3>
-        <p class="card-desc">Rhythmic editing, specialized stage lighting design, and creative color grading for music artists.</p>
-      </div>
-    </div>
-                                    <div class="card grid-item music featured">
-      <div class="media-container">
-        <iframe src="https://www.youtube.com/embed/vkXDnwV_-QM" allowfullscreen></iframe>
-      </div>
-      <div class="card-body">
-        <span class="card-tag">Music Video</span>
-        <h3 class="card-title">To Love Somebody (BeeGees cover) By CHRISTINE PETTS (Official Video)</h3>
-        <p class="card-desc">Rhythmic editing, specialized stage lighting design, and creative color grading for music artists.</p>
-      </div>
-    </div>
-                                        <div class="card grid-item music featured">
-      <div class="media-container">
-        <iframe src="https://www.youtube.com/embed/kBXIXMjvbio" allowfullscreen></iframe>
-      </div>
-      <div class="card-body">
-        <span class="card-tag">Music Video</span>
-        <h3 class="card-title">Hero Down to Zero rock original Christine Petts (Official Video)</h3>
-        <p class="card-desc">Rhythmic editing, specialized stage lighting design, and creative color grading for music artists.</p>
-      </div>
-    </div>
-                                            <div class="card grid-item music featured">
-      <div class="media-container">
-        <iframe src="https://www.youtube.com/embed/nsrYFombuTE" allowfullscreen></iframe>
-      </div>
-      <div class="card-body">
-        <span class="card-tag">Music Video</span>
-        <h3 class="card-title">You Won't See Me Crying’ CHRISTINE PETTS (Official Video)</h3>
-        <p class="card-desc">Rhythmic editing, specialized stage lighting design, and creative color grading for music artists.</p>
+        <p class="card-desc">Atmospheric music video direction and post-production.</p>
       </div>
     </div>
 
-    <!-- 5. FEATURED PHOTOGRAPHY -->
-    <div class="card grid-item photo featured">
-      <div class="media-container">
-        <img src="weddings2.jpg" alt="Cinematic Stills & Photography">
-      </div>
-      <div class="card-body">
-        <span class="card-tag">Photography</span>
-        <h3 class="card-title">Cinematic Stills & Set Design Gallery</h3>
-        <p class="card-desc">High-resolution location stills, portraiture, and behind-the-scenes set art direction captures.</p>
-      </div>
-    </div>
-
-    <!-- 6. FEATURED WEDDING PRODUCTION -->
-    <div class="card grid-item wedding featured">
+    <!-- WEDDINGS -->
+    <div class="card grid-item wedding">
       <div class="media-container">
         <iframe src="https://www.youtube.com/embed/-nWzVNTJHJk" allowfullscreen></iframe>
       </div>
       <div class="card-body">
         <span class="card-tag">Wedding Documentary</span>
-        <h3 class="card-title">Cinematic Wedding (Wedding Short)</h3>
-        <p class="card-desc">10 minute wedding highlights short.</p>
+        <h3 class="card-title">Riaan and Jade's Cinematic Wedding Film</h3>
+        <p class="card-desc">10 minute cinematic wedding short.</p>
       </div>
+    </div>
+
+    <div class="card grid-item wedding">
+      <div class="media-container">
+        <iframe src="https://www.youtube.com/embed/vnajgu3YL7k" allowfullscreen></iframe>
+      </div>
+      <div class="card-body">
+        <span class="card-tag">Wedding Trailer</span>
+        <h3 class="card-title">Vanessa Haywood and Ryan Sandes Wedding Trailer</h3>
+        <p class="card-desc">High-profile wedding highlights trailer.</p>
+      </div>
+    </div>
+
+    <div class="card grid-item wedding">
+      <div class="media-container">
+        <iframe src="https://player.vimeo.com/video/96893603" allowfullscreen></iframe>
+      </div>
+      <div class="card-body">
+        <span class="card-tag">Wedding Short</span>
+        <h3 class="card-title">Starke Wedding Short</h3>
+        <p class="card-desc">Cinematic wedding story highlight.</p>
+      </div>
+    </div>
+
+    <div class="card grid-item wedding">
+      <div class="media-container">
+        <iframe src="https://www.youtube.com/embed/eF_1nwGx5Ls" allowfullscreen></iframe>
+      </div>
+      <div class="card-body">
+        <span class="card-tag">Wedding Trailer</span>
+        <h3 class="card-title">Megan and Nick's Wedding Trailer</h3>
+        <p class="card-desc">Atmospheric venue and highlights short.</p>
+      </div>
+    </div>
+
+    <div class="card grid-item wedding">
+      <div class="media-container">
+        <iframe src="https://player.vimeo.com/video/431726440" allowfullscreen></iframe>
+      </div>
+      <div class="card-body">
+        <span class="card-tag">Wedding Trailer</span>
+        <h3 class="card-title">Gabi and Benji's Wedding Trailer</h3>
+        <p class="card-desc">High-pacing emotional wedding short.</p>
+      </div>
+    </div>
+
+    <div class="card grid-item wedding">
+      <div class="media-container">
+        <iframe src="https://www.youtube.com/embed/5WI8lIa9ONg" allowfullscreen></iframe>
+      </div>
+      <div class="card-body">
+        <span class="card-tag">Wedding Short</span>
+        <h3 class="card-title">The Spectacular Voss Wedding</h3>
+        <p class="card-desc">Full ceremony and reception documentary highlight.</p>
+      </div>
+    </div>
+
+    <div class="card grid-item wedding">
+      <div class="media-container">
+        <iframe src="https://player.vimeo.com/video/431403634" allowfullscreen></iframe>
+      </div>
+      <div class="card-body">
+        <span class="card-tag">Wedding Trailer</span>
+        <h3 class="card-title">Chris and Pascal Wedding Trailer</h3>
+        <p class="card-desc">Cinematic celebration highlight reel.</p>
+      </div>
+    </div>
+
+    <div class="card grid-item wedding">
+      <div class="media-container">
+        <iframe src="https://www.youtube.com/embed/aXQfzcbubq8" allowfullscreen></iframe>
+      </div>
+      <div class="card-body">
+        <span class="card-tag">Wedding Trailer</span>
+        <h3 class="card-title">Kyle and Maya Wedding Trailer</h3>
+        <p class="card-desc">Destination wedding short.</p>
+      </div>
+    </div>
+
+    <div class="card grid-item wedding">
+      <div class="media-container">
+        <iframe src="https://player.vimeo.com/video/389720779" allowfullscreen></iframe>
+      </div>
+      <div class="card-body">
+        <span class="card-tag">Wedding Trailer</span>
+        <h3 class="card-title">Lanzarec Wedding Trailer</h3>
+        <p class="card-desc">Estate wedding short film.</p>
+      </div>
+    </div>
+
+    <div class="card grid-item wedding">
+      <div class="media-container">
+        <iframe src="https://player.vimeo.com/video/399085294" allowfullscreen></iframe>
+      </div>
+      <div class="card-body">
+        <span class="card-tag">Wedding Trailer</span>
+        <h3 class="card-title">Willem and Kimberly Wedding Trailer</h3>
+        <p class="card-desc">Cinematic wedding highlights.</p>
+      </div>
+    </div>
+
+    <div class="card grid-item wedding">
+      <div class="media-container">
+        <iframe src="https://player.vimeo.com/video/399852152" allowfullscreen></iframe>
+      </div>
+      <div class="card-body">
+        <span class="card-tag">Wedding Trailer</span>
+        <h3 class="card-title">Lor and Sam Wedding Trailer</h3>
+        <p class="card-desc">Emotional story highlights.</p>
+      </div>
+    </div>
+
+    <div class="card grid-item wedding">
+      <div class="media-container">
+        <iframe src="https://player.vimeo.com/video/351566786" allowfullscreen></iframe>
+      </div>
+      <div class="card-body">
+        <span class="card-tag">Wedding Trailer</span>
+        <h3 class="card-title">Chantel and Karl Wedding Trailer</h3>
+        <p class="card-desc">Coastal wedding trailer.</p>
+      </div>
+    </div>
+
+    <div class="card grid-item wedding">
+      <div class="media-container">
+        <iframe src="https://player.vimeo.com/video/348002329" allowfullscreen></iframe>
+      </div>
+      <div class="card-body">
+        <span class="card-tag">Wedding Trailer</span>
+        <h3 class="card-title">Claire and Matthew wedding Trailer</h3>
+        <p class="card-desc">Scenic location wedding short.</p>
+      </div>
+    </div>
+
+    <div class="card grid-item wedding">
+      <div class="media-container">
+        <iframe src="https://player.vimeo.com/video/284893192" allowfullscreen></iframe>
+      </div>
+      <div class="card-body">
+        <span class="card-tag">Wedding Trailer</span>
+        <h3 class="card-title">Amy and Brett Wedding Trailer</h3>
+        <p class="card-desc">Cinematic storytelling highlight.</p>
+      </div>
+    </div>
+
+    <div class="card grid-item wedding">
+      <div class="media-container">
+        <iframe src="https://player.vimeo.com/video/276836968" allowfullscreen></iframe>
+      </div>
+      <div class="card-body">
+        <span class="card-tag">Wedding Trailer</span>
+        <h3 class="card-title">Sean and Kate Zimbabwe Wedding Trailer</h3>
+        <p class="card-desc">Destination safari wedding highlights.</p>
+      </div>
+    </div>
+
+    <div class="card grid-item wedding">
+      <div class="media-container">
+        <iframe src="https://player.vimeo.com/video/269178812" allowfullscreen></iframe>
+      </div>
+      <div class="card-body">
+        <span class="card-tag">Wedding Trailer</span>
+        <h3 class="card-title">Anna and James Wedding Trailer</h3>
+        <p class="card-desc">Winelands wedding highlight video.</p>
+      </div>
+    </div>
+
+    <div class="card grid-item wedding">
+      <div class="media-container">
+        <iframe src="https://player.vimeo.com/video/170642372" allowfullscreen></iframe>
+      </div>
+      <div class="card-body">
+        <span class="card-tag">Wedding Trailer</span>
+        <h3 class="card-title">John and Faye Wedding Trailer</h3>
+        <p class="card-desc">Classic wedding narrative short.</p>
+      </div>
+    </div>
+
+    <div class="card grid-item wedding">
+      <div class="media-container">
+        <iframe src="https://player.vimeo.com/video/116378739" allowfullscreen></iframe>
+      </div>
+      <div class="card-body">
+        <span class="card-tag">Wedding Trailer</span>
+        <h3 class="card-title">Farryn and Ryan Wedding Trailer</h3>
+        <p class="card-desc">Cape Town wedding story highlights.</p>
+      </div>
+    </div>
+
+    <div class="card grid-item wedding">
+      <div class="media-container">
+        <iframe src="https://www.youtube.com/embed/xJTZNRKSPjs" allowfullscreen></iframe>
+      </div>
+      <div class="card-body">
+        <span class="card-tag">Wedding Trailer</span>
+        <h3 class="card-title">Annali and Spike Wedding Trailer</h3>
+        <p class="card-desc">Outdoor wedding highlights edit.</p>
+      </div>
+    </div>
+
+    <!-- 30 PHOTOGRAPHY PLACEHOLDERS (photos1.jpg TO photos30.jpg) -->
+    <!-- (Photos 1 to 5) -->
+    <div class="card grid-item photo">
+      <div class="media-container"><img src="photos1.jpg" alt="Photography Still 1"></div>
+      <div class="card-body"><span class="card-tag">Photography</span><h3 class="card-title">Cinematic Still 01</h3></div>
+    </div>
+    <div class="card grid-item photo">
+      <div class="media-container"><img src="photos2.jpg" alt="Photography Still 2"></div>
+      <div class="card-body"><span class="card-tag">Photography</span><h3 class="card-title">Cinematic Still 02</h3></div>
+    </div>
+    <div class="card grid-item photo">
+      <div class="media-container"><img src="photos3.jpg" alt="Photography Still 3"></div>
+      <div class="card-body"><span class="card-tag">Photography</span><h3 class="card-title">Cinematic Still 03</h3></div>
+    </div>
+    <div class="card grid-item photo">
+      <div class="media-container"><img src="photos4.jpg" alt="Photography Still 4"></div>
+      <div class="card-body"><span class="card-tag">Photography</span><h3 class="card-title">Cinematic Still 04</h3></div>
+    </div>
+    <div class="card grid-item photo">
+      <div class="media-container"><img src="photos5.jpg" alt="Photography Still 5"></div>
+      <div class="card-body"><span class="card-tag">Photography</span><h3 class="card-title">Cinematic Still 05</h3></div>
+    </div>
+
+    <!-- (Photos 6 to 10) -->
+    <div class="card grid-item photo">
+      <div class="media-container"><img src="photos6.jpg" alt="Photography Still 6"></div>
+      <div class="card-body"><span class="card-tag">Photography</span><h3 class="card-title">Cinematic Still 06</h3></div>
+    </div>
+    <div class="card grid-item photo">
+      <div class="media-container"><img src="photos7.jpg" alt="Photography Still 7"></div>
+      <div class="card-body"><span class="card-tag">Photography</span><h3 class="card-title">Cinematic Still 07</h3></div>
+    </div>
+    <div class="card grid-item photo">
+      <div class="media-container"><img src="photos8.jpg" alt="Photography Still 8"></div>
+      <div class="card-body"><span class="card-tag">Photography</span><h3 class="card-title">Cinematic Still 08</h3></div>
+    </div>
+    <div class="card grid-item photo">
+      <div class="media-container"><img src="photos9.jpg" alt="Photography Still 9"></div>
+      <div class="card-body"><span class="card-tag">Photography</span><h3 class="card-title">Cinematic Still 09</h3></div>
+    </div>
+    <div class="card grid-item photo">
+      <div class="media-container"><img src="photos10.jpg" alt="Photography Still 10"></div>
+      <div class="card-body"><span class="card-tag">Photography</span><h3 class="card-title">Cinematic Still 10</h3></div>
+    </div>
+
+    <!-- (Photos 11 to 15) -->
+    <div class="card grid-item photo">
+      <div class="media-container"><img src="photos11.jpg" alt="Photography Still 11"></div>
+      <div class="card-body"><span class="card-tag">Photography</span><h3 class="card-title">Cinematic Still 11</h3></div>
+    </div>
+    <div class="card grid-item photo">
+      <div class="media-container"><img src="photos12.jpg" alt="Photography Still 12"></div>
+      <div class="card-body"><span class="card-tag">Photography</span><h3 class="card-title">Cinematic Still 12</h3></div>
+    </div>
+    <div class="card grid-item photo">
+      <div class="media-container"><img src="photos13.jpg" alt="Photography Still 13"></div>
+      <div class="card-body"><span class="card-tag">Photography</span><h3 class="card-title">Cinematic Still 13</h3></div>
+    </div>
+    <div class="card grid-item photo">
+      <div class="media-container"><img src="photos14.jpg" alt="Photography Still 14"></div>
+      <div class="card-body"><span class="card-tag">Photography</span><h3 class="card-title">Cinematic Still 14</h3></div>
+    </div>
+    <div class="card grid-item photo">
+      <div class="media-container"><img src="photos15.jpg" alt="Photography Still 15"></div>
+      <div class="card-body"><span class="card-tag">Photography</span><h3 class="card-title">Cinematic Still 15</h3></div>
+    </div>
+
+    <!-- (Photos 16 to 20) -->
+    <div class="card grid-item photo">
+      <div class="media-container"><img src="photos16.jpg" alt="Photography Still 16"></div>
+      <div class="card-body"><span class="card-tag">Photography</span><h3 class="card-title">Cinematic Still 16</h3></div>
+    </div>
+    <div class="card grid-item photo">
+      <div class="media-container"><img src="photos17.jpg" alt="Photography Still 17"></div>
+      <div class="card-body"><span class="card-tag">Photography</span><h3 class="card-title">Cinematic Still 17</h3></div>
+    </div>
+    <div class="card grid-item photo">
+      <div class="media-container"><img src="photos18.jpg" alt="Photography Still 18"></div>
+      <div class="card-body"><span class="card-tag">Photography</span><h3 class="card-title">Cinematic Still 18</h3></div>
+    </div>
+    <div class="card grid-item photo">
+      <div class="media-container"><img src="photos19.jpg" alt="Photography Still 19"></div>
+      <div class="card-body"><span class="card-tag">Photography</span><h3 class="card-title">Cinematic Still 19</h3></div>
+    </div>
+    <div class="card grid-item photo">
+      <div class="media-container"><img src="photos20.jpg" alt="Photography Still 20"></div>
+      <div class="card-body"><span class="card-tag">Photography</span><h3 class="card-title">Cinematic Still 20</h3></div>
+    </div>
+
+    <!-- (Photos 21 to 25) -->
+    <div class="card grid-item photo">
+      <div class="media-container"><img src="photos21.jpg" alt="Photography Still 21"></div>
+      <div class="card-body"><span class="card-tag">Photography</span><h3 class="card-title">Cinematic Still 21</h3></div>
+    </div>
+    <div class="card grid-item photo">
+      <div class="media-container"><img src="photos22.jpg" alt="Photography Still 22"></div>
+      <div class="card-body"><span class="card-tag">Photography</span><h3 class="card-title">Cinematic Still 22</h3></div>
+    </div>
+    <div class="card grid-item photo">
+      <div class="media-container"><img src="photos23.jpg" alt="Photography Still 23"></div>
+      <div class="card-body"><span class="card-tag">Photography</span><h3 class="card-title">Cinematic Still 23</h3></div>
+    </div>
+    <div class="card grid-item photo">
+      <div class="media-container"><img src="photos24.jpg" alt="Photography Still 24"></div>
+      <div class="card-body"><span class="card-tag">Photography</span><h3 class="card-title">Cinematic Still 24</h3></div>
+    </div>
+    <div class="card grid-item photo">
+      <div class="media-container"><img src="photos25.jpg" alt="Photography Still 25"></div>
+      <div class="card-body"><span class="card-tag">Photography</span><h3 class="card-title">Cinematic Still 25</h3></div>
+    </div>
+
+    <!-- (Photos 26 to 30) -->
+    <div class="card grid-item photo">
+      <div class="media-container"><img src="photos26.jpg" alt="Photography Still 26"></div>
+      <div class="card-body"><span class="card-tag">Photography</span><h3 class="card-title">Cinematic Still 26</h3></div>
+    </div>
+    <div class="card grid-item photo">
+      <div class="media-container"><img src="photos27.jpg" alt="Photography Still 27"></div>
+      <div class="card-body"><span class="card-tag">Photography</span><h3 class="card-title">Cinematic Still 27</h3></div>
+    </div>
+    <div class="card grid-item photo">
+      <div class="media-container"><img src="photos28.jpg" alt="Photography Still 28"></div>
+      <div class="card-body"><span class="card-tag">Photography</span><h3 class="card-title">Cinematic Still 28</h3></div>
+    </div>
+    <div class="card grid-item photo">
+      <div class="media-container"><img src="photos29.jpg" alt="Photography Still 29"></div>
+      <div class="card-body"><span class="card-tag">Photography</span><h3 class="card-title">Cinematic Still 29</h3></div>
+    </div>
+    <div class="card grid-item photo">
+      <div class="media-container"><img src="photos30.jpg" alt="Photography Still 30"></div>
+      <div class="card-body"><span class="card-tag">Photography</span><h3 class="card-title">Cinematic Still 30</h3></div>
     </div>
 
   </div>
@@ -837,102 +1199,111 @@
   </section>
 
   <!-- VERANDERT BANNER -->
-  <div id="verandert" class="impact-banner">
-    <div style="flex: 1; min-width: 280px;">
-      <div style="margin-bottom: 20px; display: flex; align-items: center; gap: 15px; flex-wrap: wrap;">
-        <img src="verandertlogo.png" alt="Verandert Logo" style="height: 48px; width: auto; object-fit: contain;">
-        <span class="badge" style="background: rgba(255,59,48,0.15); color: #ff3b30; border: 1px solid rgba(255,59,48,0.3); margin-bottom: 0;">CSI & Corporate Partnership Engine</span>
+  <section id="verandert" style="padding: 0 20px;">
+    <div class="impact-banner">
+      <div style="flex: 1; min-width: 300px;">
+        <span class="badge" style="background: rgba(255,255,255,0.1); color: #fff; border-color: rgba(255,255,255,0.2);">Social Impact Initiative</span>
+        <h2 style="font-size: 2.2rem; margin: 16px 0; color: #fff;">Verandert Global: High-Impact Social Storytelling</h2>
+        <p style="color: var(--text-muted); font-size: 1rem; line-height: 1.7; margin-bottom: 24px;">
+          Verandert creates high-retention, documentary-style impact films for non-profits, local communities, and corporate CSI initiatives. Designed to drive genuine social change and maximum audience retention.
+        </p>
+        <a href="https://youtube.com/@Verandertglobal" target="_blank" class="btn btn-primary">Watch Full Episodes</a>
       </div>
-
-      <h2 style="margin: 10px 0; font-weight:800; font-size: 2rem; color: #fff;">Verandert: Documenting South Africa's Quiet Heroes</h2>
-      <p style="color: var(--text-muted); line-height: 1.6;">Transform corporate social investment (CSI) into broadcast-quality visual stories. Corporate sponsorships qualify as 100% tax-efficient advertising or Section 18A PBO contributions on feature projects.</p>
-      
-      <a href="#contact" class="btn btn-primary" style="display:inline-block; margin-top: 15px;">Request Sponsorship Prospectus</a>
+      <div class="impact-stats">
+        <div style="margin-bottom: 20px;">
+          <div class="stat-num">22,000+</div>
+          <div class="stat-label">Organic Launch Views (14 Days)</div>
+        </div>
+        <div style="margin-bottom: 20px;">
+          <div class="stat-num">5m 30s+</div>
+          <div class="stat-label">Average Watch Duration</div>
+        </div>
+        <div>
+          <div class="stat-num">100%</div>
+          <div class="stat-label">Tax Deductible CSI Partnership</div>
+        </div>
+      </div>
     </div>
+  </section>
 
-    <div class="impact-stats">
-      <div class="stat-num">22,000+</div>
-      <div class="stat-label">Views in 14 Days (Launch)</div>
-      <hr style="border:0; border-top:1px solid var(--border); margin: 15px 0;">
-      <div class="stat-num">5:30+</div>
-      <div class="stat-label">Avg. Watch Duration</div>
-      <hr style="border:0; border-top:1px solid var(--border); margin: 15px 0;">
-      <div class="stat-num">100%</div>
-      <div class="stat-label">Tax Efficiency Options</div>
-    </div>
-  </div>
-
-  <!-- CONTACT / BOOKING FOOTER SECTION -->
+  <!-- FOOTER & FORM -->
   <footer id="contact">
     <div class="footer-container">
       <div class="section-title">
-        <h2>Start Your Production Project</h2>
-        <p>Share your scope, target timeline, or CSI sponsorship request to schedule a consultation.</p>
+        <h2>Initiate a Production or Project Brief</h2>
+        <p>Whether you need a full post-production edit, broadcast production design, or brand film, get in touch below.</p>
       </div>
 
-      <!-- Replace YOUR_FORMSPREE_ID with your Formspree endpoint string (e.g. https://formspree.io/f/xbjnqwe) -->
-      <form action="https://formspree.io/f/YOUR_FORMSPREE_ID" method="POST">
+      <form action="#" method="POST" onsubmit="event.preventDefault(); alert('Thank you! Your message has been sent.');">
         <div class="form-row">
           <div class="form-group">
-            <label for="name">Your Name / Company</label>
-            <input type="text" id="name" name="name" placeholder="John Doe or Acme Corp" required>
+            <label for="name">Your Name / Organization</label>
+            <input type="text" id="name" name="name" placeholder="John Doe / Studio Name" required>
           </div>
           <div class="form-group">
             <label for="email">Email Address</label>
-            <input type="email" id="email" name="email" placeholder="name@company.com" required>
+            <input type="email" id="email" name="email" placeholder="john@example.com" required>
           </div>
         </div>
 
         <div class="form-row">
           <div class="form-group">
-            <label for="service">Primary Project Focus</label>
-            <select id="service" name="service" required>
-              <option value="Narrative Film">Narrative & Short Film Production</option>
-              <option value="Documentary">Documentary / Impact Project</option>
-              <option value="Corporate Brand">Corporate & Brand Video</option>
-              <option value="Verandert CSI">Verandert Sponsorship / CSI Partnership</option>
-              <option value="Music Video">Music Video Production</option>
-              <option value="Photography">Cinematic Stills & Photography</option>
-              <option value="Weddings">Cinematic Wedding Film</option>
+            <label for="service">Production Service Required</label>
+            <select id="service" name="service">
+              <option value="post">Post-Production & Editing</option>
+              <option value="narrative">Narrative / Short Film</option>
+              <option value="documentary">Documentary / Verandert</option>
+              <option value="corporate">Corporate Brand Film</option>
+              <option value="podcast">Podcast & Broadcast Show</option>
+              <option value="music">Music Video Production</option>
+              <option value="photo">Photography & Art Direction</option>
             </select>
           </div>
           <div class="form-group">
-            <label for="timeline">Target Delivery Date</label>
-            <input type="text" id="timeline" name="timeline" placeholder="e.g. Q4 2026 or ASAP">
+            <label for="budget">Estimated Budget Range</label>
+            <select id="budget" name="budget">
+              <option value="under5k">Under $5,000 / R50k</option>
+              <option value="5k-15k">$5,000 - $15,000 / R50k - R250k</option>
+              <option value="15k-50k">$15,000 - $50,000 / R250k - R750k</option>
+              <option value="50k+">$50,000+ / R750k+</option>
+            </select>
           </div>
         </div>
 
         <div class="form-group">
-          <label for="message">Project Brief / Scope Details</label>
-          <textarea id="message" name="message" rows="5" placeholder="Tell us about the project goals, locations, or deliverables..." required></textarea>
+          <label for="message">Project Overview & Timeline Details</label>
+          <textarea id="message" name="message" rows="5" placeholder="Tell us about your project goals, timelines, and deliverables..." required></textarea>
         </div>
 
-        <button type="submit" class="btn btn-primary" style="width: 100%; border: none; cursor: pointer; padding: 16px;">
-          Send Proposal Request
-        </button>
+        <button type="submit" class="btn btn-primary" style="width: 100%; border: none; cursor: pointer; font-size: 1rem;">Submit Project Request</button>
       </form>
 
-      <div style="text-align: center; margin-top: 50px; color: var(--text-muted); font-size: 0.85rem; border-top: 1px solid var(--border); padding-top: 30px;">
-        <p>© Latsky Multimedia. Broadcast Production, Visual Art Direction & Editing Suite. Cape Town, South Africa.</p>
+      <div style="text-align: center; margin-top: 60px; color: var(--text-muted); font-size: 0.85rem;">
+        <p>&copy; 2026 Latsky Multimedia. All Rights Reserved. Cape Town, South Africa.</p>
       </div>
     </div>
   </footer>
 
+  <!-- CATEGORY FILTER SCRIPT -->
   <script>
     function filterGrid(category) {
-      var items = document.querySelectorAll('.grid-item');
-      var buttons = document.querySelectorAll('.filter-btn');
+      // Toggle active button highlight
+      const buttons = document.querySelectorAll('.filter-btn');
+      buttons.forEach(btn => btn.classList.remove('active'));
+      
+      if (event && event.currentTarget) {
+        event.currentTarget.classList.add('active');
+      }
 
-      buttons.forEach(function(btn) {
-        btn.classList.remove('active');
-        if (btn.getAttribute('onclick').includes("'" + category + "'")) {
-          btn.classList.add('active');
-        }
-      });
-
-      items.forEach(function(item) {
-        if (category === 'all') {
-          item.style.display = 'block';
+      // Filter grid items
+      const items = document.querySelectorAll('.grid-item');
+      items.forEach(item => {
+        if (category === 'featured') {
+          if (item.classList.contains('featured')) {
+            item.style.display = 'block';
+          } else {
+            item.style.display = 'none';
+          }
         } else if (item.classList.contains(category)) {
           item.style.display = 'block';
         } else {
@@ -941,11 +1312,10 @@
       });
     }
 
-    // Auto-run Featured Filter on load
-    document.addEventListener('DOMContentLoaded', function() {
+    // Run filter on load to display Featured Work initially
+    document.addEventListener('DOMContentLoaded', () => {
       filterGrid('featured');
     });
   </script>
-
 </body>
 </html>

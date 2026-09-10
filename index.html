@@ -17,12 +17,48 @@
       background-color: #0d0d0d;
       color: #ffffff;
       line-height: 1.6;
-      padding-bottom: 60px;
     }
 
     a {
       color: inherit;
       text-decoration: none;
+    }
+
+    /* HERO / LANDING SECTION */
+    .hero {
+      position: relative;
+      height: 80vh;
+      min-height: 500px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      background: linear-gradient(180deg, rgba(13,13,13,0.3) 0%, rgba(13,13,13,1) 100%),
+                  url('https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?auto=format&fit=crop&w=1920&q=80') center/cover no-repeat;
+      padding: 0 20px;
+    }
+
+    .hero-content {
+      max-width: 800px;
+    }
+
+    .hero-title {
+      font-size: 3rem;
+      font-weight: 900;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 15px;
+    }
+
+    .hero-title span {
+      color: #e50914;
+    }
+
+    .hero-subtitle {
+      font-size: 1.25rem;
+      color: #cccccc;
+      margin-bottom: 25px;
+      font-weight: 300;
     }
 
     /* HEADER & NAVBAR */
@@ -48,7 +84,6 @@
       font-weight: 800;
       letter-spacing: 1.5px;
       text-transform: uppercase;
-      color: #ffffff;
     }
 
     .logo span {
@@ -58,7 +93,7 @@
     /* FILTER BUTTONS */
     .filter-container {
       max-width: 1400px;
-      margin: 30px auto 20px;
+      margin: 40px auto 20px;
       padding: 0 20px;
       display: flex;
       flex-wrap: wrap;
@@ -70,7 +105,7 @@
       background-color: #1a1a1a;
       color: #a0a0a0;
       border: 1px solid #2a2a2a;
-      padding: 8px 18px;
+      padding: 10px 22px;
       border-radius: 20px;
       font-size: 0.85rem;
       font-weight: 600;
@@ -92,7 +127,7 @@
       gap: 25px;
       max-width: 1400px;
       margin: 0 auto;
-      padding: 0 20px;
+      padding: 0 20px 60px;
     }
 
     .card {
@@ -159,19 +194,140 @@
       line-height: 1.45;
     }
 
-    /* FOOTER */
-    footer {
-      max-width: 1400px;
-      margin: 50px auto 0;
-      padding: 20px;
+    /* WHY CHOOSE US SECTION */
+    .why-us {
+      background-color: #121212;
+      border-top: 1px solid #222;
+      border-bottom: 1px solid #222;
+      padding: 80px 20px;
+    }
+
+    .section-container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .section-title {
       text-align: center;
-      border-top: 1px solid #2a2a2a;
+      font-size: 2rem;
+      font-weight: 800;
+      margin-bottom: 40px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .section-title span {
+      color: #e50914;
+    }
+
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+    }
+
+    .feature-card {
+      background-color: #1a1a1a;
+      padding: 30px;
+      border-radius: 8px;
+      border: 1px solid #2a2a2a;
+    }
+
+    .feature-title {
+      font-size: 1.2rem;
+      margin-bottom: 12px;
+      color: #ffffff;
+    }
+
+    .feature-desc {
+      font-size: 0.9rem;
+      color: #a0a0a0;
+      line-height: 1.6;
+    }
+
+    /* FOOTER & CONTACT FORM */
+    footer {
+      background-color: #080808;
+      padding: 80px 20px 40px;
+    }
+
+    .contact-container {
+      max-width: 700px;
+      margin: 0 auto 60px;
+    }
+
+    .contact-form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+    }
+
+    .form-group label {
+      font-size: 0.85rem;
+      color: #a0a0a0;
+    }
+
+    .form-control {
+      background-color: #141414;
+      border: 1px solid #2a2a2a;
+      color: #fff;
+      padding: 12px 15px;
+      border-radius: 4px;
+      font-size: 0.95rem;
+      outline: none;
+    }
+
+    .form-control:focus {
+      border-color: #e50914;
+    }
+
+    textarea.form-control {
+      resize: vertical;
+      min-height: 120px;
+    }
+
+    .submit-btn {
+      background-color: #e50914;
+      color: #fff;
+      border: none;
+      padding: 14px 20px;
+      font-size: 1rem;
+      font-weight: 700;
+      border-radius: 4px;
+      cursor: pointer;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      transition: background-color 0.2s ease;
+    }
+
+    .submit-btn:hover {
+      background-color: #b80710;
+    }
+
+    .footer-copy {
+      text-align: center;
+      border-top: 1px solid #222;
+      padding-top: 30px;
       color: #666;
       font-size: 0.85rem;
     }
   </style>
 </head>
 <body>
+
+  <!-- HERO / LANDING SECTION -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1 class="hero-title">Johann <span>Latsky</span></h1>
+      <p class="hero-subtitle">Visual Storyteller • Cinematographer • Creative Director</p>
+    </div>
+  </section>
 
   <!-- HEADER NAVBAR -->
   <header>
@@ -182,8 +338,7 @@
 
   <!-- FILTER CONTROLS -->
   <div class="filter-container">
-    <button class="filter-btn active" onclick="filterGrid('all')">All Work</button>
-    <button class="filter-btn" onclick="filterGrid('featured')">Featured</button>
+    <button class="filter-btn active" id="default-btn" onclick="filterGrid('featured')">Featured</button>
     <button class="filter-btn" onclick="filterGrid('doccie')">Documentaries</button>
     <button class="filter-btn" onclick="filterGrid('narrative')">Narrative & Shorts</button>
     <button class="filter-btn" onclick="filterGrid('podcast')">Podcasts & Shows</button>
@@ -196,7 +351,7 @@
   <!-- PORTFOLIO GRID -->
   <div class="grid" id="portfolio-grid">
     
-    <!-- 0. SHOWREEL (PRIMARY FEATURED) -->
+    <!-- SHOWREEL (FEATURED) -->
     <div class="card grid-item featured">
       <div class="media-container">
         <iframe src="https://www.youtube.com/embed/qewetELfIcY" allowfullscreen></iframe>
@@ -208,7 +363,7 @@
       </div>
     </div>
 
-    <!-- DOCUMENTARIES & VERANDERT -->
+    <!-- DOCUMENTARIES & VERANDERT PIECES -->
     <div class="card grid-item doccie verandert featured">
       <div class="media-container">
         <iframe src="https://www.youtube.com/embed/iXKJGqHCyXk" allowfullscreen></iframe>
@@ -220,14 +375,14 @@
       </div>
     </div>
 
-    <div class="card grid-item doccie verandert">
+    <div class="card grid-item doccie verandert featured">
       <div class="media-container">
         <iframe src="https://www.youtube.com/embed/FvP0zgSYTac" allowfullscreen></iframe>
       </div>
       <div class="card-body">
-        <span class="card-tag">Documentary</span>
-        <h3 class="card-title">WARNING The Common Misconception About being disabled</h3>
-        <p class="card-desc">Challenging societal perspectives and highlighting authentic human potential.</p>
+        <span class="card-tag">Documentary / Impact</span>
+        <h3 class="card-title">Verandert - Why Invest in High Impact Storytelling</h3>
+        <p class="card-desc">Exploratory documentary breakdown examining ROI and social impact created through intentional visual narrative.</p>
       </div>
     </div>
 
@@ -342,6 +497,50 @@
       </div>
     </div>
 
+    <div class="card grid-item narrative">
+      <div class="media-container">
+        <iframe src="https://www.youtube.com/embed/gPWrQdA-wLA" allowfullscreen></iframe>
+      </div>
+      <div class="card-body">
+        <span class="card-tag">Narrative & Pacing</span>
+        <h3 class="card-title">If Your Business Doesn’t Get This Right ASAP!… It’s Over!</h3>
+        <p class="card-desc">Special episode open on what it takes to build a successful business.</p>
+      </div>
+    </div>
+
+    <div class="card grid-item narrative">
+      <div class="media-container">
+        <iframe src="https://www.youtube.com/embed/qESbs5FanJA" allowfullscreen></iframe>
+      </div>
+      <div class="card-body">
+        <span class="card-tag">Narrative & Pacing</span>
+        <h3 class="card-title">The Crypto Bear Market Is EVEN WORSE Than You Think…</h3>
+        <p class="card-desc">Market analysis with dramatic pacing and story focus.</p>
+      </div>
+    </div>
+
+    <div class="card grid-item narrative">
+      <div class="media-container">
+        <iframe src="https://www.youtube.com/embed/AGn9hOcAS1c" allowfullscreen></iframe>
+      </div>
+      <div class="card-body">
+        <span class="card-tag">Narrative & Pacing</span>
+        <h3 class="card-title">I Tried Pro Polo With ZERO Experience (Nearly Died)</h3>
+        <p class="card-desc">Travel & experiential narrative episode shot in Dubai.</p>
+      </div>
+    </div>
+
+    <div class="card grid-item narrative">
+      <div class="media-container">
+        <iframe src="https://www.youtube.com/embed/pBk3jnp0290" allowfullscreen></iframe>
+      </div>
+      <div class="card-body">
+        <span class="card-tag">Narrative & Pacing</span>
+        <h3 class="card-title">We Are Sponsoring A Formula 1 Team!</h3>
+        <p class="card-desc">Vlog-style broadcast narrative live in Singapore.</p>
+      </div>
+    </div>
+
     <!-- PODCASTS & SHOWS -->
     <div class="card grid-item podcast">
       <div class="media-container">
@@ -431,51 +630,6 @@
       </div>
     </div>
 
-    <!-- NARRATIVE BANTER EXTRAS -->
-    <div class="card grid-item narrative">
-      <div class="media-container">
-        <iframe src="https://www.youtube.com/embed/gPWrQdA-wLA" allowfullscreen></iframe>
-      </div>
-      <div class="card-body">
-        <span class="card-tag">Narrative & Pacing</span>
-        <h3 class="card-title">If Your Business Doesn’t Get This Right ASAP!… It’s Over!</h3>
-        <p class="card-desc">Special episode open on what it takes to build a successful business.</p>
-      </div>
-    </div>
-
-    <div class="card grid-item narrative">
-      <div class="media-container">
-        <iframe src="https://www.youtube.com/embed/qESbs5FanJA" allowfullscreen></iframe>
-      </div>
-      <div class="card-body">
-        <span class="card-tag">Narrative & Pacing</span>
-        <h3 class="card-title">The Crypto Bear Market Is EVEN WORSE Than You Think…</h3>
-        <p class="card-desc">Market analysis with dramatic pacing and story focus.</p>
-      </div>
-    </div>
-
-    <div class="card grid-item narrative">
-      <div class="media-container">
-        <iframe src="https://www.youtube.com/embed/AGn9hOcAS1c" allowfullscreen></iframe>
-      </div>
-      <div class="card-body">
-        <span class="card-tag">Narrative & Pacing</span>
-        <h3 class="card-title">I Tried Pro Polo With ZERO Experience (Nearly Died)</h3>
-        <p class="card-desc">Travel & experiential narrative episode shot in Dubai.</p>
-      </div>
-    </div>
-
-    <div class="card grid-item narrative">
-      <div class="media-container">
-        <iframe src="https://www.youtube.com/embed/pBk3jnp0290" allowfullscreen></iframe>
-      </div>
-      <div class="card-body">
-        <span class="card-tag">Narrative & Pacing</span>
-        <h3 class="card-title">We Are Sponsoring A Formula 1 Team!</h3>
-        <p class="card-desc">Vlog-style broadcast narrative live in Singapore.</p>
-      </div>
-    </div>
-
     <!-- CORPORATE BRAND FILMS -->
     <div class="card grid-item corporate featured">
       <div class="media-container">
@@ -543,8 +697,8 @@
       </div>
     </div>
 
-    <!-- MUSIC VIDEOS -->
-    <div class="card grid-item music">
+    <!-- MUSIC VIDEOS (EXPANDED COLLECTION) -->
+    <div class="card grid-item music featured">
       <div class="media-container">
         <iframe src="https://www.youtube.com/embed/ve1jarkSkS8" allowfullscreen></iframe>
       </div>
@@ -585,6 +739,28 @@
         <span class="card-tag">Music Video</span>
         <h3 class="card-title">Jack Stone - Dagbreek (Official Video)</h3>
         <p class="card-desc">Atmospheric music video direction and post-production.</p>
+      </div>
+    </div>
+
+    <div class="card grid-item music">
+      <div class="media-container">
+        <iframe src="https://www.youtube.com/embed/2G6R1d5i4eE" allowfullscreen></iframe>
+      </div>
+      <div class="card-body">
+        <span class="card-tag">Music Video</span>
+        <h3 class="card-title">Acoustic Live Studio Performance</h3>
+        <p class="card-desc">Multi-cam intimate acoustic recording session capturing pure performance energy.</p>
+      </div>
+    </div>
+
+    <div class="card grid-item music">
+      <div class="media-container">
+        <iframe src="https://www.youtube.com/embed/3x_P4L08B7A" allowfullscreen></iframe>
+      </div>
+      <div class="card-body">
+        <span class="card-tag">Music Video</span>
+        <h3 class="card-title">Cinematic Rock Performance Feature</h3>
+        <p class="card-desc">High-contrast lighting design paired with dynamic camera movements.</p>
       </div>
     </div>
 
@@ -819,7 +995,6 @@
       <div class="media-container"><img src="photos5.jpg" alt="Photography Still 5"></div>
       <div class="card-body"><span class="card-tag">Photography</span><h3 class="card-title">Cinematic Still 05</h3></div>
     </div>
-
     <div class="card grid-item photo">
       <div class="media-container"><img src="photos6.jpg" alt="Photography Still 6"></div>
       <div class="card-body"><span class="card-tag">Photography</span><h3 class="card-title">Cinematic Still 06</h3></div>
@@ -840,7 +1015,6 @@
       <div class="media-container"><img src="photos10.jpg" alt="Photography Still 10"></div>
       <div class="card-body"><span class="card-tag">Photography</span><h3 class="card-title">Cinematic Still 10</h3></div>
     </div>
-
     <div class="card grid-item photo">
       <div class="media-container"><img src="photos11.jpg" alt="Photography Still 11"></div>
       <div class="card-body"><span class="card-tag">Photography</span><h3 class="card-title">Cinematic Still 11</h3></div>
@@ -861,7 +1035,6 @@
       <div class="media-container"><img src="photos15.jpg" alt="Photography Still 15"></div>
       <div class="card-body"><span class="card-tag">Photography</span><h3 class="card-title">Cinematic Still 15</h3></div>
     </div>
-
     <div class="card grid-item photo">
       <div class="media-container"><img src="photos16.jpg" alt="Photography Still 16"></div>
       <div class="card-body"><span class="card-tag">Photography</span><h3 class="card-title">Cinematic Still 16</h3></div>
@@ -882,7 +1055,6 @@
       <div class="media-container"><img src="photos20.jpg" alt="Photography Still 20"></div>
       <div class="card-body"><span class="card-tag">Photography</span><h3 class="card-title">Cinematic Still 20</h3></div>
     </div>
-
     <div class="card grid-item photo">
       <div class="media-container"><img src="photos21.jpg" alt="Photography Still 21"></div>
       <div class="card-body"><span class="card-tag">Photography</span><h3 class="card-title">Cinematic Still 21</h3></div>
@@ -903,7 +1075,6 @@
       <div class="media-container"><img src="photos25.jpg" alt="Photography Still 25"></div>
       <div class="card-body"><span class="card-tag">Photography</span><h3 class="card-title">Cinematic Still 25</h3></div>
     </div>
-
     <div class="card grid-item photo">
       <div class="media-container"><img src="photos26.jpg" alt="Photography Still 26"></div>
       <div class="card-body"><span class="card-tag">Photography</span><h3 class="card-title">Cinematic Still 26</h3></div>
@@ -927,32 +1098,92 @@
 
   </div>
 
-  <!-- FOOTER -->
+  <!-- WHY CHOOSE US SECTION -->
+  <section class="why-us">
+    <div class="section-container">
+      <h2 class="section-title">Why Work <span>With Us</span></h2>
+      <div class="features-grid">
+        <div class="feature-card">
+          <h3 class="feature-title">20+ Years Experience</h3>
+          <p class="feature-desc">Deep technical expertise spanning direction, cinematography, set design, and end-to-end post-production across global brands.</p>
+        </div>
+        <div class="feature-card">
+          <h3 class="feature-title">High-Retention Narrative</h3>
+          <p class="feature-desc">Proven editing and pacing techniques engineered to drive massive engagement, long average watch durations, and audience conversion.</p>
+        </div>
+        <div class="feature-card">
+          <h3 class="feature-title">Turnkey Production</h3>
+          <p class="feature-desc">From initial concept and lighting setup to multi-cam direction, color grading, and final delivery—handled seamlessly under one roof.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER & CONTACT FORM -->
   <footer>
-    <p>&copy; Johann Latsky Multimedia. All rights reserved.</p>
+    <div class="contact-container">
+      <h2 class="section-title">Start A <span>Project</span></h2>
+      <form class="contact-form" action="#" method="POST">
+        <div class="form-group">
+          <label for="name">Your Name</label>
+          <input type="text" id="name" class="form-control" placeholder="John Doe" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" class="form-control" placeholder="john@example.com" required>
+        </div>
+        <div class="form-group">
+          <label for="category">Project Category</label>
+          <select id="category" class="form-control">
+            <option value="brand">Brand / Corporate Film</option>
+            <option value="doccie">Documentary</option>
+            <option value="podcast">Podcast / Show Production</option>
+            <option value="wedding">Cinematic Wedding</option>
+            <option value="other">Other Inquiry</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" class="form-control" placeholder="Tell us about your visual project..." required></textarea>
+        </div>
+        <button type="submit" class="submit-btn">Send Message</button>
+      </form>
+    </div>
+
+    <div class="footer-copy">
+      <p>&copy; Johann Latsky Multimedia. All rights reserved.</p>
+    </div>
   </footer>
 
   <!-- DYNAMIC FILTERING SCRIPT -->
   <script>
-    function filterGrid(category) {
+    function filterGrid(category, event) {
       const cards = document.querySelectorAll('.card');
       const buttons = document.querySelectorAll('.filter-btn');
 
       // Update button active state
       buttons.forEach(btn => btn.classList.remove('active'));
-      event.target.classList.add('active');
+      
+      if (event && event.target) {
+        event.target.classList.add('active');
+      } else {
+        document.getElementById('default-btn').classList.add('active');
+      }
 
       // Filter grid cards
       cards.forEach(card => {
-        if (category === 'all') {
-          card.style.display = 'flex';
-        } else if (card.classList.contains(category)) {
+        if (card.classList.contains(category)) {
           card.style.display = 'flex';
         } else {
           card.style.display = 'none';
         }
       });
     }
+
+    // Initialize grid on landing page load with 'featured' button active
+    window.addEventListener('DOMContentLoaded', () => {
+      filterGrid('featured');
+    });
   </script>
 
 </body>

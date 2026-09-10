@@ -3,7 +3,68 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Latsky Multimedia | Creative Producer & Content Creator</title>
+  
+  <!-- SEO PRIMARY META TAGS -->
+  <title>Latsky Multimedia | Creative Producer & Video Production Cape Town</title>
+  <meta name="description" content="Johann Latsky Multimedia is a premier Cape Town film studio & video producer specializing in corporate brand films, documentaries, podcasts, music videos, and cinematic weddings across South Africa.">
+  <meta name="keywords" content="Johann Latsky, Latsky Multimedia, Video Production Cape Town, South Africa Videographer, Corporate Film Director, Documentary Producer, Cinematic Weddings Western Cape, Verandert Impact Media">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.latskymultimedia.co.za/">
+
+  <!-- GEO LOCATION TAGS FOR LOCAL SEARCH VISIBILITY -->
+  <meta name="geo.region" content="ZA-WC">
+  <meta name="geo.placename" content="Cape Town, Western Cape, South Africa">
+  <meta name="geo.position" content="-33.9249;18.4241">
+  <meta name="ICBM" content="-33.9249, 18.4241">
+
+  <!-- OPEN GRAPH / FACEBOOK SOCIAL PREVIEWS -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.latskymultimedia.co.za/">
+  <meta property="og:title" content="Latsky Multimedia | Creative Producer & Content Creator">
+  <meta property="og:description" content="20+ years of high-retention video production, brand stories, and documentary filmmaking based in Cape Town, South Africa.">
+  <meta property="og:image" content="https://img.youtube.com/vi/qewetELfIcY/maxresdefault.jpg">
+
+  <!-- SCHEMA.ORG STRUCTURED DATA FOR GOOGLE SEARCH -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Latsky Multimedia",
+    "image": "https://img.youtube.com/vi/qewetELfIcY/maxresdefault.jpg",
+    "@id": "https://www.latskymultimedia.co.za",
+    "url": "https://www.latskymultimedia.co.za",
+    "telephone": "",
+    "priceRange": "$$$",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Cape Town",
+      "addressRegion": "Western Cape",
+      "addressCountry": "ZA"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": -33.9249,
+      "longitude": 18.4241
+    },
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday"
+      ],
+      "opens": "08:00",
+      "closes": "17:00"
+    },
+    "sameAs": [
+      "https://www.facebook.com/newwworldimmigration",
+      "https://www.youtube.com"
+    ]
+  }
+  </script>
+
   <style>
     /* RESET & BASE STYLES */
     * {
@@ -150,6 +211,7 @@
       width: 100%;
       padding-top: 56.25%; /* 16:9 Aspect Ratio */
       background-color: #000;
+      cursor: pointer;
     }
 
     .media-container iframe,
@@ -161,6 +223,30 @@
       height: 100%;
       border: 0;
       object-fit: cover;
+    }
+
+    .play-button {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 54px;
+      height: 54px;
+      background-color: rgba(229, 9, 20, 0.9);
+      color: #fff;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.3rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.6);
+      transition: transform 0.2s ease, background-color 0.2s ease;
+      z-index: 2;
+    }
+
+    .media-container:hover .play-button {
+      transform: translate(-50%, -50%) scale(1.1);
+      background-color: #e50914;
     }
 
     .card-body {
@@ -350,7 +436,7 @@
   <section class="hero">
     <div class="hero-content">
       <h1 class="hero-title">Johann <span>Latsky</span></h1>
-      <p class="hero-subtitle">Visual Storyteller • Producer • Content Creator</p>
+      <p class="hero-subtitle">Visual Storyteller • Creative Producer • Content Director | Cape Town, South Africa</p>
     </div>
   </section>
 
@@ -378,8 +464,9 @@
     
     <!-- SHOWREEL (FEATURED) -->
     <div class="card grid-item featured">
-      <div class="media-container">
-        <iframe src="https://www.youtube.com/embed/qewetELfIcY" allowfullscreen></iframe>
+      <div class="media-container" onclick="loadVideo(this, 'qewetELfIcY')">
+        <img src="https://img.youtube.com/vi/qewetELfIcY/hqdefault.jpg" alt="Johann Latsky Showreel Preview" loading="lazy" decoding="async">
+        <div class="play-button">▶</div>
       </div>
       <div class="card-body">
         <span class="card-tag">Showreel</span>
@@ -390,8 +477,9 @@
 
     <!-- DOCUMENTARIES & VERANDERT PIECES -->
     <div class="card grid-item doccie verandert featured">
-      <div class="media-container">
-        <iframe src="https://www.youtube.com/embed/iXKJGqHCyXk" allowfullscreen></iframe>
+      <div class="media-container" onclick="loadVideo(this, 'iXKJGqHCyXk')">
+        <img src="https://img.youtube.com/vi/iXKJGqHCyXk/hqdefault.jpg" alt="Yzerfontein Community Feature Preview" loading="lazy" decoding="async">
+        <div class="play-button">▶</div>
       </div>
       <div class="card-body">
         <span class="card-tag">Documentary / Impact</span>
@@ -401,8 +489,9 @@
     </div>
 
     <div class="card grid-item doccie verandert featured">
-      <div class="media-container">
-        <iframe src="https://www.youtube.com/embed/FvP0zgSYTac" allowfullscreen></iframe>
+      <div class="media-container" onclick="loadVideo(this, 'FvP0zgSYTac')">
+        <img src="https://img.youtube.com/vi/FvP0zgSYTac/hqdefault.jpg" alt="Verandert High Impact Storytelling Preview" loading="lazy" decoding="async">
+        <div class="play-button">▶</div>
       </div>
       <div class="card-body">
         <span class="card-tag">Documentary / Impact</span>
@@ -412,8 +501,9 @@
     </div>
 
     <div class="card grid-item doccie">
-      <div class="media-container">
-        <iframe src="https://www.youtube.com/embed/fZSpv9MAp_M" allowfullscreen></iframe>
+      <div class="media-container" onclick="loadVideo(this, 'fZSpv9MAp_M')">
+        <img src="https://img.youtube.com/vi/fZSpv9MAp_M/hqdefault.jpg" alt="Heart Transplant Patient Preview" loading="lazy" decoding="async">
+        <div class="play-button">▶</div>
       </div>
       <div class="card-body">
         <span class="card-tag">Documentary</span>
@@ -423,8 +513,9 @@
     </div>
 
     <div class="card grid-item doccie">
-      <div class="media-container">
-        <iframe src="https://www.youtube.com/embed/PpzNiegEdxE" allowfullscreen></iframe>
+      <div class="media-container" onclick="loadVideo(this, 'PpzNiegEdxE')">
+        <img src="https://img.youtube.com/vi/PpzNiegEdxE/hqdefault.jpg" alt="Hollywood in my Huis BTS Preview" loading="lazy" decoding="async">
+        <div class="play-button">▶</div>
       </div>
       <div class="card-body">
         <span class="card-tag">Documentary</span>
@@ -434,8 +525,9 @@
     </div>
 
     <div class="card grid-item doccie">
-      <div class="media-container">
-        <iframe src="https://www.youtube.com/embed/T298L09s3cc" allowfullscreen></iframe>
+      <div class="media-container" onclick="loadVideo(this, 'T298L09s3cc')">
+        <img src="https://img.youtube.com/vi/T298L09s3cc/hqdefault.jpg" alt="Louw Venter Interview Preview" loading="lazy" decoding="async">
+        <div class="play-button">▶</div>
       </div>
       <div class="card-body">
         <span class="card-tag">Documentary</span>
@@ -445,8 +537,9 @@
     </div>
 
     <div class="card grid-item doccie">
-      <div class="media-container">
-        <iframe src="https://www.youtube.com/embed/USDRcztizyI" allowfullscreen></iframe>
+      <div class="media-container" onclick="loadVideo(this, 'USDRcztizyI')">
+        <img src="https://img.youtube.com/vi/USDRcztizyI/hqdefault.jpg" alt="George's World Preview" loading="lazy" decoding="async">
+        <div class="play-button">▶</div>
       </div>
       <div class="card-body">
         <span class="card-tag">Documentary</span>
@@ -456,8 +549,9 @@
     </div>
 
     <div class="card grid-item doccie">
-      <div class="media-container">
-        <iframe src="https://www.youtube.com/embed/GL2NurgopeQ" allowfullscreen></iframe>
+      <div class="media-container" onclick="loadVideo(this, 'GL2NurgopeQ')">
+        <img src="https://img.youtube.com/vi/GL2NurgopeQ/hqdefault.jpg" alt="Camera BTS Preview" loading="lazy" decoding="async">
+        <div class="play-button">▶</div>
       </div>
       <div class="card-body">
         <span class="card-tag">Documentary</span>
@@ -467,8 +561,9 @@
     </div>
 
     <div class="card grid-item doccie">
-      <div class="media-container">
-        <iframe src="https://www.youtube.com/embed/n9jq8mqak2Y" allowfullscreen></iframe>
+      <div class="media-container" onclick="loadVideo(this, 'n9jq8mqak2Y')">
+        <img src="https://img.youtube.com/vi/n9jq8mqak2Y/hqdefault.jpg" alt="Matriekdans BTS Preview" loading="lazy" decoding="async">
+        <div class="play-button">▶</div>
       </div>
       <div class="card-body">
         <span class="card-tag">Documentary</span>
@@ -479,8 +574,9 @@
 
     <!-- NARRATIVE & SHORT FILMS -->
     <div class="card grid-item narrative featured">
-      <div class="media-container">
-        <iframe src="https://www.youtube.com/embed/QDIR0q1jndg" allowfullscreen></iframe>
+      <div class="media-container" onclick="loadVideo(this, 'QDIR0q1jndg')">
+        <img src="https://img.youtube.com/vi/QDIR0q1jndg/hqdefault.jpg" alt="Short Film Showcase Preview" loading="lazy" decoding="async">
+        <div class="play-button">▶</div>
       </div>
       <div class="card-body">
         <span class="card-tag">Narrative Drama</span>
@@ -490,8 +586,9 @@
     </div>
 
     <div class="card grid-item narrative">
-      <div class="media-container">
-        <iframe src="https://www.youtube.com/embed/8_AOAgHUVfQ" allowfullscreen></iframe>
+      <div class="media-container" onclick="loadVideo(this, '8_AOAgHUVfQ')">
+        <img src="https://img.youtube.com/vi/8_AOAgHUVfQ/hqdefault.jpg" alt="Erin and Graham Invite Preview" loading="lazy" decoding="async">
+        <div class="play-button">▶</div>
       </div>
       <div class="card-body">
         <span class="card-tag">Narrative Short</span>
@@ -501,8 +598,9 @@
     </div>
 
     <div class="card grid-item narrative">
-      <div class="media-container">
-        <iframe src="https://www.youtube.com/embed/FhYs2or_1dY" allowfullscreen></iframe>
+      <div class="media-container" onclick="loadVideo(this, 'FhYs2or_1dY')">
+        <img src="https://img.youtube.com/vi/FhYs2or_1dY/hqdefault.jpg" alt="Thunderball Run Preview" loading="lazy" decoding="async">
+        <div class="play-button">▶</div>
       </div>
       <div class="card-body">
         <span class="card-tag">Narrative Short</span>
@@ -513,7 +611,7 @@
 
     <div class="card grid-item narrative">
       <div class="media-container">
-        <iframe src="https://player.vimeo.com/video/365666801" allowfullscreen></iframe>
+        <iframe src="https://player.vimeo.com/video/365666801" allowfullscreen loading="lazy"></iframe>
       </div>
       <div class="card-body">
         <span class="card-tag">Narrative Short</span>
@@ -523,8 +621,9 @@
     </div>
 
     <div class="card grid-item narrative">
-      <div class="media-container">
-        <iframe src="https://www.youtube.com/embed/gPWrQdA-wLA" allowfullscreen></iframe>
+      <div class="media-container" onclick="loadVideo(this, 'gPWrQdA-wLA')">
+        <img src="https://img.youtube.com/vi/gPWrQdA-wLA/hqdefault.jpg" alt="Business Episode Preview" loading="lazy" decoding="async">
+        <div class="play-button">▶</div>
       </div>
       <div class="card-body">
         <span class="card-tag">Narrative & Pacing</span>
@@ -534,8 +633,9 @@
     </div>
 
     <div class="card grid-item narrative">
-      <div class="media-container">
-        <iframe src="https://www.youtube.com/embed/qESbs5FanJA" allowfullscreen></iframe>
+      <div class="media-container" onclick="loadVideo(this, 'qESbs5FanJA')">
+        <img src="https://img.youtube.com/vi/qESbs5FanJA/hqdefault.jpg" alt="Crypto Bear Market Preview" loading="lazy" decoding="async">
+        <div class="play-button">▶</div>
       </div>
       <div class="card-body">
         <span class="card-tag">Narrative & Pacing</span>
@@ -545,8 +645,9 @@
     </div>
 
     <div class="card grid-item narrative">
-      <div class="media-container">
-        <iframe src="https://www.youtube.com/embed/AGn9hOcAS1c" allowfullscreen></iframe>
+      <div class="media-container" onclick="loadVideo(this, 'AGn9hOcAS1c')">
+        <img src="https://img.youtube.com/vi/AGn9hOcAS1c/hqdefault.jpg" alt="Pro Polo Dubai Preview" loading="lazy" decoding="async">
+        <div class="play-button">▶</div>
       </div>
       <div class="card-body">
         <span class="card-tag">Narrative & Pacing</span>
@@ -556,8 +657,9 @@
     </div>
 
     <div class="card grid-item narrative">
-      <div class="media-container">
-        <iframe src="https://www.youtube.com/embed/pBk3jnp0290" allowfullscreen></iframe>
+      <div class="media-container" onclick="loadVideo(this, 'pBk3jnp0290')">
+        <img src="https://img.youtube.com/vi/pBk3jnp0290/hqdefault.jpg" alt="Formula 1 Singapore Preview" loading="lazy" decoding="async">
+        <div class="play-button">▶</div>
       </div>
       <div class="card-body">
         <span class="card-tag">Narrative & Pacing</span>
@@ -568,8 +670,9 @@
 
     <!-- PODCASTS -->
     <div class="card grid-item podcast">
-      <div class="media-container">
-        <iframe src="https://www.youtube.com/embed/ocySh5uZvRs" allowfullscreen></iframe>
+      <div class="media-container" onclick="loadVideo(this, 'ocySh5uZvRs')">
+        <img src="https://img.youtube.com/vi/ocySh5uZvRs/hqdefault.jpg" alt="Ran Neuner Interview Preview" loading="lazy" decoding="async">
+        <div class="play-button">▶</div>
       </div>
       <div class="card-body">
         <span class="card-tag">Podcast & Show</span>
@@ -579,8 +682,9 @@
     </div>
 
     <div class="card grid-item podcast featured">
-      <div class="media-container">
-        <iframe src="https://www.youtube.com/embed/X2rEopyT3mw" allowfullscreen></iframe>
+      <div class="media-container" onclick="loadVideo(this, 'X2rEopyT3mw')">
+        <img src="https://img.youtube.com/vi/X2rEopyT3mw/hqdefault.jpg" alt="Jason Derulo Interview Preview" loading="lazy" decoding="async">
+        <div class="play-button">▶</div>
       </div>
       <div class="card-body">
         <span class="card-tag">Podcast & Show</span>
@@ -590,8 +694,9 @@
     </div>
 
     <div class="card grid-item podcast">
-      <div class="media-container">
-        <iframe src="https://www.youtube.com/embed/u3g9qYOFHEU" allowfullscreen></iframe>
+      <div class="media-container" onclick="loadVideo(this, 'u3g9qYOFHEU')">
+        <img src="https://img.youtube.com/vi/u3g9qYOFHEU/hqdefault.jpg" alt="Ben Cowen Interview Preview" loading="lazy" decoding="async">
+        <div class="play-button">▶</div>
       </div>
       <div class="card-body">
         <span class="card-tag">Podcast & Show</span>
@@ -601,8 +706,9 @@
     </div>
 
     <div class="card grid-item podcast">
-      <div class="media-container">
-        <iframe src="https://www.youtube.com/embed/hVsmtNH5zJk" allowfullscreen></iframe>
+      <div class="media-container" onclick="loadVideo(this, 'hVsmtNH5zJk')">
+        <img src="https://img.youtube.com/vi/hVsmtNH5zJk/hqdefault.jpg" alt="OSF Story Preview" loading="lazy" decoding="async">
+        <div class="play-button">▶</div>
       </div>
       <div class="card-body">
         <span class="card-tag">Podcast & Show</span>
@@ -612,8 +718,9 @@
     </div>
 
     <div class="card grid-item podcast">
-      <div class="media-container">
-        <iframe src="https://www.youtube.com/embed/yltqZsmSVbU" allowfullscreen></iframe>
+      <div class="media-container" onclick="loadVideo(this, 'yltqZsmSVbU')">
+        <img src="https://img.youtube.com/vi/yltqZsmSVbU/hqdefault.jpg" alt="Haseeb Qureshi Interview Preview" loading="lazy" decoding="async">
+        <div class="play-button">▶</div>
       </div>
       <div class="card-body">
         <span class="card-tag">Podcast & Show</span>
@@ -623,8 +730,9 @@
     </div>
 
     <div class="card grid-item podcast">
-      <div class="media-container">
-        <iframe src="https://www.youtube.com/embed/n1KVVnE0HP0" allowfullscreen></iframe>
+      <div class="media-container" onclick="loadVideo(this, 'n1KVVnE0HP0')">
+        <img src="https://img.youtube.com/vi/n1KVVnE0HP0/hqdefault.jpg" alt="Santiago Santos Interview Preview" loading="lazy" decoding="async">
+        <div class="play-button">▶</div>
       </div>
       <div class="card-body">
         <span class="card-tag">Podcast & Show</span>
@@ -634,8 +742,9 @@
     </div>
 
     <div class="card grid-item podcast">
-      <div class="media-container">
-        <iframe src="https://www.youtube.com/embed/Z0qmz0AMfQ4" allowfullscreen></iframe>
+      <div class="media-container" onclick="loadVideo(this, 'Z0qmz0AMfQ4')">
+        <img src="https://img.youtube.com/vi/Z0qmz0AMfQ4/hqdefault.jpg" alt="Bart Smith Interview Preview" loading="lazy" decoding="async">
+        <div class="play-button">▶</div>
       </div>
       <div class="card-body">
         <span class="card-tag">Podcast & Show</span>
@@ -645,8 +754,9 @@
     </div>
 
     <div class="card grid-item podcast">
-      <div class="media-container">
-        <iframe src="https://www.youtube.com/embed/Utfb8hrwJOc" allowfullscreen></iframe>
+      <div class="media-container" onclick="loadVideo(this, 'Utfb8hrwJOc')">
+        <img src="https://img.youtube.com/vi/Utfb8hrwJOc/hqdefault.jpg" alt="Jiahao Sun AI Interview Preview" loading="lazy" decoding="async">
+        <div class="play-button">▶</div>
       </div>
       <div class="card-body">
         <span class="card-tag">Podcast & Show</span>
@@ -657,103 +767,87 @@
 
     <!-- CORPORATE BRAND FILMS -->
     <div class="card grid-item corporate featured">
-      <div class="media-container">
-        <iframe src="https://www.youtube.com/embed/V3YknBiaw38" allowfullscreen></iframe>
+      <div class="media-container" onclick="loadVideo(this, 'V3YknBiaw38')">
+        <img src="https://img.youtube.com/vi/V3YknBiaw38/hqdefault.jpg" alt="Passion for Speed Preview" loading="lazy" decoding="async">
+        <div class="play-button">▶</div>
       </div>
       <div class="card-body">
         <span class="card-tag">Corporate Brand Film</span>
-        <h3 class="card-title">Passion for speed (Oily Short Film</h3>
+        <h3 class="card-title">Passion for speed (Oily Short Film)</h3>
         <p class="card-desc">B2B product launches and corporate highlights designed for high-conversion stakeholder presentation.</p>
       </div>
     </div>
     
-        <div class="card grid-item corporate">
+    <div class="card grid-item corporate">
       <div class="media-container">
-        <iframe src="https://player.vimeo.com/video/329356991" allowfullscreen></iframe>
+        <iframe src="https://player.vimeo.com/video/329356991" allowfullscreen loading="lazy"></iframe>
       </div>
       <div class="card-body">
         <span class="card-tag">Corporate Brand Film</span>
         <h3 class="card-title">NSE Corporate Film</h3>
         <p class="card-desc">The Thunderball Launch Party highlight reel.</p>
-      </div>
-    </div>
-
-        <div class="card grid-item corporate">
-      <div class="media-container">
-        <iframe src="https://www.youtube.com/embed/MJE9cHF4yB4" allowfullscreen></iframe>
-      </div>
-      <div class="card-body">
-        <span class="card-tag">Corporate Brand Film</span>
-        <h3 class="card-title">All Weather Capital</h3>
-        <p class="card-desc">"For Positive Outcomes" is more than our strapline.</p>
-      </div>
-    </div>
-    
-<div class="card grid-item corporate">
-  <div class="media-container">
-    <iframe 
-      src="https://www.facebook.com/newwworldimmigration/videos/2059097420819306/show_text=false" 
-      style="border:none;overflow:hidden" 
-      scrolling="no" 
-      frameborder="0" 
-      allowfullscreen="true" 
-      allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
-    </iframe>
-  </div>
-  <div class="card-body">
-    <span class="card-tag">Facebook Video / Campaign</span>
-    <h3 class="card-title">New World Immigration - I am Where I Want to Be</h3>
-    <p class="card-desc">High-impact agency pitch video narrative hosted on Facebook.</p>
-  </div>
-</div>
-    
-            <div class="card grid-item corporate">
-      <div class="media-container">
-        <iframe src="https://player.vimeo.com/video/329356991" allowfullscreen></iframe>
-      </div>
-      <div class="card-body">
-        <span class="card-tag">Corporate Brand Film</span>
-        <h3 class="card-title">NSE Corporate Film</h3>
-        <p class="card-desc">The Thunderball Launch Party highlight reel.</p>
-      </div>
-    </div>
-
-        <div class="card grid-item corporate">
-      <div class="media-container">
-        <iframe src="https://www.youtube.com/embed/MJ3NoBI4578" allowfullscreen></iframe>
-      </div>
-      <div class="card-body">
-        <span class="card-tag">Corporate Brand Film</span>
-        <h3 class="card-title">Mandela day Camphill Village 2018</h3>
-        <p class="card-desc">Camphill Village West Coast</p>
-      </div>
-    </div>
-
-        <div class="card grid-item corporate">
-      <div class="media-container">
-        <iframe src="https://www.youtube.com/embed/N4qmrYW01tg" allowfullscreen></iframe>
-      </div>
-      <div class="card-body">
-        <span class="card-tag">Corporate Brand Film</span>
-        <h3 class="card-title">Gibson USA 120 years Party Trailer</h3>
-        <p class="card-desc">Gibson Guitars</p>
-      </div>
-    </div>
-
-            <div class="card grid-item corporate">
-      <div class="media-container">
-        <iframe src="https://www.youtube.com/embed/Hn2DKocoo1A" allowfullscreen></iframe>
-      </div>
-      <div class="card-body">
-        <span class="card-tag">Corporate Brand Film</span>
-        <h3 class="card-title">STBB 4 Good MTB Challenge 2017</h3>
-        <p class="card-desc">The aim of this event is to raise funds for the Miles for Smiles Foundation.</p>
       </div>
     </div>
 
     <div class="card grid-item corporate">
       <div class="media-container">
-        <iframe src="https://www.youtube.com/embed/YPQVFch11rU" allowfullscreen></iframe>
+        <iframe 
+          src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fnewwworldimmigration%2Fvideos%2F2059097420819306%2F&show_text=false" 
+          style="border:none;overflow:hidden" 
+          scrolling="no" 
+          frameborder="0" 
+          allowfullscreen="true" 
+          loading="lazy"
+          allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
+        </iframe>
+      </div>
+      <div class="card-body">
+        <span class="card-tag">Facebook Video / Campaign</span>
+        <h3 class="card-title">New World Immigration - I am Where I Want to Be</h3>
+        <p class="card-desc">High-impact agency pitch video narrative hosted on Facebook.</p>
+      </div>
+    </div>
+
+    <div class="card grid-item corporate">
+      <div class="media-container" onclick="loadVideo(this, 'MJ3NoBI4578')">
+        <img src="https://img.youtube.com/vi/MJ3NoBI4578/hqdefault.jpg" alt="Camphill Village Preview" loading="lazy" decoding="async">
+        <div class="play-button">▶</div>
+      </div>
+      <div class="card-body">
+        <span class="card-tag">Corporate Brand Film</span>
+        <h3 class="card-title">Mandela day Camphill Village 2018</h3>
+        <p class="card-desc">Camphill Village West Coast impact video.</p>
+      </div>
+    </div>
+
+    <div class="card grid-item corporate">
+      <div class="media-container" onclick="loadVideo(this, 'N4qmrYW01tg')">
+        <img src="https://img.youtube.com/vi/N4qmrYW01tg/hqdefault.jpg" alt="Gibson USA Preview" loading="lazy" decoding="async">
+        <div class="play-button">▶</div>
+      </div>
+      <div class="card-body">
+        <span class="card-tag">Corporate Brand Film</span>
+        <h3 class="card-title">Gibson USA 120 years Party Trailer</h3>
+        <p class="card-desc">Gibson Guitars anniversary celebration event film.</p>
+      </div>
+    </div>
+
+    <div class="card grid-item corporate">
+      <div class="media-container" onclick="loadVideo(this, 'Hn2DKocoo1A')">
+        <img src="https://img.youtube.com/vi/Hn2DKocoo1A/hqdefault.jpg" alt="STBB Challenge Preview" loading="lazy" decoding="async">
+        <div class="play-button">▶</div>
+      </div>
+      <div class="card-body">
+        <span class="card-tag">Corporate Brand Film</span>
+        <h3 class="card-title">STBB 4 Good MTB Challenge 2017</h3>
+        <p class="card-desc">Raising funds for the Miles for Smiles Foundation.</p>
+      </div>
+    </div>
+
+    <div class="card grid-item corporate">
+      <div class="media-container" onclick="loadVideo(this, 'YPQVFch11rU')">
+        <img src="https://img.youtube.com/vi/YPQVFch11rU/hqdefault.jpg" alt="FCB Chemistry Pitch Preview" loading="lazy" decoding="async">
+        <div class="play-button">▶</div>
       </div>
       <div class="card-body">
         <span class="card-tag">Corporate Brand Film</span>
@@ -764,7 +858,7 @@
 
     <div class="card grid-item corporate">
       <div class="media-container">
-        <iframe src="https://player.vimeo.com/video/376521138" allowfullscreen></iframe>
+        <iframe src="https://player.vimeo.com/video/376521138" allowfullscreen loading="lazy"></iframe>
       </div>
       <div class="card-body">
         <span class="card-tag">Corporate Brand Film</span>
@@ -775,7 +869,7 @@
 
     <div class="card grid-item corporate">
       <div class="media-container">
-        <iframe src="https://player.vimeo.com/video/376520659" allowfullscreen></iframe>
+        <iframe src="https://player.vimeo.com/video/376520659" allowfullscreen loading="lazy"></iframe>
       </div>
       <div class="card-body">
         <span class="card-tag">Corporate Brand Film</span>
@@ -785,8 +879,9 @@
     </div>
     
     <div class="card grid-item corporate">
-      <div class="media-container">
-        <iframe src="https://www.youtube.com/embed/MJE9cHF4yB4" allowfullscreen></iframe>
+      <div class="media-container" onclick="loadVideo(this, 'MJE9cHF4yB4')">
+        <img src="https://img.youtube.com/vi/MJE9cHF4yB4/hqdefault.jpg" alt="All Weather Capital Preview" loading="lazy" decoding="async">
+        <div class="play-button">▶</div>
       </div>
       <div class="card-body">
         <span class="card-tag">Corporate Brand Film</span>
@@ -796,8 +891,9 @@
     </div>
 
     <div class="card grid-item corporate">
-      <div class="media-container">
-        <iframe src="https://www.youtube.com/embed/ThCsvp-ThCw" allowfullscreen></iframe>
+      <div class="media-container" onclick="loadVideo(this, 'ThCsvp-ThCw')">
+        <img src="https://img.youtube.com/vi/ThCsvp-ThCw/hqdefault.jpg" alt="Travelport LIVE Preview" loading="lazy" decoding="async">
+        <div class="play-button">▶</div>
       </div>
       <div class="card-body">
         <span class="card-tag">Corporate Brand Film</span>
@@ -808,52 +904,57 @@
 
     <!-- MUSIC VIDEOS -->
     <div class="card grid-item music featured">
-      <div class="media-container">
-        <iframe src="https://www.youtube.com/embed/O3c-9GQvJOg" allowfullscreen></iframe>
+      <div class="media-container" onclick="loadVideo(this, 'O3c-9GQvJOg')">
+        <img src="https://img.youtube.com/vi/O3c-9GQvJOg/hqdefault.jpg" alt="Magic Mountain Music Video Preview" loading="lazy" decoding="async">
+        <div class="play-button">▶</div>
       </div>
       <div class="card-body">
         <span class="card-tag">Music / VFX</span>
         <h3 class="card-title">Magic Mountain (Official Music Video) | Christine Petts | Witch Folklore Tale</h3>
-        <p class="card-desc">Would you dare climb Magic Mountain at night? My new video dives into the tale "Die Heks van Heksrivier"</p>
+        <p class="card-desc">Would you dare climb Magic Mountain at night? Folklore tale inspired by "Die Heks van Heksrivier".</p>
       </div>
     </div>
 
-        <div class="card grid-item music">
-      <div class="media-container">
-        <iframe src="https://www.youtube.com/embed/RITvYt_YsX4" allowfullscreen></iframe>
+    <div class="card grid-item music">
+      <div class="media-container" onclick="loadVideo(this, 'RITvYt_YsX4')">
+        <img src="https://img.youtube.com/vi/RITvYt_YsX4/hqdefault.jpg" alt="Vraagstuk Lyric Video Preview" loading="lazy" decoding="async">
+        <div class="play-button">▶</div>
       </div>
       <div class="card-body">
         <span class="card-tag">Music Video</span>
         <h3 class="card-title">Vraagstuk (Official Lyric Video) by Jack Stone</h3>
-        <p class="card-desc">Officaial Lyric Video</p>
-      </div>
-    </div>
-
-        <div class="card grid-item music">
-      <div class="media-container">
-        <iframe src="https://www.youtube.com/embed/vkXDnwV_-QM" allowfullscreen></iframe>
-      </div>
-      <div class="card-body">
-        <span class="card-tag">Music Video</span>
-        <h3 class="card-title">To Love Somebody (BeeGees cover) By CHRISTINE PETTS (video Johann Latsky)</h3>
-        <p class="card-desc">(Official music video).</p>
+        <p class="card-desc">Official Lyric Video produced for Jack Stone.</p>
       </div>
     </div>
 
     <div class="card grid-item music">
-      <div class="media-container">
-        <iframe src="https://www.youtube.com/embed/_gBGGlBBn1A" allowfullscreen></iframe>
+      <div class="media-container" onclick="loadVideo(this, 'vkXDnwV_-QM')">
+        <img src="https://img.youtube.com/vi/vkXDnwV_-QM/hqdefault.jpg" alt="To Love Somebody Cover Preview" loading="lazy" decoding="async">
+        <div class="play-button">▶</div>
+      </div>
+      <div class="card-body">
+        <span class="card-tag">Music Video</span>
+        <h3 class="card-title">To Love Somebody (BeeGees cover) By CHRISTINE PETTS</h3>
+        <p class="card-desc">Official music video performance capture.</p>
+      </div>
+    </div>
+
+    <div class="card grid-item music">
+      <div class="media-container" onclick="loadVideo(this, '_gBGGlBBn1A')">
+        <img src="https://img.youtube.com/vi/_gBGGlBBn1A/hqdefault.jpg" alt="Klawer Skade Maak Preview" loading="lazy" decoding="async">
+        <div class="play-button">▶</div>
       </div>
       <div class="card-body">
         <span class="card-tag">Music Video</span>
         <h3 class="card-title">Klawer - Skade maak (Official Music Video)</h3>
-        <p class="card-desc">(Official music video).</p>
+        <p class="card-desc">Official music video post-production and editing.</p>
       </div>
     </div>
 
     <div class="card grid-item music">
-      <div class="media-container">
-        <iframe src="https://www.youtube.com/embed/ve1jarkSkS8" allowfullscreen></iframe>
+      <div class="media-container" onclick="loadVideo(this, 've1jarkSkS8')">
+        <img src="https://img.youtube.com/vi/ve1jarkSkS8/hqdefault.jpg" alt="Faxon VFX Breakdown Preview" loading="lazy" decoding="async">
+        <div class="play-button">▶</div>
       </div>
       <div class="card-body">
         <span class="card-tag">Music Video</span>
@@ -863,8 +964,9 @@
     </div>
 
     <div class="card grid-item music">
-      <div class="media-container">
-        <iframe src="https://www.youtube.com/embed/4N_UEfaz3Ag" allowfullscreen></iframe>
+      <div class="media-container" onclick="loadVideo(this, '4N_UEfaz3Ag')">
+        <img src="https://img.youtube.com/vi/4N_UEfaz3Ag/hqdefault.jpg" alt="Brynn Live Performance Preview" loading="lazy" decoding="async">
+        <div class="play-button">▶</div>
       </div>
       <div class="card-body">
         <span class="card-tag">Music Video</span>
@@ -873,20 +975,22 @@
       </div>
     </div>
 
-        <div class="card grid-item music">
-      <div class="media-container">
-        <iframe src="https://www.youtube.com/embed/Dt4I6aRkG5U" allowfullscreen></iframe>
+    <div class="card grid-item music">
+      <div class="media-container" onclick="loadVideo(this, 'Dt4I6aRkG5U')">
+        <img src="https://img.youtube.com/vi/Dt4I6aRkG5U/hqdefault.jpg" alt="Jack Stone Tour Refleksie Preview" loading="lazy" decoding="async">
+        <div class="play-button">▶</div>
       </div>
       <div class="card-body">
         <span class="card-tag">Music Video</span>
         <h3 class="card-title">Jack Stone en die bende tour REFLEKSIE</h3>
-        <p class="card-desc">Live musical performance capture and audio sync.</p>
+        <p class="card-desc">Live tour performance capture and highlight editing.</p>
       </div>
     </div>
 
     <div class="card grid-item music">
-      <div class="media-container">
-        <iframe src="https://www.youtube.com/embed/KDMYCQUn2PY" allowfullscreen></iframe>
+      <div class="media-container" onclick="loadVideo(this, 'KDMYCQUn2PY')">
+        <img src="https://img.youtube.com/vi/KDMYCQUn2PY/hqdefault.jpg" alt="Enya-M Music Video Preview" loading="lazy" decoding="async">
+        <div class="play-button">▶</div>
       </div>
       <div class="card-body">
         <span class="card-tag">Music Video</span>
@@ -896,8 +1000,9 @@
     </div>
 
     <div class="card grid-item music">
-      <div class="media-container">
-        <iframe src="https://www.youtube.com/embed/OgZhseIRSIE" allowfullscreen></iframe>
+      <div class="media-container" onclick="loadVideo(this, 'OgZhseIRSIE')">
+        <img src="https://img.youtube.com/vi/OgZhseIRSIE/hqdefault.jpg" alt="Jack Stone Dagbreek Preview" loading="lazy" decoding="async">
+        <div class="play-button">▶</div>
       </div>
       <div class="card-body">
         <span class="card-tag">Music Video</span>
@@ -907,8 +1012,9 @@
     </div>
 
     <div class="card grid-item music">
-      <div class="media-container">
-        <iframe src="https://www.youtube.com/embed/2G6R1d5i4eE" allowfullscreen></iframe>
+      <div class="media-container" onclick="loadVideo(this, '2G6R1d5i4eE')">
+        <img src="https://img.youtube.com/vi/2G6R1d5i4eE/hqdefault.jpg" alt="Acoustic Live Studio Preview" loading="lazy" decoding="async">
+        <div class="play-button">▶</div>
       </div>
       <div class="card-body">
         <span class="card-tag">Music Video</span>
@@ -918,8 +1024,9 @@
     </div>
 
     <div class="card grid-item music">
-      <div class="media-container">
-        <iframe src="https://www.youtube.com/embed/3x_P4L08B7A" allowfullscreen></iframe>
+      <div class="media-container" onclick="loadVideo(this, '3x_P4L08B7A')">
+        <img src="https://img.youtube.com/vi/3x_P4L08B7A/hqdefault.jpg" alt="Cinematic Rock Performance Preview" loading="lazy" decoding="async">
+        <div class="play-button">▶</div>
       </div>
       <div class="card-body">
         <span class="card-tag">Music Video</span>
@@ -930,8 +1037,9 @@
 
     <!-- WEDDINGS -->
     <div class="card grid-item wedding featured">
-      <div class="media-container">
-        <iframe src="https://www.youtube.com/embed/-nWzVNTJHJk" allowfullscreen></iframe>
+      <div class="media-container" onclick="loadVideo(this, '-nWzVNTJHJk')">
+        <img src="https://img.youtube.com/vi/-nWzVNTJHJk/hqdefault.jpg" alt="Riaan and Jade Wedding Preview" loading="lazy" decoding="async">
+        <div class="play-button">▶</div>
       </div>
       <div class="card-body">
         <span class="card-tag">Wedding Documentary</span>
@@ -941,8 +1049,9 @@
     </div>
 
     <div class="card grid-item wedding">
-      <div class="media-container">
-        <iframe src="https://www.youtube.com/embed/vnajgu3YL7k" allowfullscreen></iframe>
+      <div class="media-container" onclick="loadVideo(this, 'vnajgu3YL7k')">
+        <img src="https://img.youtube.com/vi/vnajgu3YL7k/hqdefault.jpg" alt="Vanessa and Ryan Sandes Wedding Preview" loading="lazy" decoding="async">
+        <div class="play-button">▶</div>
       </div>
       <div class="card-body">
         <span class="card-tag">Wedding Trailer</span>
@@ -953,7 +1062,7 @@
 
     <div class="card grid-item wedding">
       <div class="media-container">
-        <iframe src="https://player.vimeo.com/video/96893603" allowfullscreen></iframe>
+        <iframe src="https://player.vimeo.com/video/96893603" allowfullscreen loading="lazy"></iframe>
       </div>
       <div class="card-body">
         <span class="card-tag">Wedding Short</span>
@@ -963,8 +1072,9 @@
     </div>
 
     <div class="card grid-item wedding">
-      <div class="media-container">
-        <iframe src="https://www.youtube.com/embed/eF_1nwGx5Ls" allowfullscreen></iframe>
+      <div class="media-container" onclick="loadVideo(this, 'eF_1nwGx5Ls')">
+        <img src="https://img.youtube.com/vi/eF_1nwGx5Ls/hqdefault.jpg" alt="Megan and Nick Wedding Preview" loading="lazy" decoding="async">
+        <div class="play-button">▶</div>
       </div>
       <div class="card-body">
         <span class="card-tag">Wedding Trailer</span>
@@ -975,7 +1085,7 @@
 
     <div class="card grid-item wedding">
       <div class="media-container">
-        <iframe src="https://player.vimeo.com/video/431726440" allowfullscreen></iframe>
+        <iframe src="https://player.vimeo.com/video/431726440" allowfullscreen loading="lazy"></iframe>
       </div>
       <div class="card-body">
         <span class="card-tag">Wedding Trailer</span>
@@ -985,8 +1095,9 @@
     </div>
 
     <div class="card grid-item wedding">
-      <div class="media-container">
-        <iframe src="https://www.youtube.com/embed/5WI8lIa9ONg" allowfullscreen></iframe>
+      <div class="media-container" onclick="loadVideo(this, '5WI8lIa9ONg')">
+        <img src="https://img.youtube.com/vi/5WI8lIa9ONg/hqdefault.jpg" alt="Voss Wedding Preview" loading="lazy" decoding="async">
+        <div class="play-button">▶</div>
       </div>
       <div class="card-body">
         <span class="card-tag">Wedding Short</span>
@@ -997,7 +1108,7 @@
 
     <div class="card grid-item wedding">
       <div class="media-container">
-        <iframe src="https://player.vimeo.com/video/431403634" allowfullscreen></iframe>
+        <iframe src="https://player.vimeo.com/video/431403634" allowfullscreen loading="lazy"></iframe>
       </div>
       <div class="card-body">
         <span class="card-tag">Wedding Trailer</span>
@@ -1007,8 +1118,9 @@
     </div>
 
     <div class="card grid-item wedding">
-      <div class="media-container">
-        <iframe src="https://www.youtube.com/embed/aXQfzcbubq8" allowfullscreen></iframe>
+      <div class="media-container" onclick="loadVideo(this, 'aXQfzcbubq8')">
+        <img src="https://img.youtube.com/vi/aXQfzcbubq8/hqdefault.jpg" alt="Kyle and Maya Wedding Preview" loading="lazy" decoding="async">
+        <div class="play-button">▶</div>
       </div>
       <div class="card-body">
         <span class="card-tag">Wedding Trailer</span>
@@ -1019,18 +1131,18 @@
 
     <div class="card grid-item wedding">
       <div class="media-container">
-        <iframe src="https://player.vimeo.com/video/389720779" allowfullscreen></iframe>
+        <iframe src="https://player.vimeo.com/video/389720779" allowfullscreen loading="lazy"></iframe>
       </div>
       <div class="card-body">
         <span class="card-tag">Wedding Trailer</span>
-        <h3 class="card-title">Lanzarec Wedding Trailer</h3>
-        <p class="card-desc">Estate wedding short film.</p>
+        <h3 class="card-title">Lanzerac Wedding Trailer</h3>
+        <p class="card-desc">Estate wedding short film in Stellenbosch.</p>
       </div>
     </div>
 
     <div class="card grid-item wedding">
       <div class="media-container">
-        <iframe src="https://player.vimeo.com/video/399085294" allowfullscreen></iframe>
+        <iframe src="https://player.vimeo.com/video/399085294" allowfullscreen loading="lazy"></iframe>
       </div>
       <div class="card-body">
         <span class="card-tag">Wedding Trailer</span>
@@ -1041,7 +1153,7 @@
 
     <div class="card grid-item wedding">
       <div class="media-container">
-        <iframe src="https://player.vimeo.com/video/399852152" allowfullscreen></iframe>
+        <iframe src="https://player.vimeo.com/video/399852152" allowfullscreen loading="lazy"></iframe>
       </div>
       <div class="card-body">
         <span class="card-tag">Wedding Trailer</span>
@@ -1052,7 +1164,7 @@
 
     <div class="card grid-item wedding">
       <div class="media-container">
-        <iframe src="https://player.vimeo.com/video/351566786" allowfullscreen></iframe>
+        <iframe src="https://player.vimeo.com/video/351566786" allowfullscreen loading="lazy"></iframe>
       </div>
       <div class="card-body">
         <span class="card-tag">Wedding Trailer</span>
@@ -1063,7 +1175,7 @@
 
     <div class="card grid-item wedding">
       <div class="media-container">
-        <iframe src="https://player.vimeo.com/video/348002329" allowfullscreen></iframe>
+        <iframe src="https://player.vimeo.com/video/348002329" allowfullscreen loading="lazy"></iframe>
       </div>
       <div class="card-body">
         <span class="card-tag">Wedding Trailer</span>
@@ -1074,7 +1186,7 @@
 
     <div class="card grid-item wedding">
       <div class="media-container">
-        <iframe src="https://player.vimeo.com/video/284893192" allowfullscreen></iframe>
+        <iframe src="https://player.vimeo.com/video/284893192" allowfullscreen loading="lazy"></iframe>
       </div>
       <div class="card-body">
         <span class="card-tag">Wedding Trailer</span>
@@ -1085,7 +1197,7 @@
 
     <div class="card grid-item wedding">
       <div class="media-container">
-        <iframe src="https://player.vimeo.com/video/276836968" allowfullscreen></iframe>
+        <iframe src="https://player.vimeo.com/video/276836968" allowfullscreen loading="lazy"></iframe>
       </div>
       <div class="card-body">
         <span class="card-tag">Wedding Trailer</span>
@@ -1096,7 +1208,7 @@
 
     <div class="card grid-item wedding">
       <div class="media-container">
-        <iframe src="https://player.vimeo.com/video/269178812" allowfullscreen></iframe>
+        <iframe src="https://player.vimeo.com/video/269178812" allowfullscreen loading="lazy"></iframe>
       </div>
       <div class="card-body">
         <span class="card-tag">Wedding Trailer</span>
@@ -1107,7 +1219,7 @@
 
     <div class="card grid-item wedding">
       <div class="media-container">
-        <iframe src="https://player.vimeo.com/video/170642372" allowfullscreen></iframe>
+        <iframe src="https://player.vimeo.com/video/170642372" allowfullscreen loading="lazy"></iframe>
       </div>
       <div class="card-body">
         <span class="card-tag">Wedding Trailer</span>
@@ -1118,7 +1230,7 @@
 
     <div class="card grid-item wedding">
       <div class="media-container">
-        <iframe src="https://player.vimeo.com/video/116378739" allowfullscreen></iframe>
+        <iframe src="https://player.vimeo.com/video/116378739" allowfullscreen loading="lazy"></iframe>
       </div>
       <div class="card-body">
         <span class="card-tag">Wedding Trailer</span>
@@ -1128,8 +1240,9 @@
     </div>
 
     <div class="card grid-item wedding">
-      <div class="media-container">
-        <iframe src="https://www.youtube.com/embed/xJTZNRKSPjs" allowfullscreen></iframe>
+      <div class="media-container" onclick="loadVideo(this, 'xJTZNRKSPjs')">
+        <img src="https://img.youtube.com/vi/xJTZNRKSPjs/hqdefault.jpg" alt="Annali and Spike Wedding Preview" loading="lazy" decoding="async">
+        <div class="play-button">▶</div>
       </div>
       <div class="card-body">
         <span class="card-tag">Wedding Trailer</span>
@@ -1138,125 +1251,125 @@
       </div>
     </div>
 
-    <!-- PHOTOGRAPHY -->
+    <!-- PHOTOGRAPHY (OPTIMIZED WITH LAZY LOADING & ASYNC DECODING) -->
     <div class="card grid-item photo">
-      <div class="media-container"><img src="photos1.jpg" alt="Photography Still 1"></div>
+      <div class="media-container"><img src="photos1.jpg" alt="Johann Latsky Photography Still 01" loading="lazy" decoding="async"></div>
       <div class="card-body"><span class="card-tag">Photography</span><h3 class="card-title">Cinematic Still 01</h3></div>
     </div>
     <div class="card grid-item photo">
-      <div class="media-container"><img src="photos2.jpg" alt="Photography Still 2"></div>
+      <div class="media-container"><img src="photos2.jpg" alt="Johann Latsky Photography Still 02" loading="lazy" decoding="async"></div>
       <div class="card-body"><span class="card-tag">Photography</span><h3 class="card-title">Cinematic Still 02</h3></div>
     </div>
     <div class="card grid-item photo">
-      <div class="media-container"><img src="photos3.jpg" alt="Photography Still 3"></div>
+      <div class="media-container"><img src="photos3.jpg" alt="Johann Latsky Photography Still 03" loading="lazy" decoding="async"></div>
       <div class="card-body"><span class="card-tag">Photography</span><h3 class="card-title">Cinematic Still 03</h3></div>
     </div>
     <div class="card grid-item photo">
-      <div class="media-container"><img src="photos4.jpg" alt="Photography Still 4"></div>
+      <div class="media-container"><img src="photos4.jpg" alt="Johann Latsky Photography Still 04" loading="lazy" decoding="async"></div>
       <div class="card-body"><span class="card-tag">Photography</span><h3 class="card-title">Cinematic Still 04</h3></div>
     </div>
     <div class="card grid-item photo">
-      <div class="media-container"><img src="photos5.jpg" alt="Photography Still 5"></div>
+      <div class="media-container"><img src="photos5.jpg" alt="Johann Latsky Photography Still 05" loading="lazy" decoding="async"></div>
       <div class="card-body"><span class="card-tag">Photography</span><h3 class="card-title">Cinematic Still 05</h3></div>
     </div>
     <div class="card grid-item photo">
-      <div class="media-container"><img src="photos6.jpg" alt="Photography Still 6"></div>
+      <div class="media-container"><img src="photos6.jpg" alt="Johann Latsky Photography Still 06" loading="lazy" decoding="async"></div>
       <div class="card-body"><span class="card-tag">Photography</span><h3 class="card-title">Cinematic Still 06</h3></div>
     </div>
     <div class="card grid-item photo">
-      <div class="media-container"><img src="photos7.jpg" alt="Photography Still 7"></div>
+      <div class="media-container"><img src="photos7.jpg" alt="Johann Latsky Photography Still 07" loading="lazy" decoding="async"></div>
       <div class="card-body"><span class="card-tag">Photography</span><h3 class="card-title">Cinematic Still 07</h3></div>
     </div>
     <div class="card grid-item photo">
-      <div class="media-container"><img src="photos8.jpg" alt="Photography Still 8"></div>
+      <div class="media-container"><img src="photos8.jpg" alt="Johann Latsky Photography Still 08" loading="lazy" decoding="async"></div>
       <div class="card-body"><span class="card-tag">Photography</span><h3 class="card-title">Cinematic Still 08</h3></div>
     </div>
     <div class="card grid-item photo">
-      <div class="media-container"><img src="photos9.jpg" alt="Photography Still 9"></div>
+      <div class="media-container"><img src="photos9.jpg" alt="Johann Latsky Photography Still 09" loading="lazy" decoding="async"></div>
       <div class="card-body"><span class="card-tag">Photography</span><h3 class="card-title">Cinematic Still 09</h3></div>
     </div>
     <div class="card grid-item photo">
-      <div class="media-container"><img src="photos10.jpg" alt="Photography Still 10"></div>
+      <div class="media-container"><img src="photos10.jpg" alt="Johann Latsky Photography Still 10" loading="lazy" decoding="async"></div>
       <div class="card-body"><span class="card-tag">Photography</span><h3 class="card-title">Cinematic Still 10</h3></div>
     </div>
     <div class="card grid-item photo">
-      <div class="media-container"><img src="photos11.jpg" alt="Photography Still 11"></div>
+      <div class="media-container"><img src="photos11.jpg" alt="Johann Latsky Photography Still 11" loading="lazy" decoding="async"></div>
       <div class="card-body"><span class="card-tag">Photography</span><h3 class="card-title">Cinematic Still 11</h3></div>
     </div>
     <div class="card grid-item photo">
-      <div class="media-container"><img src="photos12.jpg" alt="Photography Still 12"></div>
+      <div class="media-container"><img src="photos12.jpg" alt="Johann Latsky Photography Still 12" loading="lazy" decoding="async"></div>
       <div class="card-body"><span class="card-tag">Photography</span><h3 class="card-title">Cinematic Still 12</h3></div>
     </div>
     <div class="card grid-item photo">
-      <div class="media-container"><img src="photos13.jpg" alt="Photography Still 13"></div>
+      <div class="media-container"><img src="photos13.jpg" alt="Johann Latsky Photography Still 13" loading="lazy" decoding="async"></div>
       <div class="card-body"><span class="card-tag">Photography</span><h3 class="card-title">Cinematic Still 13</h3></div>
     </div>
     <div class="card grid-item photo">
-      <div class="media-container"><img src="photos14.jpg" alt="Photography Still 14"></div>
+      <div class="media-container"><img src="photos14.jpg" alt="Johann Latsky Photography Still 14" loading="lazy" decoding="async"></div>
       <div class="card-body"><span class="card-tag">Photography</span><h3 class="card-title">Cinematic Still 14</h3></div>
     </div>
     <div class="card grid-item photo">
-      <div class="media-container"><img src="photos15.jpg" alt="Photography Still 15"></div>
+      <div class="media-container"><img src="photos15.jpg" alt="Johann Latsky Photography Still 15" loading="lazy" decoding="async"></div>
       <div class="card-body"><span class="card-tag">Photography</span><h3 class="card-title">Cinematic Still 15</h3></div>
     </div>
     <div class="card grid-item photo">
-      <div class="media-container"><img src="photos16.jpg" alt="Photography Still 16"></div>
+      <div class="media-container"><img src="photos16.jpg" alt="Johann Latsky Photography Still 16" loading="lazy" decoding="async"></div>
       <div class="card-body"><span class="card-tag">Photography</span><h3 class="card-title">Cinematic Still 16</h3></div>
     </div>
     <div class="card grid-item photo">
-      <div class="media-container"><img src="photos17.jpg" alt="Photography Still 17"></div>
+      <div class="media-container"><img src="photos17.jpg" alt="Johann Latsky Photography Still 17" loading="lazy" decoding="async"></div>
       <div class="card-body"><span class="card-tag">Photography</span><h3 class="card-title">Cinematic Still 17</h3></div>
     </div>
     <div class="card grid-item photo">
-      <div class="media-container"><img src="photos18.jpg" alt="Photography Still 18"></div>
+      <div class="media-container"><img src="photos18.jpg" alt="Johann Latsky Photography Still 18" loading="lazy" decoding="async"></div>
       <div class="card-body"><span class="card-tag">Photography</span><h3 class="card-title">Cinematic Still 18</h3></div>
     </div>
     <div class="card grid-item photo">
-      <div class="media-container"><img src="photos19.jpg" alt="Photography Still 19"></div>
+      <div class="media-container"><img src="photos19.jpg" alt="Johann Latsky Photography Still 19" loading="lazy" decoding="async"></div>
       <div class="card-body"><span class="card-tag">Photography</span><h3 class="card-title">Cinematic Still 19</h3></div>
     </div>
     <div class="card grid-item photo">
-      <div class="media-container"><img src="photos20.jpg" alt="Photography Still 20"></div>
+      <div class="media-container"><img src="photos20.jpg" alt="Johann Latsky Photography Still 20" loading="lazy" decoding="async"></div>
       <div class="card-body"><span class="card-tag">Photography</span><h3 class="card-title">Cinematic Still 20</h3></div>
     </div>
     <div class="card grid-item photo">
-      <div class="media-container"><img src="photos21.jpg" alt="Photography Still 21"></div>
+      <div class="media-container"><img src="photos21.jpg" alt="Johann Latsky Photography Still 21" loading="lazy" decoding="async"></div>
       <div class="card-body"><span class="card-tag">Photography</span><h3 class="card-title">Cinematic Still 21</h3></div>
     </div>
     <div class="card grid-item photo">
-      <div class="media-container"><img src="photos22.jpg" alt="Photography Still 22"></div>
+      <div class="media-container"><img src="photos22.jpg" alt="Johann Latsky Photography Still 22" loading="lazy" decoding="async"></div>
       <div class="card-body"><span class="card-tag">Photography</span><h3 class="card-title">Cinematic Still 22</h3></div>
     </div>
     <div class="card grid-item photo">
-      <div class="media-container"><img src="photos23.jpg" alt="Photography Still 23"></div>
+      <div class="media-container"><img src="photos23.jpg" alt="Johann Latsky Photography Still 23" loading="lazy" decoding="async"></div>
       <div class="card-body"><span class="card-tag">Photography</span><h3 class="card-title">Cinematic Still 23</h3></div>
     </div>
     <div class="card grid-item photo">
-      <div class="media-container"><img src="photos24.jpg" alt="Photography Still 24"></div>
+      <div class="media-container"><img src="photos24.jpg" alt="Johann Latsky Photography Still 24" loading="lazy" decoding="async"></div>
       <div class="card-body"><span class="card-tag">Photography</span><h3 class="card-title">Cinematic Still 24</h3></div>
     </div>
     <div class="card grid-item photo">
-      <div class="media-container"><img src="photos25.jpg" alt="Photography Still 25"></div>
+      <div class="media-container"><img src="photos25.jpg" alt="Johann Latsky Photography Still 25" loading="lazy" decoding="async"></div>
       <div class="card-body"><span class="card-tag">Photography</span><h3 class="card-title">Cinematic Still 25</h3></div>
     </div>
     <div class="card grid-item photo">
-      <div class="media-container"><img src="photos26.jpg" alt="Photography Still 26"></div>
+      <div class="media-container"><img src="photos26.jpg" alt="Johann Latsky Photography Still 26" loading="lazy" decoding="async"></div>
       <div class="card-body"><span class="card-tag">Photography</span><h3 class="card-title">Cinematic Still 26</h3></div>
     </div>
     <div class="card grid-item photo">
-      <div class="media-container"><img src="photos27.jpg" alt="Photography Still 27"></div>
+      <div class="media-container"><img src="photos27.jpg" alt="Johann Latsky Photography Still 27" loading="lazy" decoding="async"></div>
       <div class="card-body"><span class="card-tag">Photography</span><h3 class="card-title">Cinematic Still 27</h3></div>
     </div>
     <div class="card grid-item photo">
-      <div class="media-container"><img src="photos28.jpg" alt="Photography Still 28"></div>
+      <div class="media-container"><img src="photos28.jpg" alt="Johann Latsky Photography Still 28" loading="lazy" decoding="async"></div>
       <div class="card-body"><span class="card-tag">Photography</span><h3 class="card-title">Cinematic Still 28</h3></div>
     </div>
     <div class="card grid-item photo">
-      <div class="media-container"><img src="photos29.jpg" alt="Photography Still 29"></div>
+      <div class="media-container"><img src="photos29.jpg" alt="Johann Latsky Photography Still 29" loading="lazy" decoding="async"></div>
       <div class="card-body"><span class="card-tag">Photography</span><h3 class="card-title">Cinematic Still 29</h3></div>
     </div>
     <div class="card grid-item photo">
-      <div class="media-container"><img src="photos30.jpg" alt="Photography Still 30"></div>
+      <div class="media-container"><img src="photos30.jpg" alt="Johann Latsky Photography Still 30" loading="lazy" decoding="async"></div>
       <div class="card-body"><span class="card-tag">Photography</span><h3 class="card-title">Cinematic Still 30</h3></div>
     </div>
 
@@ -1330,11 +1443,11 @@
     </div>
 
     <div class="footer-copy">
-      <p>&copy; Johann Latsky Multimedia. All rights reserved.</p>
+      <p>&copy; Johann Latsky Multimedia. All rights reserved. | Cape Town, South Africa</p>
     </div>
   </footer>
 
-  <!-- DYNAMIC FILTERING SCRIPT -->
+  <!-- DYNAMIC FILTERING & DYNAMIC VIDEO LOAD SCRIPT -->
   <script>
     function filterGrid(category, event) {
       const cards = document.querySelectorAll('.card');
@@ -1357,6 +1470,11 @@
           card.style.display = 'none';
         }
       });
+    }
+
+    // Dynamic Video Embed Load on Click
+    function loadVideo(container, videoId) {
+      container.innerHTML = `<iframe src="https://www.youtube.com/embed/${videoId}?autoplay=1" allow="autoplay; encrypted-media" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;"></iframe>`;
     }
 
     // Initialize grid on landing page load with 'featured' button active

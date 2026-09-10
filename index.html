@@ -245,6 +245,31 @@
       line-height: 1.6;
     }
 
+    /* VERANDERT & INVESTMENT BLURB SECTION */
+    .investment-section {
+      background-color: #0f0f0f;
+      padding: 80px 20px;
+      border-bottom: 1px solid #222;
+    }
+
+    .investment-content {
+      max-width: 900px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .investment-text {
+      font-size: 1.1rem;
+      color: #cccccc;
+      line-height: 1.8;
+      margin-bottom: 25px;
+    }
+
+    .investment-highlight {
+      color: #ffffff;
+      font-weight: 600;
+    }
+
     /* FOOTER & CONTACT FORM */
     footer {
       background-color: #080808;
@@ -338,14 +363,14 @@
 
   <!-- FILTER CONTROLS -->
   <div class="filter-container">
-    <button class="filter-btn active" id="default-btn" onclick="filterGrid('featured')">Featured</button>
-    <button class="filter-btn" onclick="filterGrid('doccie')">Documentaries</button>
-    <button class="filter-btn" onclick="filterGrid('narrative')">Narrative & Shorts</button>
-    <button class="filter-btn" onclick="filterGrid('podcast')">Podcasts & Shows</button>
-    <button class="filter-btn" onclick="filterGrid('corporate')">Corporate</button>
-    <button class="filter-btn" onclick="filterGrid('music')">Music Videos</button>
-    <button class="filter-btn" onclick="filterGrid('wedding')">Weddings</button>
-    <button class="filter-btn" onclick="filterGrid('photo')">Photography</button>
+    <button class="filter-btn active" id="default-btn" onclick="filterGrid('featured', event)">Featured</button>
+    <button class="filter-btn" onclick="filterGrid('doccie', event)">Documentaries</button>
+    <button class="filter-btn" onclick="filterGrid('narrative', event)">Narrative & Shorts</button>
+    <button class="filter-btn" onclick="filterGrid('podcast', event)">Podcasts & Shows</button>
+    <button class="filter-btn" onclick="filterGrid('corporate', event)">Corporate</button>
+    <button class="filter-btn" onclick="filterGrid('music', event)">Music Videos</button>
+    <button class="filter-btn" onclick="filterGrid('wedding', event)">Weddings</button>
+    <button class="filter-btn" onclick="filterGrid('photo', event)">Photography</button>
   </div>
 
   <!-- PORTFOLIO GRID -->
@@ -697,7 +722,7 @@
       </div>
     </div>
 
-    <!-- MUSIC VIDEOS (EXPANDED COLLECTION) -->
+    <!-- MUSIC VIDEOS -->
     <div class="card grid-item music featured">
       <div class="media-container">
         <iframe src="https://www.youtube.com/embed/ve1jarkSkS8" allowfullscreen></iframe>
@@ -974,7 +999,7 @@
       </div>
     </div>
 
-    <!-- 30 PHOTOGRAPHY PLACEHOLDERS -->
+    <!-- PHOTOGRAPHY -->
     <div class="card grid-item photo">
       <div class="media-container"><img src="photos1.jpg" alt="Photography Still 1"></div>
       <div class="card-body"><span class="card-tag">Photography</span><h3 class="card-title">Cinematic Still 01</h3></div>
@@ -1119,6 +1144,21 @@
     </div>
   </section>
 
+  <!-- VERANDERT & INVESTMENT BLURB SECTION -->
+  <section class="investment-section">
+    <div class="section-container">
+      <div class="investment-content">
+        <h2 class="section-title">Investing In <span>High Impact Storytelling</span></h2>
+        <p class="investment-text">
+          Through the <span class="investment-highlight">Verandert</span> initiative, we believe that video is far more than visual media—it is an investment in measurable human connection and community impact. High-retention video narratives consistently outperform standard marketing by holding audience attention longer and driving meaningful action.
+        </p>
+        <p class="investment-text">
+          Whether capturing community transformations or building brand authority, investing in intentional production, clear narrative structure, and high-level post-production ensures your message delivers a lasting return on investment.
+        </p>
+      </div>
+    </div>
+  </section>
+
   <!-- FOOTER & CONTACT FORM -->
   <footer>
     <div class="contact-container">
@@ -1136,7 +1176,7 @@
           <label for="category">Project Category</label>
           <select id="category" class="form-control">
             <option value="brand">Brand / Corporate Film</option>
-            <option value="doccie">Documentary</option>
+            <option value="doccie">Documentary / Impact (Verandert)</option>
             <option value="podcast">Podcast / Show Production</option>
             <option value="wedding">Cinematic Wedding</option>
             <option value="other">Other Inquiry</option>

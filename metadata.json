@@ -1,0 +1,8 @@
+{
+  "name": "Latsky Multimedia",
+  "description": "Johann Latsky Multimedia is a premier Cape Town creative producer & content creator specializing in corporate brand films, documentaries, podcasts, music videos, and cinematic weddings across South Africa.",
+  "permissions": [],
+  "capabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
